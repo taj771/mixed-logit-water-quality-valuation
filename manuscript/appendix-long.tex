@@ -1,0 +1,445 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{setspace}
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{changes}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularray}
+\usepackage{lipsum}
+\usepackage{smartdiagram}
+\usepackage{lscape}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{makecell}
+\usepackage{siunitx}% Including necessary packages
+\usepackage{etoc} % For customizing List of Tables
+\usepackage{tocloft} % For additional control over table of contents/lists
+%\usepackage{noto} % Reliable font package for compatibility
+\usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{multirow}
+
+%\usepackage[backend=biber,style=authoryear,maxbibnames=99,]{biblatex}
+
+\usepackage[backend=biber,
+            style=authoryear,
+            maxbibnames=99,
+            giveninits=false,
+            uniquename=false,    % ← Add this line
+            uniquelist=false]{biblatex} % ← And this line
+
+\addbibresource{refs.bib}
+
+\begin{document}
+
+
+\section*{Appendix}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A1} % set figure number manually
+\centering
+\includegraphics[scale=0.7]{figures/ab_age_weight.png}
+\caption{Demographic Distribution of Age in Alberta: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+age in Alberta. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A2} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/ab_gender_weight.png}
+\caption{Demographic Distribution of Gender in Alberta: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+gender in Alberta. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A3} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/ab_income_weight.png}
+\caption{Demographic Distribution of Income in Alberta: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+income in Alberta. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A4} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/ab_education_weight.png}
+\caption{Demographic Distribution of Education in Alberta: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+education in Alberta. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+%MB
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A5} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/mb_age_weight.png}
+\caption{Demographic Distribution of Age in Manitoba: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+age in Manitoba. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A6} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/mb_gender_weight.png}
+\caption{Demographic Distribution of Gender in Manitoba: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+gender in Manitoba. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A7} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/mb_income_weight.png}
+\caption{Demographic Distribution of Income in Manitoba: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+income in Manitoba. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A8} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/mb_education_weight.png}
+\caption{Demographic Distribution of Education in Manitoba: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+education in Manitoba. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+
+%sk
+\begin{figure}[H]%
+\renewcommand{\thefigure}{A9} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/sk_age_weight.png}
+\caption{Demographic Distribution of Age in Saskatchewan: Unweighted Survey, Weighted Survey, and Census Targets}
+\label{fig:appendix_demo_ab}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+age in Saskatchewan. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+for water quality improvement valuations based on the WWF’s freshwater health score.
+\end{minipage}
+\end{figure}
+
+
+%\begin{figure}[H]%
+%\renewcommand{\thefigure}{A3.10} % set figure number manually
+%\centering
+%\includegraphics[scale=0.8]{figures/sk_gender_weight.png}
+%\caption{ Demographic Distribution of Gender in Saskatchewan: Unweighted Survey, Weighted Survey, and Census Targets}
+%\label{fig:appendix_demo_ab}
+%\begin{minipage}{15cm}
+%\singlespacing
+%\vspace{0.01cm}
+%\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+%gender in Saskatchewan. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+%align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+%for water quality improvement valuations based on the WWF’s freshwater health score.
+%\end{minipage}
+%\end{figure}
+
+
+%\begin{figure}[H]%
+%\renewcommand{\thefigure}{A3.11. } % set figure number manually
+%\centering
+%\includegraphics[scale=0.8]{figures/sk_income_weight.png}
+%\caption{Demographic Distribution of Income in Saskatchewan: Unweighted Survey, Weighted Survey, and Census Targets}
+%\label{fig:appendix_demo_ab}
+%\begin{minipage}{15cm}
+%\singlespacing
+%\vspace{0.01cm}
+%\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+%income in Saskatchewan. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+%align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+%for water quality improvement valuations based on the WWF’s freshwater health score.
+%\end{minipage}
+%\end{figure}
+
+
+%\begin{figure}[H]%
+%\renewcommand{\thefigure}{A3.12} % set figure number manually
+%\centering
+%\includegraphics[scale=0.8]{figures/sk_education_weight.png}
+%\caption{ Demographic Distribution of Education in Saskatchewan: Unweighted Survey, Weighted Survey, and Census Targets}
+%\label{fig:appendix_demo_ab}
+%\begin{minipage}{15cm}
+%\singlespacing
+%\vspace{0.01cm}
+%\small  Notes: This figure compares the unweighted survey, weighted survey, and 2021 Census target distributions of 
+%education in Saskatchewan. The survey weights were derived using iterative proportional fitting with Statistics Canada data to 
+%align the sample with population benchmarks, thereby ensuring representativeness for estimating willingness to pay (WTP) 
+%for water quality improvement valuations based on the WWF’s freshwater health score.
+%\end{minipage}
+%\end{figure}
+
+
+
+
+
+
+\subsection*{A10. Survey Instrument}
+
+\textbf{Survey Instrument}
+
+\newcommand{\surveyfig}[2]{
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{figures/#1}
+    \caption*{}
+    \label{#2}
+\end{figure}
+}
+
+\surveyfig{survey_ss_1.png}{Demo_SK1}
+\surveyfig{survey_ss_2.png}{Demo_SK2}
+\surveyfig{survey_ss_3.png}{Demo_SK3}
+\surveyfig{survey_ss_4.png}{Demo_SK4}
+\surveyfig{survey_ss_5.png}{Demo_SK5}
+\surveyfig{survey_ss_6.png}{Demo_SK6}
+\surveyfig{survey_ss_7.png}{Demo_SK7}
+\surveyfig{survey_ss_8.png}{Demo_SK8}
+\surveyfig{survey_ss_9.png}{Demo_SK9}
+\surveyfig{survey_ss_10.png}{Demo_SK10}
+\surveyfig{survey_ss_11.png}{Demo_SK11}
+\surveyfig{survey_ss_12.png}{Demo_SK12}
+\surveyfig{survey_ss_13.png}{Demo_SK13}
+\surveyfig{survey_ss_14.png}{Demo_SK14}
+\surveyfig{survey_ss_15.png}{Demo_SK15}
+\surveyfig{survey_ss_16.png}{Demo_SK16}
+\surveyfig{survey_ss_17.png}{Demo_SK17}
+\surveyfig{survey_ss_18.png}{Demo_SK18}
+\surveyfig{survey_ss_19.png}{Demo_SK19}
+\surveyfig{survey_ss_20.png}{Demo_SK20}
+\surveyfig{survey_ss_21.png}{Demo_SK21}
+\surveyfig{survey_ss_22.png}{Demo_SK22}
+\surveyfig{survey_ss_23.png}{Demo_SK23}
+\surveyfig{survey_ss_24.png}{Demo_SK24}
+\surveyfig{survey_ss_25.png}{Demo_SK25}
+\surveyfig{survey_ss_26.png}{Demo_SK26}
+\surveyfig{survey_ss_27.png}{Demo_SK27}
+\surveyfig{survey_ss_28.png}{Demo_SK28}
+%\surveyfig{survey_ss_29.png}{Demo_SK29}
+%\surveyfig{survey_ss_30.png}{Demo_SK30}
+%\surveyfig{survey_ss_31.png}{Demo_SK31}
+%\surveyfig{survey_ss_32.png}{Demo_SK32}
+%\surveyfig{survey_ss_33.png}{Demo_SK33}
+%\surveyfig{survey_ss_34.png}{Demo_SK34}
+%\surveyfig{survey_ss_35.png}{Demo_SK35}
+%\surveyfig{survey_ss_36.png}{Demo_SK36}
+%\surveyfig{survey_ss_37.png}{Demo_SK37}
+%\surveyfig{survey_ss_38.png}{Demo_SK38}
+%\surveyfig{survey_ss_39.png}{Demo_SK39}
+\surveyfig{survey_ss_40.png}{Demo_SK40}
+\surveyfig{survey_ss_41.png}{Demo_SK41}
+\surveyfig{survey_ss_42.png}{Demo_SK42}
+
+\newpage
+
+\subsection*{A11. Choice Set Randomization}
+\addcontentsline{toc}{subsection}{\protect\numberline{A3}Choice Set Randomization}
+
+\textbf{Study Area}
+
+Within the study area, there are four river basins across Saskatchewan, Alberta, and Manitoba and 18 sub-river basins.
+
+\noindent\textbf{Versions}
+
+
+There are four survey versions that respondents are randomized into at the beginning of the survey. These versions differ 
+on the current water quality (WQ) conditions presented to respondents:
+\begin{itemize}
+    \item Version 1
+    \item Version 2
+    \item Version 3
+    \item Version 4
+\end{itemize}    
+
+
+\noindent\textbf{Treatments}
+
+There are two overall survey treatments that respondents are randomized into at the beginning of the survey:
+\begin{enumerate}
+    \item Spatial
+    \item WQ
+\end{enumerate}
+
+
+Thus, at the beginning of the survey, respondents will have been randomized into a Version--Treatment pair.
+
+\noindent\textbf{Blocks}
+
+Within each of these versions/treatments, respondents will receive two blocks of choice scenarios. These blocks contain between 2 
+and 7 choice sets each, all grouped under a unique block number. There are a total of 114 blocks.
+
+\noindent\textbf{Local vs. Non-local Blocks}
+
+The two blocks of choice scenarios offered to each respondent include:
+\begin{enumerate}
+    \item Local block: river basin includes the respondent’s home location.
+    \item Non-local block: sub-river basin does not include the respondent’s home location.
+\end{enumerate}
+
+
+The local definition depends on the home location of the respondent based on their postal code (survey question S6). While the local 
+blocks are endogenous to the respondent’s home location, the non-local units are randomly assigned from non-local river basins.
+
+\noindent\textbf{Spatial Treatment}
+
+Within the spatial treatment, there are two types of blocks that depend on the spatial scale:
+\begin{enumerate}
+    \item River basin
+    \item River sub-basin
+\end{enumerate}
+
+
+Within each spatial unit block, respondents are presented with choice sets that hold the spatial scale fixed with various WQ change scenarios. 
+
+For example, if a respondent’s postal code is in the South Saskatchewan river basin and they are randomly assigned Version~1 and the spatial 
+treatment, we will randomly allocate one of the five South Saskatchewan spatial blocks (i.e., local block) and one of the 17 non-South 
+Saskatchewan spatial blocks (i.e., non-local block) (see Table A3.1).
+
+\noindent\textbf{WQ Treatment}
+
+Within the WQ treatment, there are four types of blocks that depend on the changes in WQ level:
+\begin{enumerate}
+    \item Improve WQ to level 1
+    \item Improve WQ to level 2
+    \item Improve WQ to level 3
+    \item Improve WQ level by 1 unit
+\end{enumerate}
+
+Within each WQ change block, respondents are presented with choice scenarios with varying spatial units but holding the level of WQ 
+improvement constant.
+
+For example, if a respondent’s postal code is in the North Saskatchewan river basin and is randomly assigned Version~2 and the 
+WQ treatment of the survey, we will randomly allocate one of the four WQ change blocks as their local block and one of the ten non-North 
+Saskatchewan WQ change blocks as their non-local block (see Table A3.1).
+
+
+For each block there will be on average 2--7 voting proposals, depending on the river basin, as some choices were excluded because they
+were redundant or unnecessary.
+
+\begin{table}[ht]
+\renewcommand{\thetable}{A3.1} % set table number manually
+\centering
+\caption{Summary of blocks by river basin and version}
+\label{tab:blocks_summary}
+\small % Reduce font size
+\begin{tabular}{lccccccccc}
+\toprule
+\multirow{2}{*}{River basin} & \multirow{2}{*}{Sub-basins} & \multicolumn{2}{c}{Ver. 1} & \multicolumn{2}{c}{Ver. 2} & \multicolumn{2}{c}{Ver. 3} & \multicolumn{2}{c}{Ver. 4} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8} \cmidrule(lr){9-10}
+ & & S & W & S & W & S & W & S & W \\
+\midrule
+Assiniboine Red & 4 & 5 & 2 & 5 & 3 & 5 & 1 & 5 & 2 \\
+South Saskatchewan & 4 & 5 & 3 & 5 & 3 & 4 & 2 & 4 & 2 \\
+North Saskatchewan & 4 & 5 & 4 & 5 & 4 & 1 & 1 & 1 & 1 \\
+Lower Saskatchewan Nelson & 6 & 7 & 4 & 7 & 4 & 6 & 2 & 3 & 3 \\
+\midrule
+Total & 18 & 22 & 13 & 22 & 14 & 16 & 6 & 13 & 8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\clearpage
+\subsection*{A12. RPM Estimations in WTP Space}
+
+
+
+\input{tables/Table_MNL_WTP} 
+
+%\input{tables/Table_MNL_WTP_truncate_0} 
+
+
+\input{tables/Table_MNL_WTP_lognormal.tex}
+
+
+
+\newpage
+\input{tables/Table_appendix_percieved_SQ copy.tex}
+
+
+
+\end{document}

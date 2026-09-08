@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{setspace}
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{changes}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularray}
+\usepackage{lipsum}
+\usepackage{smartdiagram}
+\usepackage{lscape}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{makecell}
+\usepackage{siunitx}% Including necessary packages
+\usepackage{etoc} % For customizing List of Tables
+\usepackage{tocloft} % For additional control over table of contents/lists
+%\usepackage{noto} % Reliable font package for compatibility
+\usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{multirow}
+
+%\usepackage[backend=biber,style=authoryear,maxbibnames=99,]{biblatex}
+
+\usepackage[backend=biber,
+            style=authoryear,
+            maxbibnames=99,
+            giveninits=false,
+            uniquename=false,    % ← Add this line
+            uniquelist=false]{biblatex} % ← And this line
+
+\addbibresource{refs.bib}
+
+\begin{document}
+
+
+\section*{Appendix}
+
+\subsection*{RPM Estimations in WTP Space}
+
+
+
+\input{tables/Table_MNL_WTP} 
+
+%\input{tables/Table_MNL_WTP_truncate_0} 
+
+
+\input{tables/Table_MNL_WTP_lognormal.tex}
+
+
+
+\newpage
+\input{tables/Table_appendix_percieved_SQ copy.tex}
+
+
+
+\end{document}

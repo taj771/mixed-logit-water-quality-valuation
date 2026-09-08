@@ -1,0 +1,5 @@
+"","WQ change scenario","Estimate","SE","2.5 %","97.5 %","Validity_Q"
+"1","Local Basin",450,40,372,528,"Filter 3"
+"2","Non-Local Basin",393,30,334,451,"Filter 3"
+"3","Local Sub Basin",362,29,306,418,"Filter 3"
+"4","Non-Local  Sub Basin",341,24,294,388,"Filter 3"

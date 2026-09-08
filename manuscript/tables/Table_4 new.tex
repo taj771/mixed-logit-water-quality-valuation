@@ -1,0 +1,72 @@
+% latex table generated in R 4.3.2 by xtable 1.8-4 package
+% Tue Jun 24 14:23:38 2025
+{
+\renewcommand{\thetable}{3.3} % set table number manually
+\singlespacing
+\begin{table}[H]
+\caption{Estimation Results for the Impact of Baseline Water Quality Conditions on Policy Preferences and Willingness to Pay}   
+\label{baseline}
+\centering
+
+\scalebox{1}{
+\begin{tabular}{lllllll}
+  \midrule
+Parameter & Model 4.1 & Std. Dev. & Model 4.2 & Std. Dev. & Model 4.3 & Std. Dev. \\ 
+  \midrule
+Program Constant & 0.832*** & 2.411*** & 0.69*** & 2.146*** & 0.886*** & 2.397*** \\ 
+   & (0.241) & (0.117) & (0.263) & (0.183) & (0.245) & (0.119) \\ 
+  Cost & -0.005*** &  & -0.005*** &  & -0.005*** &  \\ 
+   & (3e-04) &  & (3e-04) &  & (3e-04) &  \\ 
+  Current WQ Level & 0.313*** &  & 0.362*** & 0.352*** &  &  \\ 
+   & (0.0809) &  & (0.09) & (0.091) &  &  \\ 
+   Exp. Variation in SQ & -0.096 &  & -0.091 & 0.035 &  &  \\ 
+   & (0.0674) &  & (0.068) & (0.089) &  &  \\ 
+  Current WQ Level:Local &  &  &  &  & 0.469*** & 0.239*** \\ 
+   &  &  &  &  & (0.099) & (0.072) \\ 
+  Current WQ Level:Non-local &  &  &  &  & 0.198** & -0.327*** \\ 
+   &  &  &  &  & (0.088) & (0.056) \\ 
+  Exp. Variation in SQ:Local &  &  &  &  & -0.16 & 0.036 \\ 
+   &  &  &  &  & (0.1) & (0.04) \\ 
+  Exp. Variation in SQ:Non-local &  &  &  &  & -0.017 & 0.026 \\ 
+   &  &  &  &  & (0.083) & (0.03) \\ 
+
+\midrule
+\addlinespace
+$\triangle$ Water Quality Score: &  & & & & &  \\
+\addlinespace
+
+  Basin:local & -1.006*** & 0.843*** & -1.013*** & 0.841*** & -0.569*** & 0.271 \\ 
+   & (0.19) & (0.261) & (0.187) & (0.256) & (0.199) & (0.56) \\ 
+  Basin:non-local & -0.657*** & -0.351 & -0.666*** & 0.372 & -0.857*** & 0.246 \\ 
+   & (0.132) & (0.315) & (0.131) & (0.287) & (0.154) & (0.44) \\ 
+  Sub Basin:local & -0.569*** & 0.515*** & -0.573*** & 0.51*** & -0.268** & 0.027 \\ 
+   & (0.097) & (0.115) & (0.097) & (0.11) & (0.116) & (0.059) \\ 
+  Sub Basin:non-local & -0.272*** & -0.425*** & -0.27*** & 0.421*** & -0.44*** & -0.024 \\ 
+   & (0.083) & (0.117) & (0.085) & (0.131) & (0.093) & (0.04) \\ 
+\midrule
+  Individuals & 3825 &  & 3825 &  & 3825 &  \\ 
+  Voting Scenario & 26848 &  & 26848 &  & 26848 &  \\ 
+  Log-Likelihood at solution & -13099 &  & -13090 &  & -13018 &  \\ 
+  McFadden’s R2 & 0.2413 &  & 0.2417 &  & 0.2456 &  \\ 
+  BIC & 26331 &  & 26333 &  & 26230 &  \\ 
+   \midrule
+
+\end{tabular}
+}
+\begin{minipage}{17cm}  
+\singlespacing  
+\vspace{0.01cm}  
+\footnotesize Notes: This table reports results from models evaluating how status quo (SQ) water quality in stated preference 
+surveys influences preferences for water quality improvements. In Model 3, we include an interaction term between the WWF 
+Freshwater Health Index score at the SQ and the proposed units of improvement, differentiated at the local and non-local scales. 
+This specification captures the observational variability in SQ water quality levels while controlling for experimentally varied 
+SQ levels through survey version fixed effects. In Model 4, we include an interaction term between the deviation of the SQ across 
+survey versions and the proposed units of improvement at the local and non-local scales, assessing how experimentally varied SQ 
+levels affect public preferences for water quality improvement programs. The deviation of the SQ across survey versions is coded 
+by comparing the WWF Freshwater Health Index score for a given basin or sub-basin across the four survey versions. The version 
+with the highest SQ level (best water quality) is coded as 0. A one-unit deviation is coded as 1 if the basin or sub-basin has 
+an SQ degraded by one unit relative to the version with the highest SQ score, with similar coding for greater degrees of degradation.
+Significance: *** $p < 0.01$, ** $p < 0.05$, * $p < 0.10$. 
+\end{minipage}
+\end{table}
+}

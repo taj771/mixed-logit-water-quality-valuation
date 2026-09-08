@@ -1,0 +1,62 @@
+# =============================================================================
+# Chapter III - Use and Non-Use Value of Water Quality
+#
+# This repository holds CODE AND MANUSCRIPT ONLY.
+#
+# Survey data is deliberately excluded. It is REB-governed human-subjects data:
+# processed_finaldata_batch_1_Apollo.csv carries POSTALCODE alongside age,
+# gender, income and education bands, plus free-text fields where respondents
+# typed place names and open comments. Postal code with that demographic detail
+# is re-identifiable, especially in small prairie communities. Obtain the data
+# through the proper channel and place it under data/ to reproduce.
+# =============================================================================
+
+# --- survey data: never commit ----------------------------------------------
+data/
+
+# --- survey instrument, design files, REB, CHASR correspondence -------------
+survey/
+
+# --- third-party PDFs, replication packages, background reading -------------
+refs/
+
+# --- superseded material kept locally ---------------------------------------
+archive/
+
+# --- model objects: large, rebuildable, and derived from the survey data -----
+analysis/outputs/models/*.rds
+analysis/outputs/models/*_iterations.csv
+
+# --- R ----------------------------------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user
+
+# --- LaTeX build artifacts --------------------------------------------------
+manuscript/_build/
+*.aux
+*.log
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.synctex(busy)
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.lof
+*.lot
+*.loc
+*.soc
+*.bbl-SAVE-ERROR
+
+# --- OS ---------------------------------------------------------------------
+.DS_Store
+._*
+
+# --- Apollo auto-backups (created when a model is re-estimated) --------------
+analysis/outputs/models/*_OLD*

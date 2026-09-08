@@ -1,0 +1,273 @@
+Model run by tharakajayalath using Apollo 0.3.4 on R 4.3.2 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : Model2_LogNormal
+Model description                           : Mixed MNL with Log-Normal WTP
+Model run at                                : 2025-10-28 21:23:41.208309
+Estimation method                           : bgw
+Model diagnosis                             : False convergence
+Number of individuals                       : 3825
+Number of rows in database                  : 26848
+Number of modelled outcomes                 : 26848
+
+Number of cores used                        :  6 
+Number of inter-individual draws            : 1000 (halton)
+
+LL(start)                                   : -44843.21
+LL at equal shares, LL(0)                   : -18470.84
+LL at observed shares, LL(C)                : -17280.79
+LL(final)                                   : -22689.09
+Rho-squared vs equal shares                  :  -0.2284 
+Adj.Rho-squared vs equal shares              :  -0.2287 
+Rho-squared vs observed shares               :  -0.313 
+Adj.Rho-squared vs observed shares           :  -0.3133 
+AIC                                         :  45390.19 
+BIC                                         :  45439.38 
+
+Estimated parameters                        : 6
+Time taken (hh:mm:ss)                       :  00:04:54.51 
+     pre-estimation                         :  00:01:44.36 
+     estimation                             :  00:02:54.03 
+     post-estimation                        :  00:00:16.12 
+Iterations                                  :  20 (False convergence) 
+
+Unconstrained optimisation.
+
+Estimates:
+                                    Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc_mu                               2.68397          NA          NA          NA            NA
+asc_sigma                            0.10000          NA          NA          NA            NA
+b_cost                              -0.01002          NA          NA          NA            NA
+ln_b_wq_local_basin_mu            -139.65579          NA          NA          NA            NA
+ln_b_wq_local_basin_sigma           -1.60944          NA          NA          NA            NA
+ln_b_wq_nonlocal_basin_mu          -49.92066          NA          NA          NA            NA
+ln_b_wq_nonlocal_basin_sigma        -1.60944          NA          NA          NA            NA
+ln_b_wq_local_sub_basin_mu         -31.13592          NA          NA          NA            NA
+ln_b_wq_local_sub_basin_sigma       -1.60944          NA          NA          NA            NA
+ln_b_wq_nonlocal_sub_basin_mu       -8.72920          NA          NA          NA            NA
+ln_b_wq_nonlocal_sub_basin_sigma    -1.60944          NA          NA          NA            NA
+
+
+Overview of choices for MNL model component :
+                                  policy opt_out
+Times available                  26848.0 26848.0
+Times chosen                     17559.0  9289.0
+Percentage chosen overall           65.4    34.6
+Percentage chosen when available    65.4    34.6
+
+
+
+Classical covariance matrix:
+                                                     asc_mu                        b_cost        ln_b_wq_local_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+                                  ln_b_wq_nonlocal_basin_mu    ln_b_wq_local_sub_basin_mu ln_b_wq_nonlocal_sub_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+
+Robust covariance matrix:
+                                                     asc_mu                        b_cost        ln_b_wq_local_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+                                  ln_b_wq_nonlocal_basin_mu    ln_b_wq_local_sub_basin_mu ln_b_wq_nonlocal_sub_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+
+Classical correlation matrix:
+                                                     asc_mu                        b_cost        ln_b_wq_local_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+                                  ln_b_wq_nonlocal_basin_mu    ln_b_wq_local_sub_basin_mu ln_b_wq_nonlocal_sub_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+
+Robust correlation matrix:
+                                                     asc_mu                        b_cost        ln_b_wq_local_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+                                  ln_b_wq_nonlocal_basin_mu    ln_b_wq_local_sub_basin_mu ln_b_wq_nonlocal_sub_basin_mu
+asc_mu                                                   NA                            NA                            NA
+b_cost                                                   NA                            NA                            NA
+ln_b_wq_local_basin_mu                                   NA                            NA                            NA
+ln_b_wq_nonlocal_basin_mu                                NA                            NA                            NA
+ln_b_wq_local_sub_basin_mu                               NA                            NA                            NA
+ln_b_wq_nonlocal_sub_basin_mu                            NA                            NA                            NA
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+ 104413        9.414147e-07
+ 106074        1.366787e-05
+  63940        1.785783e-05
+  63614        1.844977e-05
+ 104607        1.845461e-05
+  57228        2.121534e-05
+ 104812        2.123551e-05
+  60898        2.911889e-05
+ 103190        4.070846e-05
+  56048        4.172977e-05
+ 100789        5.245003e-05
+  61993        6.187431e-05
+  63810        7.641345e-05
+ 101804        8.375175e-05
+ 103799        8.392282e-05
+  65037        1.281508e-04
+ 104128        1.334126e-04
+ 103978        1.428272e-04
+  62677        1.428313e-04
+ 103752        1.755540e-04
+
+Changes in parameter estimates from starting values:
+                                     Initial    Estimate  Difference
+asc_mu                               0.00000     2.68397       2.684
+asc_sigma                            0.10000     0.10000       0.000
+b_cost                              -0.01000    -0.01002  -2.214e-05
+ln_b_wq_local_basin_mu              -2.30259  -139.65579    -137.353
+ln_b_wq_local_basin_sigma           -1.60944    -1.60944       0.000
+ln_b_wq_nonlocal_basin_mu           -2.99573   -49.92066     -46.925
+ln_b_wq_nonlocal_basin_sigma        -1.60944    -1.60944       0.000
+ln_b_wq_local_sub_basin_mu          -2.30259   -31.13592     -28.833
+ln_b_wq_local_sub_basin_sigma       -1.60944    -1.60944       0.000
+ln_b_wq_nonlocal_sub_basin_mu       -2.99573    -8.72920      -5.733
+ln_b_wq_nonlocal_sub_basin_sigma    -1.60944    -1.60944       0.000
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                          
+modelName              "Model2_LogNormal"             
+modelDescr             "Mixed MNL with Log-Normal WTP"
+indivID                "CaseId"                       
+nCores                 "6"                            
+outputDirectory        "Finaloutput/"                 
+weights                "WEIGHT"                       
+analyticGrad           "TRUE"                         
+scaling                "-1"                           
+mixing                 "TRUE"                         
+debug                  "FALSE"                        
+workInLogs             "FALSE"                        
+seed                   "13"                           
+HB                     "FALSE"                        
+noValidation           "FALSE"                        
+noDiagnostics          "FALSE"                        
+calculateLLC           "TRUE"                         
+analyticHessian        "FALSE"                        
+memorySaver            "FALSE"                        
+panelData              "TRUE"                         
+analyticGrad_manualSet "TRUE"                         
+overridePanel          "FALSE"                        
+preventOverridePanel   "FALSE"                        
+noModification         "FALSE"                        
+
+Hessian routines attempted
+--------------------------
+none
+
+
+apollo_randCoeff
+------------------
+function(apollo_beta, apollo_inputs){
+  randcoeff = list()
+  
+  # ASC - normal distribution
+  randcoeff[["b_asc"]] = asc_mu + asc_sigma * draws_asc 
+  
+  # WTP parameters - LOG-NORMAL distribution
+  # exp(mu + sigma * draw) ensures all values > 0
+  randcoeff[["b_wq_local_basin"]] = exp(ln_b_wq_local_basin_mu + 
+                                          exp(ln_b_wq_local_basin_sigma) * draws_wq_local_basin)
+  
+  randcoeff[["b_wq_nonlocal_basin"]] = exp(ln_b_wq_nonlocal_basin_mu + 
+                                             exp(ln_b_wq_nonlocal_basin_sigma) * draws_wq_nonlocal_basin)
+  
+  randcoeff[["b_wq_local_sub_basin"]] = exp(ln_b_wq_local_sub_basin_mu + 
+                                              exp(ln_b_wq_local_sub_basin_sigma) * draws_wq_local_sub_basin)
+  
+  randcoeff[["b_wq_nonlocal_sub_basin"]] = exp(ln_b_wq_nonlocal_sub_basin_mu + 
+                                                 exp(ln_b_wq_nonlocal_sub_basin_sigma) * draws_wq_nonlocal_sub_basin)
+  
+  return(randcoeff)
+}
+<bytecode: 0x14d921d60>
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality = "estimate") {
+  
+  # Attach inputs
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  # Create list of probabilities
+  P = list()
+  
+  # Define utilities
+  V = list()
+  V[["policy"]]  = b_asc + b_cost * COST + 
+    b_wq_local_basin * WQ_BASIN_LOCAL_POLICY +
+    b_wq_nonlocal_basin * WQ_BASIN_NL_POLICY +
+    b_wq_local_sub_basin * WQ_SUBBASIN_LOCAL_POLICY_SUBONLY +
+    b_wq_nonlocal_sub_basin * WQ_SUBBASIN_NL_POLICY_SUBONLY
+  
+  V[["opt_out"]] = 
+    b_wq_local_basin * WQ_BASIN_LOCAL_CURRENT +
+    b_wq_nonlocal_basin * WQ_BASIN_NL_CURRENT +
+    b_wq_local_sub_basin * WQ_SUBBASIN_LOCAL_CURRENT_SUBONLY +
+    b_wq_nonlocal_sub_basin * WQ_SUBBASIN_NL_CURRENT_SUBONLY
+  
+  # Define MNL settings
+  mnl_settings = list(
+    alternatives  = c(policy = 1, opt_out = 0),
+    avail         = 1,
+    choiceVar     = VOTE,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Average across inter-individual draws
+  P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+  
+  ### Apply weights here (note the functionality argument)
+  P = apollo_weighting(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
+<bytecode: 0x15994b660>

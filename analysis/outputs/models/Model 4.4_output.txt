@@ -1,0 +1,1826 @@
+Model run by tharakajayalath using Apollo 0.3.4 on R 4.3.2 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : Model 4.4
+Model description                           : Mixed-MNL
+Model run at                                : 2025-11-10 16:56:51.049925
+Estimation method                           : bgw
+Model diagnosis                             : Relative function convergence
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -5.435345
+     reciprocal of condition number         : 3.60106e-08
+Number of individuals                       : 3825
+Number of rows in database                  : 26848
+Number of modelled outcomes                 : 26848
+
+Number of cores used                        :  4 
+Number of inter-individual draws            : 100 (sobol)
+
+LL(start)                                   : -13179.95
+LL at equal shares, LL(0)                   : -18470.84
+LL at observed shares, LL(C)                : -17280.79
+LL(final)                                   : -13017.58
+Rho-squared vs equal shares                  :  0.2952 
+Adj.Rho-squared vs equal shares              :  0.2934 
+Rho-squared vs observed shares               :  0.2467 
+Adj.Rho-squared vs observed shares           :  0.2449 
+AIC                                         :  26101.16 
+BIC                                         :  26371.69 
+
+Estimated parameters                        : 33
+Time taken (hh:mm:ss)                       :  00:03:14.95 
+     pre-estimation                         :  00:00:18.32 
+     estimation                             :  00:00:26.69 
+     post-estimation                        :  00:02:29.94 
+Iterations                                  :  29  
+
+Unconstrained optimisation.
+
+Estimates:
+                                 Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+mu_b_asc                         0.722094     0.19444     3.71378     0.35798       2.01713
+sigma_b_asc                      2.420152     0.05607    43.15980     0.11975      20.21023
+b_cost                          -0.004867  1.1012e-04   -44.19666  2.6431e-04     -18.41385
+mu_b_wq_local_basin             -0.432057     0.09081    -4.75798     0.19848      -2.17678
+sigma_b_wq_local_basin           0.479914     0.14154     3.39061     0.32262       1.48755
+mu_b_wq_nonlocal_basin          -0.244298     0.06896    -3.54239     0.14019      -1.74267
+sigma_b_wq_nonlocal_basin       -0.153860     0.12097    -1.27186     0.13642      -1.12782
+mu_b_wq_local_sub_basin         -0.600381     0.04877   -12.31140     0.10255      -5.85470
+sigma_b_wq_local_sub_basin       0.504569     0.06154     8.19946     0.13934       3.62119
+mu_b_wq_nonlocal_sub_basin      -0.424763     0.04144   -10.24945     0.08568      -4.95759
+sigma_b_wq_nonlocal_sub_basin    0.401421     0.05331     7.53045     0.12503       3.21065
+b_basesq_exp                     0.353803     0.04959     7.13486     0.09480       3.73191
+b_basin_1                        0.328758     0.17069     1.92610     0.30214       1.08811
+b_basin_2                        0.658391     0.17052     3.86099     0.32060       2.05360
+b_basin_3                        0.366140     0.13848     2.64398     0.26042       1.40596
+b_basin_4                        0.773064     0.15360     5.03289     0.26769       2.88796
+b_subbasin_1                    -0.291861     0.13051    -2.23639     0.23572      -1.23814
+b_subbasin_2                    -0.455293     0.13511    -3.36972     0.22575      -2.01683
+b_subbasin_3                    -0.395883     0.13266    -2.98423     0.23559      -1.68040
+b_subbasin_4                    -0.581599     0.13457    -4.32200     0.24909      -2.33489
+b_subbasin_5                    -0.524975     0.15876    -3.30672     0.29378      -1.78695
+b_subbasin_6                    -0.891304     0.14689    -6.06783     0.26718      -3.33594
+b_subbasin_7                    -0.753805     0.17016    -4.42998     0.30948      -2.43570
+b_subbasin_8                    -0.487074     0.15557    -3.13084     0.29599      -1.64558
+b_subbasin_9                    -1.059089     0.15764    -6.71858     0.29154      -3.63272
+b_subbasin_10                   -0.759129     0.17056    -4.45080     0.32046      -2.36887
+b_subbasin_11                   -0.503545     0.12353    -4.07634     0.23207      -2.16980
+b_subbasin_12                   -0.466035     0.14028    -3.32228     0.23995      -1.94222
+b_subbasin_13                   -0.411525     0.14040    -2.93116     0.25176      -1.63461
+b_subbasin_14                   -0.303216     0.18963    -1.59897     0.30136      -1.00616
+b_subbasin_15                    0.290239     0.16046     1.80882     0.28347       1.02386
+b_subbasin_16                    0.004112     0.10665     0.03855     0.19098       0.02153
+b_subbasin_17                   -0.041261     0.10654    -0.38727     0.19005      -0.21710
+
+
+Overview of choices for MNL model component :
+                                  policy opt_out
+Times available                  26848.0 26848.0
+Times chosen                     17559.0  9289.0
+Percentage chosen overall           65.4    34.6
+Percentage chosen when available    65.4    34.6
+
+
+
+Classical covariance matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           0.037806                    2.7032e-04                    -2.560e-06
+sigma_b_asc                                      2.7032e-04                      0.003144                    -2.539e-06
+b_cost                                           -2.560e-06                    -2.539e-06                     1.213e-08
+mu_b_wq_local_basin                               -0.002210                   -7.8532e-04                     1.046e-06
+sigma_b_wq_local_basin                           -9.719e-05                      0.001539                    -2.172e-06
+mu_b_wq_nonlocal_basin                            -0.002452                   -3.7401e-04                     4.008e-07
+sigma_b_wq_nonlocal_basin                         -0.001061                   -7.6606e-04                     1.114e-06
+mu_b_wq_local_sub_basin                            0.001441                   -4.3167e-04                     9.282e-07
+sigma_b_wq_local_sub_basin                      -9.5561e-04                    7.1425e-04                    -1.544e-06
+mu_b_wq_nonlocal_sub_basin                        5.630e-05                   -2.3703e-04                     5.915e-07
+sigma_b_wq_nonlocal_sub_basin                    6.3727e-04                    1.6911e-04                    -9.018e-07
+b_basesq_exp                                      -0.007861                    2.5339e-04                    -2.796e-07
+b_basin_1                                         -0.014779                    -3.535e-05                    -1.796e-07
+b_basin_2                                         -0.012758                    1.2444e-04                    -6.927e-07
+b_basin_3                                         -0.017487                    -7.843e-06                    -1.447e-07
+b_basin_4                                         -0.012180                    1.7562e-04                    -6.775e-07
+b_subbasin_1                                      -0.010677                    -9.379e-06                     3.466e-07
+b_subbasin_2                                      -0.010475                   -1.0340e-04                     5.592e-07
+b_subbasin_3                                      -0.010779                    -8.862e-05                     5.717e-07
+b_subbasin_4                                      -0.010537                   -1.7559e-04                     7.394e-07
+b_subbasin_5                                      -0.010022                   -2.1898e-04                     1.114e-07
+b_subbasin_6                                      -0.004331                   -5.4822e-04                     6.986e-07
+b_subbasin_7                                      -0.010515                   -2.1977e-04                     3.727e-07
+b_subbasin_8                                      -0.009969                   -2.1402e-04                     5.774e-07
+b_subbasin_9                                      -0.006357                   -5.0019e-04                     1.073e-06
+b_subbasin_10                                      0.004485                   -7.2330e-04                     5.193e-07
+b_subbasin_11                                     -0.001511                   -3.6628e-04                     7.184e-07
+b_subbasin_12                                     -0.009386                   -1.5480e-04                     5.868e-07
+b_subbasin_13                                     -0.010974                   -2.4886e-04                     6.507e-07
+b_subbasin_14                                     -0.014658                    1.4169e-04                     4.423e-07
+b_subbasin_15                                     -0.013795                    1.3326e-04                     2.367e-08
+b_subbasin_16                                     -0.005663                    -1.111e-05                    -1.542e-07
+b_subbasin_17                                     -0.005858                     1.955e-05                     1.458e-07
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                          -0.002210                    -9.719e-05                     -0.002452
+sigma_b_asc                                     -7.8532e-04                      0.001539                   -3.7401e-04
+b_cost                                            1.046e-06                    -2.172e-06                     4.008e-07
+mu_b_wq_local_basin                                0.008246                     -0.007525                      0.003626
+sigma_b_wq_local_basin                            -0.007525                      0.020034                     -0.002155
+mu_b_wq_nonlocal_basin                             0.003626                     -0.002155                      0.004756
+sigma_b_wq_nonlocal_basin                          0.001205                     -0.001892                      0.001942
+mu_b_wq_local_sub_basin                          5.3648e-04                   -5.3912e-04                    3.9076e-04
+sigma_b_wq_local_sub_basin                      -6.5221e-04                      0.001900                    -7.965e-05
+mu_b_wq_nonlocal_sub_basin                       2.9792e-04                    2.7476e-04                    4.0372e-04
+sigma_b_wq_nonlocal_sub_basin                    5.4230e-04                     -0.001782                     4.328e-05
+b_basesq_exp                                     6.8965e-04                    2.4668e-04                    7.8828e-04
+b_basin_1                                          0.006179                     -0.003660                      0.005870
+b_basin_2                                          0.004136                     -0.001711                      0.005972
+b_basin_3                                          0.005082                     -0.002915                      0.003839
+b_basin_4                                          0.007337                     -0.003302                      0.004405
+b_subbasin_1                                      6.832e-05                    3.1218e-04                    3.7782e-04
+b_subbasin_2                                     1.3228e-04                    2.7530e-04                    3.9996e-04
+b_subbasin_3                                      4.991e-05                    4.5920e-04                    3.7480e-04
+b_subbasin_4                                     1.9400e-04                    2.3054e-04                    4.3591e-04
+b_subbasin_5                                    -3.7960e-04                    9.3221e-04                    2.1531e-04
+b_subbasin_6                                    -4.4848e-04                    4.5618e-04                     3.380e-05
+b_subbasin_7                                    -2.6290e-04                    5.5990e-04                    1.7714e-04
+b_subbasin_8                                    -3.2898e-04                    7.6104e-04                    2.1366e-04
+b_subbasin_9                                    -3.6132e-04                    2.9808e-04                     3.471e-05
+b_subbasin_10                                   -9.0294e-04                     4.071e-05                   -5.1902e-04
+b_subbasin_11                                   -3.4647e-04                    -5.212e-05                   -3.1967e-04
+b_subbasin_12                                   -1.0264e-04                    5.6876e-04                     9.105e-05
+b_subbasin_13                                     3.354e-05                    3.9072e-04                     9.899e-05
+b_subbasin_14                                     9.821e-05                     7.735e-05                    2.6280e-04
+b_subbasin_15                                    4.0722e-04                   -4.5027e-04                    4.1196e-04
+b_subbasin_16                                    1.3044e-04                   -2.7426e-04                     2.193e-05
+b_subbasin_17                                    -3.493e-06                     5.755e-05                     1.000e-05
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.001061                      0.001441                   -9.5561e-04
+sigma_b_asc                                     -7.6606e-04                   -4.3167e-04                    7.1425e-04
+b_cost                                            1.114e-06                     9.282e-07                    -1.544e-06
+mu_b_wq_local_basin                                0.001205                    5.3648e-04                   -6.5221e-04
+sigma_b_wq_local_basin                            -0.001892                   -5.3912e-04                      0.001900
+mu_b_wq_nonlocal_basin                             0.001942                    3.9076e-04                    -7.965e-05
+sigma_b_wq_nonlocal_basin                          0.014634                    -9.653e-06                    3.4976e-04
+mu_b_wq_local_sub_basin                          -9.653e-06                      0.002378                     -0.001308
+sigma_b_wq_local_sub_basin                       3.4976e-04                     -0.001308                      0.003787
+mu_b_wq_nonlocal_sub_basin                       2.8932e-04                      0.001255                   -2.3273e-04
+sigma_b_wq_nonlocal_sub_basin                   -9.1314e-04                    -2.197e-05                   -6.8019e-04
+b_basesq_exp                                      1.717e-05                    3.4404e-04                    2.0742e-04
+b_basin_1                                          0.001502                     -0.002295                    7.0477e-04
+b_basin_2                                          0.001289                     -0.002598                      0.001065
+b_basin_3                                          0.001385                     -0.002166                    7.6830e-04
+b_basin_4                                        5.2267e-04                     -0.002349                    6.2158e-04
+b_subbasin_1                                     2.3223e-04                   -6.5729e-04                    2.5747e-04
+b_subbasin_2                                     3.1216e-04                   -5.6037e-04                    1.0444e-04
+b_subbasin_3                                     2.0075e-04                   -5.5532e-04                    -9.857e-06
+b_subbasin_4                                     3.7698e-04                   -6.1389e-04                    1.5830e-04
+b_subbasin_5                                     6.7223e-04                     -0.001234                    6.3946e-04
+b_subbasin_6                                     7.4309e-04                   -8.6708e-04                    2.9315e-04
+b_subbasin_7                                     5.8239e-04                     -0.001274                    5.3119e-04
+b_subbasin_8                                     6.1996e-04                     -0.001120                    3.7457e-04
+b_subbasin_9                                     5.5568e-04                   -9.6446e-04                    3.0715e-04
+b_subbasin_10                                    5.4150e-04                   -3.7609e-04                    -5.469e-05
+b_subbasin_11                                    2.7773e-04                    5.2715e-04                   -7.1143e-04
+b_subbasin_12                                    4.9734e-04                   -1.6626e-04                   -1.5408e-04
+b_subbasin_13                                    3.1966e-04                   -2.4643e-04                   -2.9382e-04
+b_subbasin_14                                    4.2403e-04                   -6.5939e-04                    -4.865e-05
+b_subbasin_15                                    2.6141e-04                   -3.3279e-04                    3.5482e-04
+b_subbasin_16                                    1.1781e-04                     2.451e-06                     5.338e-05
+b_subbasin_17                                     7.599e-05                    -4.371e-05                    1.2099e-04
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_exp
+mu_b_asc                                          5.630e-05                    6.3727e-04                     -0.007861
+sigma_b_asc                                     -2.3703e-04                    1.6911e-04                    2.5339e-04
+b_cost                                            5.915e-07                    -9.018e-07                    -2.796e-07
+mu_b_wq_local_basin                              2.9792e-04                    5.4230e-04                    6.8965e-04
+sigma_b_wq_local_basin                           2.7476e-04                     -0.001782                    2.4668e-04
+mu_b_wq_nonlocal_basin                           4.0372e-04                     4.328e-05                    7.8828e-04
+sigma_b_wq_nonlocal_basin                        2.8932e-04                   -9.1314e-04                     1.717e-05
+mu_b_wq_local_sub_basin                            0.001255                    -2.197e-05                    3.4404e-04
+sigma_b_wq_local_sub_basin                      -2.3273e-04                   -6.8019e-04                    2.0742e-04
+mu_b_wq_nonlocal_sub_basin                         0.001717                   -6.1724e-04                    4.8248e-04
+sigma_b_wq_nonlocal_sub_basin                   -6.1724e-04                      0.002842                    -9.184e-05
+b_basesq_exp                                     4.8248e-04                    -9.184e-05                      0.002459
+b_basin_1                                         -0.001184                    1.7918e-04                      0.001585
+b_basin_2                                         -0.001253                     8.314e-05                    9.8024e-04
+b_basin_3                                         -0.001132                    1.0145e-04                      0.002410
+b_basin_4                                         -0.001448                    2.9096e-04                    9.3109e-04
+b_subbasin_1                                     5.0872e-04                   -6.7149e-04                      0.001052
+b_subbasin_2                                     4.9478e-04                   -6.1840e-04                    9.9425e-04
+b_subbasin_3                                     5.1256e-04                   -5.4021e-04                      0.001082
+b_subbasin_4                                     5.4632e-04                   -6.8365e-04                    9.8021e-04
+b_subbasin_5                                     5.7289e-04                   -6.3650e-04                    7.2822e-04
+b_subbasin_6                                     9.5646e-04                   -7.6402e-04                   -8.5069e-04
+b_subbasin_7                                     4.5405e-04                   -5.1832e-04                    8.3763e-04
+b_subbasin_8                                     5.6946e-04                   -5.8128e-04                    7.1562e-04
+b_subbasin_9                                     7.6805e-04                   -3.3669e-04                   -2.9473e-04
+b_subbasin_10                                      0.001422                     3.313e-05                     -0.003116
+b_subbasin_11                                    6.7236e-04                   -2.5218e-04                     -0.001223
+b_subbasin_12                                    3.7056e-04                   -4.9945e-04                    7.7792e-04
+b_subbasin_13                                    2.3281e-04                   -5.4743e-04                      0.001170
+b_subbasin_14                                    2.0375e-04                   -7.7723e-04                      0.002138
+b_subbasin_15                                    -8.870e-05                   -1.1149e-04                      0.002118
+b_subbasin_16                                    -1.750e-05                    -7.183e-05                    -3.378e-06
+b_subbasin_17                                     4.840e-05                   -2.3371e-04                     1.813e-05
+                                                  b_basin_1                     b_basin_2                     b_basin_3
+mu_b_asc                                          -0.014779                     -0.012758                     -0.017487
+sigma_b_asc                                      -3.535e-05                    1.2444e-04                    -7.843e-06
+b_cost                                           -1.796e-07                    -6.927e-07                    -1.447e-07
+mu_b_wq_local_basin                                0.006179                      0.004136                      0.005082
+sigma_b_wq_local_basin                            -0.003660                     -0.001711                     -0.002915
+mu_b_wq_nonlocal_basin                             0.005870                      0.005972                      0.003839
+sigma_b_wq_nonlocal_basin                          0.001502                      0.001289                      0.001385
+mu_b_wq_local_sub_basin                           -0.002295                     -0.002598                     -0.002166
+sigma_b_wq_local_sub_basin                       7.0477e-04                      0.001065                    7.6830e-04
+mu_b_wq_nonlocal_sub_basin                        -0.001184                     -0.001253                     -0.001132
+sigma_b_wq_nonlocal_sub_basin                    1.7918e-04                     8.314e-05                    1.0145e-04
+b_basesq_exp                                       0.001585                    9.8024e-04                      0.002410
+b_basin_1                                          0.029134                      0.017312                      0.015707
+b_basin_2                                          0.017312                      0.029078                      0.014743
+b_basin_3                                          0.015707                      0.014743                      0.019177
+b_basin_4                                          0.016841                      0.015441                      0.015119
+b_subbasin_1                                       0.008523                      0.007480                      0.007917
+b_subbasin_2                                       0.008564                      0.007397                      0.007785
+b_subbasin_3                                       0.008502                      0.007337                      0.007858
+b_subbasin_4                                       0.008623                      0.007428                      0.007963
+b_subbasin_5                                       0.007615                      0.008784                      0.007819
+b_subbasin_6                                       0.006197                      0.007828                      0.005865
+b_subbasin_7                                       0.007646                      0.008909                      0.007912
+b_subbasin_8                                       0.007433                      0.008573                      0.007717
+b_subbasin_9                                       0.006515                      0.007988                      0.006310
+b_subbasin_10                                      0.003635                      0.005920                      0.002365
+b_subbasin_11                                      0.004406                      0.004657                      0.004077
+b_subbasin_12                                      0.006761                      0.006550                      0.007129
+b_subbasin_13                                      0.007268                      0.006741                      0.007727
+b_subbasin_14                                      0.008295                      0.007562                      0.009002
+b_subbasin_15                                      0.007878                      0.007079                      0.008523
+b_subbasin_16                                      0.005793                      0.005723                      0.005836
+b_subbasin_17                                      0.005888                      0.005858                      0.005863
+                                                  b_basin_4                  b_subbasin_1                  b_subbasin_2
+mu_b_asc                                          -0.012180                     -0.010677                     -0.010475
+sigma_b_asc                                      1.7562e-04                    -9.379e-06                   -1.0340e-04
+b_cost                                           -6.775e-07                     3.466e-07                     5.592e-07
+mu_b_wq_local_basin                                0.007337                     6.832e-05                    1.3228e-04
+sigma_b_wq_local_basin                            -0.003302                    3.1218e-04                    2.7530e-04
+mu_b_wq_nonlocal_basin                             0.004405                    3.7782e-04                    3.9996e-04
+sigma_b_wq_nonlocal_basin                        5.2267e-04                    2.3223e-04                    3.1216e-04
+mu_b_wq_local_sub_basin                           -0.002349                   -6.5729e-04                   -5.6037e-04
+sigma_b_wq_local_sub_basin                       6.2158e-04                    2.5747e-04                    1.0444e-04
+mu_b_wq_nonlocal_sub_basin                        -0.001448                    5.0872e-04                    4.9478e-04
+sigma_b_wq_nonlocal_sub_basin                    2.9096e-04                   -6.7149e-04                   -6.1840e-04
+b_basesq_exp                                     9.3109e-04                      0.001052                    9.9425e-04
+b_basin_1                                          0.016841                      0.008523                      0.008564
+b_basin_2                                          0.015441                      0.007480                      0.007397
+b_basin_3                                          0.015119                      0.007917                      0.007785
+b_basin_4                                          0.023594                      0.007093                      0.007045
+b_subbasin_1                                       0.007093                      0.017032                      0.008591
+b_subbasin_2                                       0.007045                      0.008591                      0.018256
+b_subbasin_3                                       0.006991                      0.008546                      0.008620
+b_subbasin_4                                       0.007063                      0.008615                      0.008686
+b_subbasin_5                                       0.007125                      0.007577                      0.007527
+b_subbasin_6                                       0.006085                      0.007070                      0.006971
+b_subbasin_7                                       0.007149                      0.007522                      0.007444
+b_subbasin_8                                       0.006963                      0.007493                      0.007418
+b_subbasin_9                                       0.006215                      0.007116                      0.007009
+b_subbasin_10                                      0.004056                      0.005954                      0.005972
+b_subbasin_11                                      0.004587                      0.005782                      0.005782
+b_subbasin_12                                      0.006505                      0.006946                      0.006906
+b_subbasin_13                                      0.006805                      0.007202                      0.007089
+b_subbasin_14                                      0.007546                      0.007745                      0.007729
+b_subbasin_15                                      0.007045                      0.007130                      0.006960
+b_subbasin_16                                      0.005779                      0.005712                      0.005688
+b_subbasin_17                                      0.005746                      0.005818                      0.005765
+                                               b_subbasin_3                  b_subbasin_4                  b_subbasin_5
+mu_b_asc                                          -0.010779                     -0.010537                     -0.010022
+sigma_b_asc                                      -8.862e-05                   -1.7559e-04                   -2.1898e-04
+b_cost                                            5.717e-07                     7.394e-07                     1.114e-07
+mu_b_wq_local_basin                               4.991e-05                    1.9400e-04                   -3.7960e-04
+sigma_b_wq_local_basin                           4.5920e-04                    2.3054e-04                    9.3221e-04
+mu_b_wq_nonlocal_basin                           3.7480e-04                    4.3591e-04                    2.1531e-04
+sigma_b_wq_nonlocal_basin                        2.0075e-04                    3.7698e-04                    6.7223e-04
+mu_b_wq_local_sub_basin                         -5.5532e-04                   -6.1389e-04                     -0.001234
+sigma_b_wq_local_sub_basin                       -9.857e-06                    1.5830e-04                    6.3946e-04
+mu_b_wq_nonlocal_sub_basin                       5.1256e-04                    5.4632e-04                    5.7289e-04
+sigma_b_wq_nonlocal_sub_basin                   -5.4021e-04                   -6.8365e-04                   -6.3650e-04
+b_basesq_exp                                       0.001082                    9.8021e-04                    7.2822e-04
+b_basin_1                                          0.008502                      0.008623                      0.007615
+b_basin_2                                          0.007337                      0.007428                      0.008784
+b_basin_3                                          0.007858                      0.007963                      0.007819
+b_basin_4                                          0.006991                      0.007063                      0.007125
+b_subbasin_1                                       0.008546                      0.008615                      0.007577
+b_subbasin_2                                       0.008620                      0.008686                      0.007527
+b_subbasin_3                                       0.017598                      0.008643                      0.007542
+b_subbasin_4                                       0.008643                      0.018108                      0.007588
+b_subbasin_5                                       0.007542                      0.007588                      0.025205
+b_subbasin_6                                       0.006994                      0.007080                      0.009644
+b_subbasin_7                                       0.007474                      0.007507                      0.010385
+b_subbasin_8                                       0.007439                      0.007478                      0.010166
+b_subbasin_9                                       0.007019                      0.007104                      0.010068
+b_subbasin_10                                      0.005851                      0.006060                      0.009046
+b_subbasin_11                                      0.005787                      0.005857                      0.005814
+b_subbasin_12                                      0.006974                      0.007066                      0.006935
+b_subbasin_13                                      0.007435                      0.007137                      0.007115
+b_subbasin_14                                      0.007760                      0.007725                      0.007532
+b_subbasin_15                                      0.007040                      0.006952                      0.006728
+b_subbasin_16                                      0.005731                      0.005768                      0.005590
+b_subbasin_17                                      0.005712                      0.005778                      0.005832
+                                               b_subbasin_6                  b_subbasin_7                  b_subbasin_8
+mu_b_asc                                          -0.004331                     -0.010515                     -0.009969
+sigma_b_asc                                     -5.4822e-04                   -2.1977e-04                   -2.1402e-04
+b_cost                                            6.986e-07                     3.727e-07                     5.774e-07
+mu_b_wq_local_basin                             -4.4848e-04                   -2.6290e-04                   -3.2898e-04
+sigma_b_wq_local_basin                           4.5618e-04                    5.5990e-04                    7.6104e-04
+mu_b_wq_nonlocal_basin                            3.380e-05                    1.7714e-04                    2.1366e-04
+sigma_b_wq_nonlocal_basin                        7.4309e-04                    5.8239e-04                    6.1996e-04
+mu_b_wq_local_sub_basin                         -8.6708e-04                     -0.001274                     -0.001120
+sigma_b_wq_local_sub_basin                       2.9315e-04                    5.3119e-04                    3.7457e-04
+mu_b_wq_nonlocal_sub_basin                       9.5646e-04                    4.5405e-04                    5.6946e-04
+sigma_b_wq_nonlocal_sub_basin                   -7.6402e-04                   -5.1832e-04                   -5.8128e-04
+b_basesq_exp                                    -8.5069e-04                    8.3763e-04                    7.1562e-04
+b_basin_1                                          0.006197                      0.007646                      0.007433
+b_basin_2                                          0.007828                      0.008909                      0.008573
+b_basin_3                                          0.005865                      0.007912                      0.007717
+b_basin_4                                          0.006085                      0.007149                      0.006963
+b_subbasin_1                                       0.007070                      0.007522                      0.007493
+b_subbasin_2                                       0.006971                      0.007444                      0.007418
+b_subbasin_3                                       0.006994                      0.007474                      0.007439
+b_subbasin_4                                       0.007080                      0.007507                      0.007478
+b_subbasin_5                                       0.009644                      0.010385                      0.010166
+b_subbasin_6                                       0.021577                      0.009659                      0.009453
+b_subbasin_7                                       0.009659                      0.028954                      0.010162
+b_subbasin_8                                       0.009453                      0.010162                      0.024203
+b_subbasin_9                                       0.010396                      0.010210                      0.009870
+b_subbasin_10                                      0.012169                      0.008767                      0.008836
+b_subbasin_11                                      0.007128                      0.005707                      0.005803
+b_subbasin_12                                      0.006490                      0.006875                      0.006926
+b_subbasin_13                                      0.006249                      0.007047                      0.006993
+b_subbasin_14                                      0.006112                      0.007813                      0.007457
+b_subbasin_15                                      0.005023                      0.006955                      0.006532
+b_subbasin_16                                      0.005639                      0.005575                      0.005540
+b_subbasin_17                                      0.005891                      0.005725                      0.005776
+                                               b_subbasin_9                 b_subbasin_10                 b_subbasin_11
+mu_b_asc                                          -0.006357                      0.004485                     -0.001511
+sigma_b_asc                                     -5.0019e-04                   -7.2330e-04                   -3.6628e-04
+b_cost                                            1.073e-06                     5.193e-07                     7.184e-07
+mu_b_wq_local_basin                             -3.6132e-04                   -9.0294e-04                   -3.4647e-04
+sigma_b_wq_local_basin                           2.9808e-04                     4.071e-05                    -5.212e-05
+mu_b_wq_nonlocal_basin                            3.471e-05                   -5.1902e-04                   -3.1967e-04
+sigma_b_wq_nonlocal_basin                        5.5568e-04                    5.4150e-04                    2.7773e-04
+mu_b_wq_local_sub_basin                         -9.6446e-04                   -3.7609e-04                    5.2715e-04
+sigma_b_wq_local_sub_basin                       3.0715e-04                    -5.469e-05                   -7.1143e-04
+mu_b_wq_nonlocal_sub_basin                       7.6805e-04                      0.001422                    6.7236e-04
+sigma_b_wq_nonlocal_sub_basin                   -3.3669e-04                     3.313e-05                   -2.5218e-04
+b_basesq_exp                                    -2.9473e-04                     -0.003116                     -0.001223
+b_basin_1                                          0.006515                      0.003635                      0.004406
+b_basin_2                                          0.007988                      0.005920                      0.004657
+b_basin_3                                          0.006310                      0.002365                      0.004077
+b_basin_4                                          0.006215                      0.004056                      0.004587
+b_subbasin_1                                       0.007116                      0.005954                      0.005782
+b_subbasin_2                                       0.007009                      0.005972                      0.005782
+b_subbasin_3                                       0.007019                      0.005851                      0.005787
+b_subbasin_4                                       0.007104                      0.006060                      0.005857
+b_subbasin_5                                       0.010068                      0.009046                      0.005814
+b_subbasin_6                                       0.010396                      0.012169                      0.007128
+b_subbasin_7                                       0.010210                      0.008767                      0.005707
+b_subbasin_8                                       0.009870                      0.008836                      0.005803
+b_subbasin_9                                       0.024849                      0.011198                      0.006544
+b_subbasin_10                                      0.011198                      0.029091                      0.008693
+b_subbasin_11                                      0.006544                      0.008693                      0.015259
+b_subbasin_12                                      0.006599                      0.005588                      0.006709
+b_subbasin_13                                      0.006416                      0.004858                      0.006348
+b_subbasin_14                                      0.006406                      0.003484                      0.005379
+b_subbasin_15                                      0.005606                      0.002657                      0.005215
+b_subbasin_16                                      0.005552                      0.005553                      0.005699
+b_subbasin_17                                      0.005711                      0.005689                      0.005670
+                                              b_subbasin_12                 b_subbasin_13                 b_subbasin_14
+mu_b_asc                                          -0.009386                     -0.010974                     -0.014658
+sigma_b_asc                                     -1.5480e-04                   -2.4886e-04                    1.4169e-04
+b_cost                                            5.868e-07                     6.507e-07                     4.423e-07
+mu_b_wq_local_basin                             -1.0264e-04                     3.354e-05                     9.821e-05
+sigma_b_wq_local_basin                           5.6876e-04                    3.9072e-04                     7.735e-05
+mu_b_wq_nonlocal_basin                            9.105e-05                     9.899e-05                    2.6280e-04
+sigma_b_wq_nonlocal_basin                        4.9734e-04                    3.1966e-04                    4.2403e-04
+mu_b_wq_local_sub_basin                         -1.6626e-04                   -2.4643e-04                   -6.5939e-04
+sigma_b_wq_local_sub_basin                      -1.5408e-04                   -2.9382e-04                    -4.865e-05
+mu_b_wq_nonlocal_sub_basin                       3.7056e-04                    2.3281e-04                    2.0375e-04
+sigma_b_wq_nonlocal_sub_basin                   -4.9945e-04                   -5.4743e-04                   -7.7723e-04
+b_basesq_exp                                     7.7792e-04                      0.001170                      0.002138
+b_basin_1                                          0.006761                      0.007268                      0.008295
+b_basin_2                                          0.006550                      0.006741                      0.007562
+b_basin_3                                          0.007129                      0.007727                      0.009002
+b_basin_4                                          0.006505                      0.006805                      0.007546
+b_subbasin_1                                       0.006946                      0.007202                      0.007745
+b_subbasin_2                                       0.006906                      0.007089                      0.007729
+b_subbasin_3                                       0.006974                      0.007435                      0.007760
+b_subbasin_4                                       0.007066                      0.007137                      0.007725
+b_subbasin_5                                       0.006935                      0.007115                      0.007532
+b_subbasin_6                                       0.006490                      0.006249                      0.006112
+b_subbasin_7                                       0.006875                      0.007047                      0.007813
+b_subbasin_8                                       0.006926                      0.006993                      0.007457
+b_subbasin_9                                       0.006599                      0.006416                      0.006406
+b_subbasin_10                                      0.005588                      0.004858                      0.003484
+b_subbasin_11                                      0.006709                      0.006348                      0.005379
+b_subbasin_12                                      0.019677                      0.008041                      0.008226
+b_subbasin_13                                      0.008041                      0.019711                      0.008794
+b_subbasin_14                                      0.008226                      0.008794                      0.035960
+b_subbasin_15                                      0.006943                      0.007382                      0.008361
+b_subbasin_16                                      0.005781                      0.005871                      0.005797
+b_subbasin_17                                      0.005773                      0.005749                      0.005652
+                                              b_subbasin_15                 b_subbasin_16                 b_subbasin_17
+mu_b_asc                                          -0.013795                     -0.005663                     -0.005858
+sigma_b_asc                                      1.3326e-04                    -1.111e-05                     1.955e-05
+b_cost                                            2.367e-08                    -1.542e-07                     1.458e-07
+mu_b_wq_local_basin                              4.0722e-04                    1.3044e-04                    -3.493e-06
+sigma_b_wq_local_basin                          -4.5027e-04                   -2.7426e-04                     5.755e-05
+mu_b_wq_nonlocal_basin                           4.1196e-04                     2.193e-05                     1.000e-05
+sigma_b_wq_nonlocal_basin                        2.6141e-04                    1.1781e-04                     7.599e-05
+mu_b_wq_local_sub_basin                         -3.3279e-04                     2.451e-06                    -4.371e-05
+sigma_b_wq_local_sub_basin                       3.5482e-04                     5.338e-05                    1.2099e-04
+mu_b_wq_nonlocal_sub_basin                       -8.870e-05                    -1.750e-05                     4.840e-05
+sigma_b_wq_nonlocal_sub_basin                   -1.1149e-04                    -7.183e-05                   -2.3371e-04
+b_basesq_exp                                       0.002118                    -3.378e-06                     1.813e-05
+b_basin_1                                          0.007878                      0.005793                      0.005888
+b_basin_2                                          0.007079                      0.005723                      0.005858
+b_basin_3                                          0.008523                      0.005836                      0.005863
+b_basin_4                                          0.007045                      0.005779                      0.005746
+b_subbasin_1                                       0.007130                      0.005712                      0.005818
+b_subbasin_2                                       0.006960                      0.005688                      0.005765
+b_subbasin_3                                       0.007040                      0.005731                      0.005712
+b_subbasin_4                                       0.006952                      0.005768                      0.005778
+b_subbasin_5                                       0.006728                      0.005590                      0.005832
+b_subbasin_6                                       0.005023                      0.005639                      0.005891
+b_subbasin_7                                       0.006955                      0.005575                      0.005725
+b_subbasin_8                                       0.006532                      0.005540                      0.005776
+b_subbasin_9                                       0.005606                      0.005552                      0.005711
+b_subbasin_10                                      0.002657                      0.005553                      0.005689
+b_subbasin_11                                      0.005215                      0.005699                      0.005670
+b_subbasin_12                                      0.006943                      0.005781                      0.005773
+b_subbasin_13                                      0.007382                      0.005871                      0.005749
+b_subbasin_14                                      0.008361                      0.005797                      0.005652
+b_subbasin_15                                      0.025746                      0.005751                      0.005747
+b_subbasin_16                                      0.005751                      0.011374                      0.005731
+b_subbasin_17                                      0.005747                      0.005731                      0.011351
+
+Robust covariance matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           0.128151                      0.002488                    -1.363e-05
+sigma_b_asc                                        0.002488                      0.014340                    -1.359e-05
+b_cost                                           -1.363e-05                    -1.359e-05                     6.986e-08
+mu_b_wq_local_basin                               -0.004141                     -0.004817                     3.787e-06
+sigma_b_wq_local_basin                            -0.004713                      0.007921                    -6.530e-06
+mu_b_wq_nonlocal_basin                            -0.007374                     -0.002196                     1.219e-06
+sigma_b_wq_nonlocal_basin                         -0.004706                     -0.001502                     2.804e-06
+mu_b_wq_local_sub_basin                            0.004313                     -0.002022                     4.719e-06
+sigma_b_wq_local_sub_basin                        -0.002819                      0.003276                    -6.721e-06
+mu_b_wq_nonlocal_sub_basin                      -1.4560e-04                   -7.6161e-04                     2.278e-06
+sigma_b_wq_nonlocal_sub_basin                      0.004127                   -3.9673e-04                    -3.067e-06
+b_basesq_exp                                      -0.026871                    8.2514e-04                    -1.793e-06
+b_basin_1                                         -0.046768                     -0.001379                    -3.649e-06
+b_basin_2                                         -0.043805                     -0.001721                     8.142e-07
+b_basin_3                                         -0.056111                   -4.4202e-04                    -3.018e-06
+b_basin_4                                         -0.031992                   -1.5465e-04                    -2.798e-06
+b_subbasin_1                                      -0.037512                   -8.2267e-04                     6.486e-06
+b_subbasin_2                                      -0.035517                    2.9032e-04                     1.046e-06
+b_subbasin_3                                      -0.035765                     -0.001065                     7.813e-06
+b_subbasin_4                                      -0.036510                   -6.5490e-04                     5.955e-06
+b_subbasin_5                                      -0.032558                   -3.3363e-04                    -8.852e-07
+b_subbasin_6                                      -0.012626                   -7.5048e-04                     2.371e-06
+b_subbasin_7                                      -0.031861                   -9.3617e-04                     5.720e-06
+b_subbasin_8                                      -0.026497                   -9.1259e-04                     1.682e-06
+b_subbasin_9                                      -0.018948                   -4.6273e-04                     1.430e-06
+b_subbasin_10                                      0.013575                     -0.003174                     7.013e-06
+b_subbasin_11                                     -0.005091                   -8.1110e-04                     2.214e-06
+b_subbasin_12                                     -0.026019                    9.6425e-04                     1.646e-06
+b_subbasin_13                                     -0.030385                   -2.6584e-04                     2.803e-06
+b_subbasin_14                                     -0.043887                    3.6539e-04                     2.337e-06
+b_subbasin_15                                     -0.036820                    6.8107e-04                    -4.370e-07
+b_subbasin_16                                     -0.013373                    5.6844e-04                    -1.611e-06
+b_subbasin_17                                     -0.016855                     3.158e-05                     3.943e-06
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                          -0.004141                     -0.004713                     -0.007374
+sigma_b_asc                                       -0.004817                      0.007921                     -0.002196
+b_cost                                            3.787e-06                    -6.530e-06                     1.219e-06
+mu_b_wq_local_basin                                0.039396                     -0.042613                      0.018341
+sigma_b_wq_local_basin                            -0.042613                      0.104084                     -0.012785
+mu_b_wq_nonlocal_basin                             0.018341                     -0.012785                      0.019652
+sigma_b_wq_nonlocal_basin                          0.004257                     -0.006436                      0.004065
+mu_b_wq_local_sub_basin                            0.006898                     -0.006353                      0.003819
+sigma_b_wq_local_sub_basin                        -0.006291                      0.015560                     -0.001026
+mu_b_wq_nonlocal_sub_basin                         0.003532                      0.001465                      0.004443
+sigma_b_wq_nonlocal_sub_basin                      0.005450                     -0.016139                    1.4395e-04
+b_basesq_exp                                       0.003227                      0.001173                      0.003698
+b_basin_1                                          0.028690                     -0.024132                      0.020738
+b_basin_2                                          0.017019                     -0.011113                      0.022239
+b_basin_3                                          0.019847                     -0.015115                      0.014911
+b_basin_4                                          0.024526                     -0.011105                      0.016561
+b_subbasin_1                                       0.001667                   -6.9725e-04                      0.001610
+b_subbasin_2                                     1.0857e-04                      0.001540                    5.0967e-04
+b_subbasin_3                                      -0.001269                      0.001156                    1.6948e-04
+b_subbasin_4                                     7.4320e-04                      0.003119                      0.001885
+b_subbasin_5                                      -0.006715                      0.009234                     -0.001210
+b_subbasin_6                                      -0.003609                      0.007169                      0.001681
+b_subbasin_7                                      -0.006536                      0.006796                     -0.002741
+b_subbasin_8                                      -0.004317                      0.005539                    9.5614e-04
+b_subbasin_9                                      -0.006701                      0.008094                   -1.1338e-04
+b_subbasin_10                                     -0.004289                    7.0720e-04                     -0.001173
+b_subbasin_11                                   -8.6384e-04                     -0.001358                   -7.9988e-04
+b_subbasin_12                                     -0.003609                      0.004444                   -8.0399e-04
+b_subbasin_13                                   -2.4020e-04                    1.8916e-04                    8.9185e-04
+b_subbasin_14                                     -0.001627                      0.003648                    8.1215e-04
+b_subbasin_15                                     -0.002928                     -0.001660                     -0.002492
+b_subbasin_16                                     -0.001810                      0.001778                     -0.001055
+b_subbasin_17                                     -0.003236                      0.004683                   -6.7106e-04
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.004706                      0.004313                     -0.002819
+sigma_b_asc                                       -0.001502                     -0.002022                      0.003276
+b_cost                                            2.804e-06                     4.719e-06                    -6.721e-06
+mu_b_wq_local_basin                                0.004257                      0.006898                     -0.006291
+sigma_b_wq_local_basin                            -0.006436                     -0.006353                      0.015560
+mu_b_wq_nonlocal_basin                             0.004065                      0.003819                     -0.001026
+sigma_b_wq_nonlocal_basin                          0.018611                    5.3344e-04                      0.002866
+mu_b_wq_local_sub_basin                          5.3344e-04                      0.010516                     -0.006529
+sigma_b_wq_local_sub_basin                         0.002866                     -0.006529                      0.019415
+mu_b_wq_nonlocal_sub_basin                         0.002392                      0.006146                   -5.9615e-04
+sigma_b_wq_nonlocal_sub_basin                     -0.006924                    4.8681e-04                     -0.005140
+b_basesq_exp                                     3.6245e-04                      0.001944                    6.2383e-04
+b_basin_1                                          0.003220                     -0.004695                     -0.001802
+b_basin_2                                          0.003478                     -0.008835                      0.002304
+b_basin_3                                          0.005336                     -0.006133                    7.7513e-04
+b_basin_4                                       -6.1284e-04                     -0.006475                    -3.341e-05
+b_subbasin_1                                       0.002768                   -8.6859e-04                    8.5084e-04
+b_subbasin_2                                       0.001179                   -4.3321e-04                     -0.001211
+b_subbasin_3                                     9.9697e-04                    -9.409e-05                   -7.9866e-04
+b_subbasin_4                                       0.002307                   -7.9082e-04                      0.002378
+b_subbasin_5                                       0.002889                     -0.005802                      0.004330
+b_subbasin_6                                       0.003738                     -0.003347                      0.003159
+b_subbasin_7                                       0.004479                     -0.004932                      0.003823
+b_subbasin_8                                       0.002493                     -0.002300                      0.001333
+b_subbasin_9                                       0.003118                     -0.003475                      0.002070
+b_subbasin_10                                      0.004925                   -4.4774e-04                    2.3695e-04
+b_subbasin_11                                      0.002057                      0.004400                     -0.004973
+b_subbasin_12                                    9.5395e-04                     8.522e-05                     -0.002415
+b_subbasin_13                                      0.002542                    7.7693e-04                     -0.003152
+b_subbasin_14                                   -2.3925e-04                     -0.001308                   -7.0111e-04
+b_subbasin_15                                      0.001207                     -0.001084                    2.4463e-04
+b_subbasin_16                                      0.001614                   -7.3361e-04                      0.002677
+b_subbasin_17                                    -9.277e-05                   -5.1302e-04                    4.8322e-04
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_exp
+mu_b_asc                                        -1.4560e-04                      0.004127                     -0.026871
+sigma_b_asc                                     -7.6161e-04                   -3.9673e-04                    8.2514e-04
+b_cost                                            2.278e-06                    -3.067e-06                    -1.793e-06
+mu_b_wq_local_basin                                0.003532                      0.005450                      0.003227
+sigma_b_wq_local_basin                             0.001465                     -0.016139                      0.001173
+mu_b_wq_nonlocal_basin                             0.004443                    1.4395e-04                      0.003698
+sigma_b_wq_nonlocal_basin                          0.002392                     -0.006924                    3.6245e-04
+mu_b_wq_local_sub_basin                            0.006146                    4.8681e-04                      0.001944
+sigma_b_wq_local_sub_basin                      -5.9615e-04                     -0.005140                    6.2383e-04
+mu_b_wq_nonlocal_sub_basin                         0.007341                     -0.003007                      0.002651
+sigma_b_wq_nonlocal_sub_basin                     -0.003007                      0.015632                   -7.8697e-04
+b_basesq_exp                                       0.002651                   -7.8697e-04                      0.008988
+b_basin_1                                         -0.003434                      0.003031                      0.006134
+b_basin_2                                         -0.004119                      0.001843                      0.003421
+b_basin_3                                         -0.003559                    2.8763e-04                      0.008027
+b_basin_4                                         -0.004535                      0.002799                      0.002484
+b_subbasin_1                                     6.1555e-04                     -0.002677                      0.003528
+b_subbasin_2                                     6.0377e-04                     -0.002144                      0.004010
+b_subbasin_3                                     3.3849e-04                     -0.001364                      0.003523
+b_subbasin_4                                       0.001036                     -0.003203                      0.003699
+b_subbasin_5                                     4.8136e-04                     -0.005061                      0.001801
+b_subbasin_6                                       0.002084                     -0.002578                     -0.003237
+b_subbasin_7                                     4.2866e-04                     -0.006073                      0.001253
+b_subbasin_8                                       0.002901                     -0.003016                      0.001035
+b_subbasin_9                                       0.001298                     -0.003358                     -0.002213
+b_subbasin_10                                      0.003274                    7.6938e-04                     -0.010768
+b_subbasin_11                                      0.001645                      0.001010                     -0.003696
+b_subbasin_12                                    2.1638e-04                     -0.001302                      0.001546
+b_subbasin_13                                    9.6188e-04                     -0.002682                      0.002697
+b_subbasin_14                                    5.2483e-04                     -0.002206                      0.006606
+b_subbasin_15                                     -0.001448                   -9.0599e-04                      0.004443
+b_subbasin_16                                    2.6380e-04                     -0.001899                     -0.001003
+b_subbasin_17                                   -4.0965e-04                   -6.5647e-04                   -5.9251e-04
+                                                  b_basin_1                     b_basin_2                     b_basin_3
+mu_b_asc                                          -0.046768                     -0.043805                     -0.056111
+sigma_b_asc                                       -0.001379                     -0.001721                   -4.4202e-04
+b_cost                                           -3.649e-06                     8.142e-07                    -3.018e-06
+mu_b_wq_local_basin                                0.028690                      0.017019                      0.019847
+sigma_b_wq_local_basin                            -0.024132                     -0.011113                     -0.015115
+mu_b_wq_nonlocal_basin                             0.020738                      0.022239                      0.014911
+sigma_b_wq_nonlocal_basin                          0.003220                      0.003478                      0.005336
+mu_b_wq_local_sub_basin                           -0.004695                     -0.008835                     -0.006133
+sigma_b_wq_local_sub_basin                        -0.001802                      0.002304                    7.7513e-04
+mu_b_wq_nonlocal_sub_basin                        -0.003434                     -0.004119                     -0.003559
+sigma_b_wq_nonlocal_sub_basin                      0.003031                      0.001843                    2.8763e-04
+b_basesq_exp                                       0.006134                      0.003421                      0.008027
+b_basin_1                                          0.091286                      0.058223                      0.054167
+b_basin_2                                          0.058223                      0.102787                      0.052481
+b_basin_3                                          0.054167                      0.052481                      0.067819
+b_basin_4                                          0.053262                      0.051152                      0.047105
+b_subbasin_1                                       0.026651                      0.025551                      0.027571
+b_subbasin_2                                       0.028809                      0.022837                      0.024009
+b_subbasin_3                                       0.023479                      0.021562                      0.022730
+b_subbasin_4                                       0.028190                      0.024637                      0.026001
+b_subbasin_5                                       0.021333                      0.034442                      0.025180
+b_subbasin_6                                       0.018498                      0.033295                      0.018888
+b_subbasin_7                                       0.018625                      0.033545                      0.022340
+b_subbasin_8                                       0.019798                      0.029561                      0.022392
+b_subbasin_9                                       0.019852                      0.027749                      0.021727
+b_subbasin_10                                      0.009390                      0.029289                      0.009234
+b_subbasin_11                                      0.012721                      0.014753                      0.015672
+b_subbasin_12                                      0.015436                      0.019507                      0.019324
+b_subbasin_13                                      0.020265                      0.022860                      0.020980
+b_subbasin_14                                      0.023386                      0.024285                      0.026552
+b_subbasin_15                                      0.022264                      0.018730                      0.021101
+b_subbasin_16                                      0.014016                      0.015054                      0.013916
+b_subbasin_17                                      0.014771                      0.017040                      0.014993
+                                                  b_basin_4                  b_subbasin_1                  b_subbasin_2
+mu_b_asc                                          -0.031992                     -0.037512                     -0.035517
+sigma_b_asc                                     -1.5465e-04                   -8.2267e-04                    2.9032e-04
+b_cost                                           -2.798e-06                     6.486e-06                     1.046e-06
+mu_b_wq_local_basin                                0.024526                      0.001667                    1.0857e-04
+sigma_b_wq_local_basin                            -0.011105                   -6.9725e-04                      0.001540
+mu_b_wq_nonlocal_basin                             0.016561                      0.001610                    5.0967e-04
+sigma_b_wq_nonlocal_basin                       -6.1284e-04                      0.002768                      0.001179
+mu_b_wq_local_sub_basin                           -0.006475                   -8.6859e-04                   -4.3321e-04
+sigma_b_wq_local_sub_basin                       -3.341e-05                    8.5084e-04                     -0.001211
+mu_b_wq_nonlocal_sub_basin                        -0.004535                    6.1555e-04                    6.0377e-04
+sigma_b_wq_nonlocal_sub_basin                      0.002799                     -0.002677                     -0.002144
+b_basesq_exp                                       0.002484                      0.003528                      0.004010
+b_basin_1                                          0.053262                      0.026651                      0.028809
+b_basin_2                                          0.051152                      0.025551                      0.022837
+b_basin_3                                          0.047105                      0.027571                      0.024009
+b_basin_4                                          0.071655                      0.019451                      0.017015
+b_subbasin_1                                       0.019451                      0.055566                      0.030233
+b_subbasin_2                                       0.017015                      0.030233                      0.050962
+b_subbasin_3                                       0.015850                      0.030587                      0.027342
+b_subbasin_4                                       0.018880                      0.032800                      0.024214
+b_subbasin_5                                       0.015324                      0.025685                      0.023285
+b_subbasin_6                                       0.015452                      0.022779                      0.020110
+b_subbasin_7                                       0.015859                      0.024341                      0.022802
+b_subbasin_8                                       0.014930                      0.024445                      0.022762
+b_subbasin_9                                       0.013904                      0.025693                      0.023601
+b_subbasin_10                                      0.009134                      0.019627                      0.016616
+b_subbasin_11                                      0.009412                      0.019104                      0.018935
+b_subbasin_12                                      0.013117                      0.022935                      0.020498
+b_subbasin_13                                      0.016823                      0.023212                      0.021981
+b_subbasin_14                                      0.019611                      0.024950                      0.024811
+b_subbasin_15                                      0.015865                      0.024317                      0.025343
+b_subbasin_16                                      0.012634                      0.019100                      0.018116
+b_subbasin_17                                      0.013567                      0.018700                      0.014234
+                                               b_subbasin_3                  b_subbasin_4                  b_subbasin_5
+mu_b_asc                                          -0.035765                     -0.036510                     -0.032558
+sigma_b_asc                                       -0.001065                   -6.5490e-04                   -3.3363e-04
+b_cost                                            7.813e-06                     5.955e-06                    -8.852e-07
+mu_b_wq_local_basin                               -0.001269                    7.4320e-04                     -0.006715
+sigma_b_wq_local_basin                             0.001156                      0.003119                      0.009234
+mu_b_wq_nonlocal_basin                           1.6948e-04                      0.001885                     -0.001210
+sigma_b_wq_nonlocal_basin                        9.9697e-04                      0.002307                      0.002889
+mu_b_wq_local_sub_basin                          -9.409e-05                   -7.9082e-04                     -0.005802
+sigma_b_wq_local_sub_basin                      -7.9866e-04                      0.002378                      0.004330
+mu_b_wq_nonlocal_sub_basin                       3.3849e-04                      0.001036                    4.8136e-04
+sigma_b_wq_nonlocal_sub_basin                     -0.001364                     -0.003203                     -0.005061
+b_basesq_exp                                       0.003523                      0.003699                      0.001801
+b_basin_1                                          0.023479                      0.028190                      0.021333
+b_basin_2                                          0.021562                      0.024637                      0.034442
+b_basin_3                                          0.022730                      0.026001                      0.025180
+b_basin_4                                          0.015850                      0.018880                      0.015324
+b_subbasin_1                                       0.030587                      0.032800                      0.025685
+b_subbasin_2                                       0.027342                      0.024214                      0.023285
+b_subbasin_3                                       0.055502                      0.027671                      0.023410
+b_subbasin_4                                       0.027671                      0.062046                      0.024903
+b_subbasin_5                                       0.023410                      0.024903                      0.086308
+b_subbasin_6                                       0.020077                      0.021758                      0.038744
+b_subbasin_7                                       0.022271                      0.023265                      0.041690
+b_subbasin_8                                       0.022945                      0.023818                      0.041517
+b_subbasin_9                                       0.023140                      0.023890                      0.039404
+b_subbasin_10                                      0.017406                      0.018500                      0.033746
+b_subbasin_11                                      0.018691                      0.018279                      0.017918
+b_subbasin_12                                      0.021464                      0.020688                      0.021717
+b_subbasin_13                                      0.021299                      0.023335                      0.022839
+b_subbasin_14                                      0.019987                      0.022908                      0.021129
+b_subbasin_15                                      0.020220                      0.021572                      0.022958
+b_subbasin_16                                      0.016663                      0.016792                      0.020557
+b_subbasin_17                                      0.016380                      0.017839                      0.015871
+                                               b_subbasin_6                  b_subbasin_7                  b_subbasin_8
+mu_b_asc                                          -0.012626                     -0.031861                     -0.026497
+sigma_b_asc                                     -7.5048e-04                   -9.3617e-04                   -9.1259e-04
+b_cost                                            2.371e-06                     5.720e-06                     1.682e-06
+mu_b_wq_local_basin                               -0.003609                     -0.006536                     -0.004317
+sigma_b_wq_local_basin                             0.007169                      0.006796                      0.005539
+mu_b_wq_nonlocal_basin                             0.001681                     -0.002741                    9.5614e-04
+sigma_b_wq_nonlocal_basin                          0.003738                      0.004479                      0.002493
+mu_b_wq_local_sub_basin                           -0.003347                     -0.004932                     -0.002300
+sigma_b_wq_local_sub_basin                         0.003159                      0.003823                      0.001333
+mu_b_wq_nonlocal_sub_basin                         0.002084                    4.2866e-04                      0.002901
+sigma_b_wq_nonlocal_sub_basin                     -0.002578                     -0.006073                     -0.003016
+b_basesq_exp                                      -0.003237                      0.001253                      0.001035
+b_basin_1                                          0.018498                      0.018625                      0.019798
+b_basin_2                                          0.033295                      0.033545                      0.029561
+b_basin_3                                          0.018888                      0.022340                      0.022392
+b_basin_4                                          0.015452                      0.015859                      0.014930
+b_subbasin_1                                       0.022779                      0.024341                      0.024445
+b_subbasin_2                                       0.020110                      0.022802                      0.022762
+b_subbasin_3                                       0.020077                      0.022271                      0.022945
+b_subbasin_4                                       0.021758                      0.023265                      0.023818
+b_subbasin_5                                       0.038744                      0.041690                      0.041517
+b_subbasin_6                                       0.071386                      0.031152                      0.038034
+b_subbasin_7                                       0.031152                      0.095779                      0.035003
+b_subbasin_8                                       0.038034                      0.035003                      0.087610
+b_subbasin_9                                       0.044972                      0.032288                      0.031273
+b_subbasin_10                                      0.045077                      0.036684                      0.034747
+b_subbasin_11                                      0.022411                      0.018391                      0.023244
+b_subbasin_12                                      0.017843                      0.020946                      0.018902
+b_subbasin_13                                      0.018019                      0.021688                      0.021655
+b_subbasin_14                                      0.019641                      0.025113                      0.017295
+b_subbasin_15                                      0.015779                      0.023208                      0.018157
+b_subbasin_16                                      0.020254                      0.018079                      0.022163
+b_subbasin_17                                      0.017640                      0.016405                      0.018504
+                                               b_subbasin_9                 b_subbasin_10                 b_subbasin_11
+mu_b_asc                                          -0.018948                      0.013575                     -0.005091
+sigma_b_asc                                     -4.6273e-04                     -0.003174                   -8.1110e-04
+b_cost                                            1.430e-06                     7.013e-06                     2.214e-06
+mu_b_wq_local_basin                               -0.006701                     -0.004289                   -8.6384e-04
+sigma_b_wq_local_basin                             0.008094                    7.0720e-04                     -0.001358
+mu_b_wq_nonlocal_basin                          -1.1338e-04                     -0.001173                   -7.9988e-04
+sigma_b_wq_nonlocal_basin                          0.003118                      0.004925                      0.002057
+mu_b_wq_local_sub_basin                           -0.003475                   -4.4774e-04                      0.004400
+sigma_b_wq_local_sub_basin                         0.002070                    2.3695e-04                     -0.004973
+mu_b_wq_nonlocal_sub_basin                         0.001298                      0.003274                      0.001645
+sigma_b_wq_nonlocal_sub_basin                     -0.003358                    7.6938e-04                      0.001010
+b_basesq_exp                                      -0.002213                     -0.010768                     -0.003696
+b_basin_1                                          0.019852                      0.009390                      0.012721
+b_basin_2                                          0.027749                      0.029289                      0.014753
+b_basin_3                                          0.021727                      0.009234                      0.015672
+b_basin_4                                          0.013904                      0.009134                      0.009412
+b_subbasin_1                                       0.025693                      0.019627                      0.019104
+b_subbasin_2                                       0.023601                      0.016616                      0.018935
+b_subbasin_3                                       0.023140                      0.017406                      0.018691
+b_subbasin_4                                       0.023890                      0.018500                      0.018279
+b_subbasin_5                                       0.039404                      0.033746                      0.017918
+b_subbasin_6                                       0.044972                      0.045077                      0.022411
+b_subbasin_7                                       0.032288                      0.036684                      0.018391
+b_subbasin_8                                       0.031273                      0.034747                      0.023244
+b_subbasin_9                                       0.084997                      0.046877                      0.021920
+b_subbasin_10                                      0.046877                      0.102695                      0.027896
+b_subbasin_11                                      0.021920                      0.027896                      0.053856
+b_subbasin_12                                      0.023041                      0.018397                      0.018216
+b_subbasin_13                                      0.020052                      0.018517                      0.019427
+b_subbasin_14                                      0.021070                      0.014020                      0.018521
+b_subbasin_15                                      0.018827                      0.013799                      0.016692
+b_subbasin_16                                      0.022310                      0.018429                      0.017137
+b_subbasin_17                                      0.019371                      0.019644                      0.017599
+                                              b_subbasin_12                 b_subbasin_13                 b_subbasin_14
+mu_b_asc                                          -0.026019                     -0.030385                     -0.043887
+sigma_b_asc                                      9.6425e-04                   -2.6584e-04                    3.6539e-04
+b_cost                                            1.646e-06                     2.803e-06                     2.337e-06
+mu_b_wq_local_basin                               -0.003609                   -2.4020e-04                     -0.001627
+sigma_b_wq_local_basin                             0.004444                    1.8916e-04                      0.003648
+mu_b_wq_nonlocal_basin                          -8.0399e-04                    8.9185e-04                    8.1215e-04
+sigma_b_wq_nonlocal_basin                        9.5395e-04                      0.002542                   -2.3925e-04
+mu_b_wq_local_sub_basin                           8.522e-05                    7.7693e-04                     -0.001308
+sigma_b_wq_local_sub_basin                        -0.002415                     -0.003152                   -7.0111e-04
+mu_b_wq_nonlocal_sub_basin                       2.1638e-04                    9.6188e-04                    5.2483e-04
+sigma_b_wq_nonlocal_sub_basin                     -0.001302                     -0.002682                     -0.002206
+b_basesq_exp                                       0.001546                      0.002697                      0.006606
+b_basin_1                                          0.015436                      0.020265                      0.023386
+b_basin_2                                          0.019507                      0.022860                      0.024285
+b_basin_3                                          0.019324                      0.020980                      0.026552
+b_basin_4                                          0.013117                      0.016823                      0.019611
+b_subbasin_1                                       0.022935                      0.023212                      0.024950
+b_subbasin_2                                       0.020498                      0.021981                      0.024811
+b_subbasin_3                                       0.021464                      0.021299                      0.019987
+b_subbasin_4                                       0.020688                      0.023335                      0.022908
+b_subbasin_5                                       0.021717                      0.022839                      0.021129
+b_subbasin_6                                       0.017843                      0.018019                      0.019641
+b_subbasin_7                                       0.020946                      0.021688                      0.025113
+b_subbasin_8                                       0.018902                      0.021655                      0.017295
+b_subbasin_9                                       0.023041                      0.020052                      0.021070
+b_subbasin_10                                      0.018397                      0.018517                      0.014020
+b_subbasin_11                                      0.018216                      0.019427                      0.018521
+b_subbasin_12                                      0.057576                      0.026044                      0.019793
+b_subbasin_13                                      0.026044                      0.063381                      0.024330
+b_subbasin_14                                      0.019793                      0.024330                      0.090818
+b_subbasin_15                                      0.017449                      0.026456                      0.022545
+b_subbasin_16                                      0.014624                      0.016815                      0.014579
+b_subbasin_17                                      0.015776                      0.014928                      0.015220
+                                              b_subbasin_15                 b_subbasin_16                 b_subbasin_17
+mu_b_asc                                          -0.036820                     -0.013373                     -0.016855
+sigma_b_asc                                      6.8107e-04                    5.6844e-04                     3.158e-05
+b_cost                                           -4.370e-07                    -1.611e-06                     3.943e-06
+mu_b_wq_local_basin                               -0.002928                     -0.001810                     -0.003236
+sigma_b_wq_local_basin                            -0.001660                      0.001778                      0.004683
+mu_b_wq_nonlocal_basin                            -0.002492                     -0.001055                   -6.7106e-04
+sigma_b_wq_nonlocal_basin                          0.001207                      0.001614                    -9.277e-05
+mu_b_wq_local_sub_basin                           -0.001084                   -7.3361e-04                   -5.1302e-04
+sigma_b_wq_local_sub_basin                       2.4463e-04                      0.002677                    4.8322e-04
+mu_b_wq_nonlocal_sub_basin                        -0.001448                    2.6380e-04                   -4.0965e-04
+sigma_b_wq_nonlocal_sub_basin                   -9.0599e-04                     -0.001899                   -6.5647e-04
+b_basesq_exp                                       0.004443                     -0.001003                   -5.9251e-04
+b_basin_1                                          0.022264                      0.014016                      0.014771
+b_basin_2                                          0.018730                      0.015054                      0.017040
+b_basin_3                                          0.021101                      0.013916                      0.014993
+b_basin_4                                          0.015865                      0.012634                      0.013567
+b_subbasin_1                                       0.024317                      0.019100                      0.018700
+b_subbasin_2                                       0.025343                      0.018116                      0.014234
+b_subbasin_3                                       0.020220                      0.016663                      0.016380
+b_subbasin_4                                       0.021572                      0.016792                      0.017839
+b_subbasin_5                                       0.022958                      0.020557                      0.015871
+b_subbasin_6                                       0.015779                      0.020254                      0.017640
+b_subbasin_7                                       0.023208                      0.018079                      0.016405
+b_subbasin_8                                       0.018157                      0.022163                      0.018504
+b_subbasin_9                                       0.018827                      0.022310                      0.019371
+b_subbasin_10                                      0.013799                      0.018429                      0.019644
+b_subbasin_11                                      0.016692                      0.017137                      0.017599
+b_subbasin_12                                      0.017449                      0.014624                      0.015776
+b_subbasin_13                                      0.026456                      0.016815                      0.014928
+b_subbasin_14                                      0.022545                      0.014579                      0.015220
+b_subbasin_15                                      0.080358                      0.015421                      0.015870
+b_subbasin_16                                      0.015421                      0.036474                      0.017304
+b_subbasin_17                                      0.015870                      0.017304                      0.036120
+
+Classical correlation matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           1.000000                      0.024793                     -0.119538
+sigma_b_asc                                        0.024793                      1.000000                     -0.411093
+b_cost                                            -0.119538                     -0.411093                      1.000000
+mu_b_wq_local_basin                               -0.125177                     -0.154228                      0.104592
+sigma_b_wq_local_basin                            -0.003532                      0.193919                     -0.139351
+mu_b_wq_nonlocal_basin                            -0.182830                     -0.096716                      0.052778
+sigma_b_wq_nonlocal_basin                         -0.045095                     -0.112931                      0.083600
+mu_b_wq_local_sub_basin                            0.151945                     -0.157860                      0.172833
+sigma_b_wq_local_sub_basin                        -0.079867                      0.206990                     -0.227804
+mu_b_wq_nonlocal_sub_basin                         0.006987                     -0.102000                      0.129615
+sigma_b_wq_nonlocal_sub_basin                      0.061485                      0.056574                     -0.153615
+b_basesq_exp                                      -0.815327                      0.091126                     -0.051200
+b_basin_1                                         -0.445330                     -0.003693                     -0.009554
+b_basin_2                                         -0.384793                      0.013014                     -0.036889
+b_basin_3                                         -0.649448                     -0.001010                     -0.009490
+b_basin_4                                         -0.407806                      0.020390                     -0.040052
+b_subbasin_1                                      -0.420751                     -0.001282                      0.024116
+b_subbasin_2                                      -0.398715                     -0.013647                      0.037585
+b_subbasin_3                                      -0.417893                     -0.011914                      0.039136
+b_subbasin_4                                      -0.402718                     -0.023270                      0.049898
+b_subbasin_5                                      -0.324658                     -0.024598                      0.006374
+b_subbasin_6                                      -0.151645                     -0.066557                      0.043190
+b_subbasin_7                                      -0.317816                     -0.023033                      0.019890
+b_subbasin_8                                      -0.329557                     -0.024534                      0.033702
+b_subbasin_9                                      -0.207408                     -0.056587                      0.061822
+b_subbasin_10                                      0.135229                     -0.075627                      0.027649
+b_subbasin_11                                     -0.062924                     -0.052878                      0.052808
+b_subbasin_12                                     -0.344145                     -0.019680                      0.037984
+b_subbasin_13                                     -0.401994                     -0.031611                      0.042089
+b_subbasin_14                                     -0.397545                      0.013325                      0.021181
+b_subbasin_15                                     -0.442171                      0.014811                      0.001340
+b_subbasin_16                                     -0.273085                     -0.001858                     -0.013127
+b_subbasin_17                                     -0.282793                      0.003273                      0.012428
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                          -0.125177                     -0.003532                     -0.182830
+sigma_b_asc                                       -0.154228                      0.193919                     -0.096716
+b_cost                                             0.104592                     -0.139351                      0.052778
+mu_b_wq_local_basin                                1.000000                     -0.585490                      0.579064
+sigma_b_wq_local_basin                            -0.585490                      1.000000                     -0.220795
+mu_b_wq_nonlocal_basin                             0.579064                     -0.220795                      1.000000
+sigma_b_wq_nonlocal_basin                          0.109692                     -0.110481                      0.232725
+mu_b_wq_local_sub_basin                            0.121147                     -0.078106                      0.116189
+sigma_b_wq_local_sub_basin                        -0.116717                      0.218125                     -0.018767
+mu_b_wq_nonlocal_sub_basin                         0.079164                      0.046841                      0.141257
+sigma_b_wq_nonlocal_sub_basin                      0.112032                     -0.236196                      0.011772
+b_basesq_exp                                       0.153155                      0.035146                      0.230505
+b_basin_1                                          0.398675                     -0.151497                      0.498651
+b_basin_2                                          0.267091                     -0.070901                      0.507806
+b_basin_3                                          0.404124                     -0.148694                      0.401935
+b_basin_4                                          0.526012                     -0.151891                      0.415796
+b_subbasin_1                                       0.005765                      0.016900                      0.041979
+b_subbasin_2                                       0.010781                      0.014396                      0.042924
+b_subbasin_3                                       0.004143                      0.024456                      0.040967
+b_subbasin_4                                       0.015876                      0.012104                      0.046972
+b_subbasin_5                                      -0.026331                      0.041485                      0.019665
+b_subbasin_6                                      -0.033622                      0.021941                      0.003337
+b_subbasin_7                                      -0.017014                      0.023247                      0.015095
+b_subbasin_8                                      -0.023287                      0.034561                      0.019915
+b_subbasin_9                                      -0.025242                      0.013359                      0.003193
+b_subbasin_10                                     -0.058299                      0.001686                     -0.044125
+b_subbasin_11                                     -0.030887                     -0.002981                     -0.037524
+b_subbasin_12                                     -0.008058                      0.028646                      0.009412
+b_subbasin_13                                      0.002631                      0.019662                      0.010224
+b_subbasin_14                                      0.005703                      0.002882                      0.020095
+b_subbasin_15                                      0.027948                     -0.019826                      0.037228
+b_subbasin_16                                      0.013469                     -0.018168                      0.002982
+b_subbasin_17                                   -3.6100e-04                      0.003816                      0.001361
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.045095                      0.151945                     -0.079867
+sigma_b_asc                                       -0.112931                     -0.157860                      0.206990
+b_cost                                             0.083600                      0.172833                     -0.227804
+mu_b_wq_local_basin                                0.109692                      0.121147                     -0.116717
+sigma_b_wq_local_basin                            -0.110481                     -0.078106                      0.218125
+mu_b_wq_nonlocal_basin                             0.232725                      0.116189                     -0.018767
+sigma_b_wq_nonlocal_basin                          1.000000                     -0.001636                      0.046984
+mu_b_wq_local_sub_basin                           -0.001636                      1.000000                     -0.435755
+sigma_b_wq_local_sub_basin                         0.046984                     -0.435755                      1.000000
+mu_b_wq_nonlocal_sub_basin                         0.057709                      0.621024                     -0.091260
+sigma_b_wq_nonlocal_sub_basin                     -0.141602                     -0.008453                     -0.207356
+b_basesq_exp                                       0.002862                      0.142269                      0.067974
+b_basin_1                                          0.072724                     -0.275676                      0.067099
+b_basin_2                                          0.062478                     -0.312369                      0.101479
+b_basin_3                                          0.082673                     -0.320763                      0.090159
+b_basin_4                                          0.028128                     -0.313600                      0.065760
+b_subbasin_1                                       0.014710                     -0.103278                      0.032060
+b_subbasin_2                                       0.019098                     -0.085047                      0.012562
+b_subbasin_3                                       0.012509                     -0.085840                     -0.001207
+b_subbasin_4                                       0.023158                     -0.093548                      0.019116
+b_subbasin_5                                       0.035002                     -0.159405                      0.065454
+b_subbasin_6                                       0.041818                     -0.121046                      0.032431
+b_subbasin_7                                       0.028292                     -0.153515                      0.050730
+b_subbasin_8                                       0.032941                     -0.147573                      0.039126
+b_subbasin_9                                       0.029140                     -0.125462                      0.031663
+b_subbasin_10                                      0.026244                     -0.045216                     -0.005211
+b_subbasin_11                                      0.018585                      0.087507                     -0.093590
+b_subbasin_12                                      0.029308                     -0.024304                     -0.017850
+b_subbasin_13                                      0.018821                     -0.035993                     -0.034009
+b_subbasin_14                                      0.018484                     -0.071303                     -0.004169
+b_subbasin_15                                      0.013467                     -0.042530                      0.035934
+b_subbasin_16                                      0.009131                    4.7117e-04                      0.008133
+b_subbasin_17                                      0.005896                     -0.008414                      0.018454
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_exp
+mu_b_asc                                           0.006987                      0.061485                     -0.815327
+sigma_b_asc                                       -0.102000                      0.056574                      0.091126
+b_cost                                             0.129615                     -0.153615                     -0.051200
+mu_b_wq_local_basin                                0.079164                      0.112032                      0.153155
+sigma_b_wq_local_basin                             0.046841                     -0.236196                      0.035146
+mu_b_wq_nonlocal_basin                             0.141257                      0.011772                      0.230505
+sigma_b_wq_nonlocal_basin                          0.057709                     -0.141602                      0.002862
+mu_b_wq_local_sub_basin                            0.621024                     -0.008453                      0.142269
+sigma_b_wq_local_sub_basin                        -0.091260                     -0.207356                      0.067974
+mu_b_wq_nonlocal_sub_basin                         1.000000                     -0.279401                      0.234778
+sigma_b_wq_nonlocal_sub_basin                     -0.279401                      1.000000                     -0.034744
+b_basesq_exp                                       0.234778                     -0.034744                      1.000000
+b_basin_1                                         -0.167359                      0.019693                      0.187293
+b_basin_2                                         -0.177341                      0.009147                      0.115924
+b_basin_3                                         -0.197212                      0.013743                      0.350961
+b_basin_4                                         -0.227500                      0.035534                      0.122242
+b_subbasin_1                                       0.094060                     -0.096524                      0.162571
+b_subbasin_2                                       0.088363                     -0.085861                      0.148396
+b_subbasin_3                                       0.093232                     -0.076392                      0.164456
+b_subbasin_4                                       0.097962                     -0.095304                      0.146894
+b_subbasin_5                                       0.087073                     -0.075210                      0.092500
+b_subbasin_6                                       0.157118                     -0.097573                     -0.116789
+b_subbasin_7                                       0.064387                     -0.057142                      0.099270
+b_subbasin_8                                       0.088325                     -0.070092                      0.092762
+b_subbasin_9                                       0.117568                     -0.040068                     -0.037704
+b_subbasin_10                                      0.201220                      0.003643                     -0.368434
+b_subbasin_11                                      0.131338                     -0.038296                     -0.199679
+b_subbasin_12                                      0.063742                     -0.066793                      0.111835
+b_subbasin_13                                      0.040013                     -0.073146                      0.168002
+b_subbasin_14                                      0.025926                     -0.076888                      0.227396
+b_subbasin_15                                     -0.013339                     -0.013035                      0.266132
+b_subbasin_16                                     -0.003960                     -0.012634                   -6.3878e-04
+b_subbasin_17                                      0.010961                     -0.041150                      0.003432
+                                                  b_basin_1                     b_basin_2                     b_basin_3
+mu_b_asc                                          -0.445330                     -0.384793                     -0.649448
+sigma_b_asc                                       -0.003693                      0.013014                     -0.001010
+b_cost                                            -0.009554                     -0.036889                     -0.009490
+mu_b_wq_local_basin                                0.398675                      0.267091                      0.404124
+sigma_b_wq_local_basin                            -0.151497                     -0.070901                     -0.148694
+mu_b_wq_nonlocal_basin                             0.498651                      0.507806                      0.401935
+sigma_b_wq_nonlocal_basin                          0.072724                      0.062478                      0.082673
+mu_b_wq_local_sub_basin                           -0.275676                     -0.312369                     -0.320763
+sigma_b_wq_local_sub_basin                         0.067099                      0.101479                      0.090159
+mu_b_wq_nonlocal_sub_basin                        -0.167359                     -0.177341                     -0.197212
+sigma_b_wq_nonlocal_sub_basin                      0.019693                      0.009147                      0.013743
+b_basesq_exp                                       0.187293                      0.115924                      0.350961
+b_basin_1                                          1.000000                      0.594777                      0.664511
+b_basin_2                                          0.594777                      1.000000                      0.624315
+b_basin_3                                          0.664511                      0.624315                      1.000000
+b_basin_4                                          0.642354                      0.589519                      0.710781
+b_subbasin_1                                       0.382598                      0.336108                      0.438092
+b_subbasin_2                                       0.371364                      0.321049                      0.416078
+b_subbasin_3                                       0.375472                      0.324327                      0.427769
+b_subbasin_4                                       0.375418                      0.323720                      0.427301
+b_subbasin_5                                       0.281030                      0.324472                      0.355630
+b_subbasin_6                                       0.247187                      0.312536                      0.288328
+b_subbasin_7                                       0.263265                      0.307023                      0.335779
+b_subbasin_8                                       0.279915                      0.323168                      0.358199
+b_subbasin_9                                       0.242151                      0.297182                      0.289043
+b_subbasin_10                                      0.124879                      0.203531                      0.100119
+b_subbasin_11                                      0.208966                      0.221086                      0.238340
+b_subbasin_12                                      0.282359                      0.273818                      0.367001
+b_subbasin_13                                      0.303287                      0.281570                      0.397430
+b_subbasin_14                                      0.256265                      0.233841                      0.342800
+b_subbasin_15                                      0.287658                      0.258732                      0.383579
+b_subbasin_16                                      0.318206                      0.314695                      0.395153
+b_subbasin_17                                      0.323793                      0.322445                      0.397353
+                                                  b_basin_4                  b_subbasin_1                  b_subbasin_2
+mu_b_asc                                           -0.40781                     -0.420751                      -0.39871
+sigma_b_asc                                         0.02039                     -0.001282                      -0.01365
+b_cost                                             -0.04005                      0.024116                       0.03758
+mu_b_wq_local_basin                                 0.52601                      0.005765                       0.01078
+sigma_b_wq_local_basin                             -0.15189                      0.016900                       0.01440
+mu_b_wq_nonlocal_basin                              0.41580                      0.041979                       0.04292
+sigma_b_wq_nonlocal_basin                           0.02813                      0.014710                       0.01910
+mu_b_wq_local_sub_basin                            -0.31360                     -0.103278                      -0.08505
+sigma_b_wq_local_sub_basin                          0.06576                      0.032060                       0.01256
+mu_b_wq_nonlocal_sub_basin                         -0.22750                      0.094060                       0.08836
+sigma_b_wq_nonlocal_sub_basin                       0.03553                     -0.096524                      -0.08586
+b_basesq_exp                                        0.12224                      0.162571                       0.14840
+b_basin_1                                           0.64235                      0.382598                       0.37136
+b_basin_2                                           0.58952                      0.336108                       0.32105
+b_basin_3                                           0.71078                      0.438092                       0.41608
+b_basin_4                                           1.00000                      0.353818                       0.33945
+b_subbasin_1                                        0.35382                      1.000000                       0.48720
+b_subbasin_2                                        0.33945                      0.487199                       1.00000
+b_subbasin_3                                        0.34311                      0.493608                       0.48090
+b_subbasin_4                                        0.34170                      0.490537                       0.47775
+b_subbasin_5                                        0.29219                      0.365690                       0.35092
+b_subbasin_6                                        0.26969                      0.368796                       0.35123
+b_subbasin_7                                        0.27351                      0.338724                       0.32378
+b_subbasin_8                                        0.29138                      0.369065                       0.35289
+b_subbasin_9                                        0.25668                      0.345886                       0.32910
+b_subbasin_10                                       0.15481                      0.267492                       0.25914
+b_subbasin_11                                       0.24174                      0.358686                       0.34645
+b_subbasin_12                                       0.30193                      0.379446                       0.36435
+b_subbasin_13                                       0.31554                      0.393078                       0.37371
+b_subbasin_14                                       0.25906                      0.312937                       0.30166
+b_subbasin_15                                       0.28582                      0.340506                       0.32103
+b_subbasin_16                                       0.35275                      0.410388                       0.39475
+b_subbasin_17                                       0.35112                      0.418447                       0.40048
+                                               b_subbasin_3                  b_subbasin_4                  b_subbasin_5
+mu_b_asc                                          -0.417893                      -0.40272                     -0.324658
+sigma_b_asc                                       -0.011914                      -0.02327                     -0.024598
+b_cost                                             0.039136                       0.04990                      0.006374
+mu_b_wq_local_basin                                0.004143                       0.01588                     -0.026331
+sigma_b_wq_local_basin                             0.024456                       0.01210                      0.041485
+mu_b_wq_nonlocal_basin                             0.040967                       0.04697                      0.019665
+sigma_b_wq_nonlocal_basin                          0.012509                       0.02316                      0.035002
+mu_b_wq_local_sub_basin                           -0.085840                      -0.09355                     -0.159405
+sigma_b_wq_local_sub_basin                        -0.001207                       0.01912                      0.065454
+mu_b_wq_nonlocal_sub_basin                         0.093232                       0.09796                      0.087073
+sigma_b_wq_nonlocal_sub_basin                     -0.076392                      -0.09530                     -0.075210
+b_basesq_exp                                       0.164456                       0.14689                      0.092500
+b_basin_1                                          0.375472                       0.37542                      0.281030
+b_basin_2                                          0.324327                       0.32372                      0.324472
+b_basin_3                                          0.427769                       0.42730                      0.355630
+b_basin_4                                          0.343108                       0.34170                      0.292194
+b_subbasin_1                                       0.493608                       0.49054                      0.365690
+b_subbasin_2                                       0.480904                       0.47775                      0.350918
+b_subbasin_3                                       1.000000                       0.48414                      0.358119
+b_subbasin_4                                       0.484138                       1.00000                      0.355161
+b_subbasin_5                                       0.358119                       0.35516                      1.000000
+b_subbasin_6                                       0.358896                       0.35816                      0.413558
+b_subbasin_7                                       0.331084                       0.32783                      0.384421
+b_subbasin_8                                       0.360436                       0.35721                      0.411609
+b_subbasin_9                                       0.335653                       0.33491                      0.402287
+b_subbasin_10                                      0.258610                       0.26404                      0.334088
+b_subbasin_11                                      0.353172                       0.35235                      0.296442
+b_subbasin_12                                      0.374747                       0.37434                      0.311399
+b_subbasin_13                                      0.399204                       0.37775                      0.319205
+b_subbasin_14                                      0.308487                       0.30273                      0.250188
+b_subbasin_15                                      0.330731                       0.32194                      0.264111
+b_subbasin_16                                      0.405054                       0.40188                      0.330140
+b_subbasin_17                                      0.404124                       0.40303                      0.344799
+                                               b_subbasin_6                  b_subbasin_7                  b_subbasin_8
+mu_b_asc                                          -0.151645                      -0.31782                      -0.32956
+sigma_b_asc                                       -0.066557                      -0.02303                      -0.02453
+b_cost                                             0.043190                       0.01989                       0.03370
+mu_b_wq_local_basin                               -0.033622                      -0.01701                      -0.02329
+sigma_b_wq_local_basin                             0.021941                       0.02325                       0.03456
+mu_b_wq_nonlocal_basin                             0.003337                       0.01510                       0.01991
+sigma_b_wq_nonlocal_basin                          0.041818                       0.02829                       0.03294
+mu_b_wq_local_sub_basin                           -0.121046                      -0.15352                      -0.14757
+sigma_b_wq_local_sub_basin                         0.032431                       0.05073                       0.03913
+mu_b_wq_nonlocal_sub_basin                         0.157118                       0.06439                       0.08832
+sigma_b_wq_nonlocal_sub_basin                     -0.097573                      -0.05714                      -0.07009
+b_basesq_exp                                      -0.116789                       0.09927                       0.09276
+b_basin_1                                          0.247187                       0.26326                       0.27992
+b_basin_2                                          0.312536                       0.30702                       0.32317
+b_basin_3                                          0.288328                       0.33578                       0.35820
+b_basin_4                                          0.269695                       0.27351                       0.29138
+b_subbasin_1                                       0.368796                       0.33872                       0.36907
+b_subbasin_2                                       0.351228                       0.32378                       0.35289
+b_subbasin_3                                       0.358896                       0.33108                       0.36044
+b_subbasin_4                                       0.358157                       0.32783                       0.35721
+b_subbasin_5                                       0.413558                       0.38442                       0.41161
+b_subbasin_6                                       1.000000                       0.38643                       0.41364
+b_subbasin_7                                       0.386434                       1.00000                       0.38386
+b_subbasin_8                                       0.413641                       0.38386                       1.00000
+b_subbasin_9                                       0.448990                       0.38063                       0.40248
+b_subbasin_10                                      0.485712                       0.30206                       0.33300
+b_subbasin_11                                      0.392829                       0.27153                       0.30195
+b_subbasin_12                                      0.314976                       0.28805                       0.31739
+b_subbasin_13                                      0.303024                       0.29498                       0.32018
+b_subbasin_14                                      0.219431                       0.24213                       0.25276
+b_subbasin_15                                      0.213112                       0.25475                       0.26168
+b_subbasin_16                                      0.359972                       0.30722                       0.33390
+b_subbasin_17                                      0.376400                       0.31578                       0.34847
+                                               b_subbasin_9                 b_subbasin_10                 b_subbasin_11
+mu_b_asc                                          -0.207408                      0.135229                     -0.062924
+sigma_b_asc                                       -0.056587                     -0.075627                     -0.052878
+b_cost                                             0.061822                      0.027649                      0.052808
+mu_b_wq_local_basin                               -0.025242                     -0.058299                     -0.030887
+sigma_b_wq_local_basin                             0.013359                      0.001686                     -0.002981
+mu_b_wq_nonlocal_basin                             0.003193                     -0.044125                     -0.037524
+sigma_b_wq_nonlocal_basin                          0.029140                      0.026244                      0.018585
+mu_b_wq_local_sub_basin                           -0.125462                     -0.045216                      0.087507
+sigma_b_wq_local_sub_basin                         0.031663                     -0.005211                     -0.093590
+mu_b_wq_nonlocal_sub_basin                         0.117568                      0.201220                      0.131338
+sigma_b_wq_nonlocal_sub_basin                     -0.040068                      0.003643                     -0.038296
+b_basesq_exp                                      -0.037704                     -0.368434                     -0.199679
+b_basin_1                                          0.242151                      0.124879                      0.208966
+b_basin_2                                          0.297182                      0.203531                      0.221086
+b_basin_3                                          0.289043                      0.100119                      0.238340
+b_basin_4                                          0.256678                      0.154811                      0.241737
+b_subbasin_1                                       0.345886                      0.267492                      0.358686
+b_subbasin_2                                       0.329105                      0.259142                      0.346453
+b_subbasin_3                                       0.335653                      0.258610                      0.353172
+b_subbasin_4                                       0.334912                      0.264041                      0.352355
+b_subbasin_5                                       0.402287                      0.334088                      0.296442
+b_subbasin_6                                       0.448990                      0.485712                      0.392829
+b_subbasin_7                                       0.380625                      0.302060                      0.271531
+b_subbasin_8                                       0.402477                      0.333000                      0.301947
+b_subbasin_9                                       1.000000                      0.416481                      0.336079
+b_subbasin_10                                      0.416481                      1.000000                      0.412593
+b_subbasin_11                                      0.336079                      0.412593                      1.000000
+b_subbasin_12                                      0.298444                      0.233566                      0.387159
+b_subbasin_13                                      0.289883                      0.202881                      0.366032
+b_subbasin_14                                      0.214314                      0.107730                      0.229647
+b_subbasin_15                                      0.221629                      0.097097                      0.263111
+b_subbasin_16                                      0.330252                      0.305287                      0.432554
+b_subbasin_17                                      0.340066                      0.313066                      0.430786
+                                              b_subbasin_12                 b_subbasin_13                 b_subbasin_14
+mu_b_asc                                          -0.344145                     -0.401994                     -0.397545
+sigma_b_asc                                       -0.019680                     -0.031611                      0.013325
+b_cost                                             0.037984                      0.042089                      0.021181
+mu_b_wq_local_basin                               -0.008058                      0.002631                      0.005703
+sigma_b_wq_local_basin                             0.028646                      0.019662                      0.002882
+mu_b_wq_nonlocal_basin                             0.009412                      0.010224                      0.020095
+sigma_b_wq_nonlocal_basin                          0.029308                      0.018821                      0.018484
+mu_b_wq_local_sub_basin                           -0.024304                     -0.035993                     -0.071303
+sigma_b_wq_local_sub_basin                        -0.017850                     -0.034009                     -0.004169
+mu_b_wq_nonlocal_sub_basin                         0.063742                      0.040013                      0.025926
+sigma_b_wq_nonlocal_sub_basin                     -0.066793                     -0.073146                     -0.076888
+b_basesq_exp                                       0.111835                      0.168002                      0.227396
+b_basin_1                                          0.282359                      0.303287                      0.256265
+b_basin_2                                          0.273818                      0.281570                      0.233841
+b_basin_3                                          0.367001                      0.397430                      0.342800
+b_basin_4                                          0.301926                      0.315545                      0.259062
+b_subbasin_1                                       0.379446                      0.393078                      0.312937
+b_subbasin_2                                       0.364348                      0.373715                      0.301659
+b_subbasin_3                                       0.374747                      0.399204                      0.308487
+b_subbasin_4                                       0.374338                      0.377751                      0.302730
+b_subbasin_5                                       0.311399                      0.319205                      0.250188
+b_subbasin_6                                       0.314976                      0.303024                      0.219431
+b_subbasin_7                                       0.288047                      0.294980                      0.242133
+b_subbasin_8                                       0.317389                      0.320184                      0.252765
+b_subbasin_9                                       0.298444                      0.289883                      0.214314
+b_subbasin_10                                      0.233566                      0.202881                      0.107730
+b_subbasin_11                                      0.387159                      0.366032                      0.229647
+b_subbasin_12                                      1.000000                      0.408304                      0.309236
+b_subbasin_13                                      0.408304                      1.000000                      0.330326
+b_subbasin_14                                      0.309236                      0.330326                      1.000000
+b_subbasin_15                                      0.308486                      0.327707                      0.274784
+b_subbasin_16                                      0.386430                      0.392106                      0.286654
+b_subbasin_17                                      0.386250                      0.384321                      0.279726
+                                              b_subbasin_15                 b_subbasin_16                 b_subbasin_17
+mu_b_asc                                          -0.442171                     -0.273085                     -0.282793
+sigma_b_asc                                        0.014811                     -0.001858                      0.003273
+b_cost                                             0.001340                     -0.013127                      0.012428
+mu_b_wq_local_basin                                0.027948                      0.013469                   -3.6100e-04
+sigma_b_wq_local_basin                            -0.019826                     -0.018168                      0.003816
+mu_b_wq_nonlocal_basin                             0.037228                      0.002982                      0.001361
+sigma_b_wq_nonlocal_basin                          0.013467                      0.009131                      0.005896
+mu_b_wq_local_sub_basin                           -0.042530                    4.7117e-04                     -0.008414
+sigma_b_wq_local_sub_basin                         0.035934                      0.008133                      0.018454
+mu_b_wq_nonlocal_sub_basin                        -0.013339                     -0.003960                      0.010961
+sigma_b_wq_nonlocal_sub_basin                     -0.013035                     -0.012634                     -0.041150
+b_basesq_exp                                       0.266132                   -6.3878e-04                      0.003432
+b_basin_1                                          0.287658                      0.318206                      0.323793
+b_basin_2                                          0.258732                      0.314695                      0.322445
+b_basin_3                                          0.383579                      0.395153                      0.397353
+b_basin_4                                          0.285823                      0.352752                      0.351123
+b_subbasin_1                                       0.340506                      0.410388                      0.418447
+b_subbasin_2                                       0.321032                      0.394751                      0.400479
+b_subbasin_3                                       0.330731                      0.405054                      0.404124
+b_subbasin_4                                       0.321945                      0.401876                      0.403026
+b_subbasin_5                                       0.264111                      0.330140                      0.344799
+b_subbasin_6                                       0.213112                      0.359972                      0.376400
+b_subbasin_7                                       0.254747                      0.307223                      0.315777
+b_subbasin_8                                       0.261676                      0.333899                      0.348473
+b_subbasin_9                                       0.221629                      0.330252                      0.340066
+b_subbasin_10                                      0.097097                      0.305287                      0.313066
+b_subbasin_11                                      0.263111                      0.432554                      0.430786
+b_subbasin_12                                      0.308486                      0.386430                      0.386250
+b_subbasin_13                                      0.327707                      0.392106                      0.384321
+b_subbasin_14                                      0.274784                      0.286654                      0.279726
+b_subbasin_15                                      1.000000                      0.336070                      0.336156
+b_subbasin_16                                      0.336070                      1.000000                      0.504324
+b_subbasin_17                                      0.336156                      0.504324                      1.000000
+
+Robust correlation matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           1.000000                      0.058035                     -0.144081
+sigma_b_asc                                        0.058035                      1.000000                     -0.429263
+b_cost                                            -0.144081                     -0.429263                      1.000000
+mu_b_wq_local_basin                               -0.058281                     -0.202680                      0.072181
+sigma_b_wq_local_basin                            -0.040812                      0.205035                     -0.076574
+mu_b_wq_nonlocal_basin                            -0.146933                     -0.130822                      0.032892
+sigma_b_wq_nonlocal_basin                         -0.096362                     -0.091929                      0.077773
+mu_b_wq_local_sub_basin                            0.117483                     -0.164680                      0.174089
+sigma_b_wq_local_sub_basin                        -0.056507                      0.196314                     -0.182498
+mu_b_wq_nonlocal_sub_basin                        -0.004747                     -0.074231                      0.100589
+sigma_b_wq_nonlocal_sub_basin                      0.092203                     -0.026498                     -0.092800
+b_basesq_exp                                      -0.791765                      0.072682                     -0.071555
+b_basin_1                                         -0.432405                     -0.038102                     -0.045688
+b_basin_2                                         -0.381677                     -0.044820                      0.009608
+b_basin_3                                         -0.601888                     -0.014174                     -0.043843
+b_basin_4                                         -0.333850                     -0.004825                     -0.039548
+b_subbasin_1                                      -0.444529                     -0.029144                      0.104108
+b_subbasin_2                                      -0.439498                      0.010739                      0.017523
+b_subbasin_3                                      -0.424074                     -0.037735                      0.125464
+b_subbasin_4                                      -0.409443                     -0.021956                      0.090456
+b_subbasin_5                                      -0.309581                     -0.009483                     -0.011400
+b_subbasin_6                                      -0.132011                     -0.023456                      0.033580
+b_subbasin_7                                      -0.287588                     -0.025261                      0.069923
+b_subbasin_8                                      -0.250072                     -0.025747                      0.021505
+b_subbasin_9                                      -0.181554                     -0.013254                      0.018555
+b_subbasin_10                                      0.118336                     -0.082716                      0.082792
+b_subbasin_11                                     -0.061280                     -0.029187                      0.036091
+b_subbasin_12                                     -0.302910                      0.033558                      0.025959
+b_subbasin_13                                     -0.337150                     -0.008818                      0.042130
+b_subbasin_14                                     -0.406804                      0.010125                      0.029337
+b_subbasin_15                                     -0.362830                      0.020063                     -0.005832
+b_subbasin_16                                     -0.195607                      0.024855                     -0.031912
+b_subbasin_17                                     -0.247746                      0.001387                      0.078487
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                          -0.058281                     -0.040812                     -0.146933
+sigma_b_asc                                       -0.202680                      0.205035                     -0.130822
+b_cost                                             0.072181                     -0.076574                      0.032892
+mu_b_wq_local_basin                                1.000000                     -0.665458                      0.659170
+sigma_b_wq_local_basin                            -0.665458                      1.000000                     -0.282678
+mu_b_wq_nonlocal_basin                             0.659170                     -0.282678                      1.000000
+sigma_b_wq_nonlocal_basin                          0.157212                     -0.146229                      0.212562
+mu_b_wq_local_sub_basin                            0.338919                     -0.192031                      0.265662
+sigma_b_wq_local_sub_basin                        -0.227478                      0.346139                     -0.052547
+mu_b_wq_nonlocal_sub_basin                         0.207701                      0.053007                      0.369906
+sigma_b_wq_nonlocal_sub_basin                      0.219632                     -0.400120                      0.008213
+b_basesq_exp                                       0.171501                      0.038354                      0.278218
+b_basin_1                                          0.478412                     -0.247570                      0.489630
+b_basin_2                                          0.267447                     -0.107443                      0.494805
+b_basin_3                                          0.383976                     -0.179909                      0.408443
+b_basin_4                                          0.461607                     -0.128589                      0.441314
+b_subbasin_1                                       0.035628                     -0.009168                      0.048736
+b_subbasin_2                                       0.002423                      0.021150                      0.016105
+b_subbasin_3                                      -0.027134                      0.015213                      0.005132
+b_subbasin_4                                       0.015032                      0.038815                      0.053976
+b_subbasin_5                                      -0.115163                      0.097429                     -0.029390
+b_subbasin_6                                      -0.068060                      0.083173                      0.044890
+b_subbasin_7                                      -0.106396                      0.068065                     -0.063168
+b_subbasin_8                                      -0.073484                      0.058005                      0.023043
+b_subbasin_9                                      -0.115804                      0.086054                     -0.002774
+b_subbasin_10                                     -0.067424                      0.006840                     -0.026107
+b_subbasin_11                                     -0.018754                     -0.018132                     -0.024587
+b_subbasin_12                                     -0.075782                      0.057412                     -0.023902
+b_subbasin_13                                     -0.004807                      0.002329                      0.025270
+b_subbasin_14                                     -0.027205                      0.037517                      0.019224
+b_subbasin_15                                     -0.052046                     -0.018147                     -0.062718
+b_subbasin_16                                     -0.047752                      0.028853                     -0.039408
+b_subbasin_17                                     -0.085777                      0.076371                     -0.025188
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.096362                      0.117483                     -0.056507
+sigma_b_asc                                       -0.091929                     -0.164680                      0.196314
+b_cost                                             0.077773                      0.174089                     -0.182498
+mu_b_wq_local_basin                                0.157212                      0.338919                     -0.227478
+sigma_b_wq_local_basin                            -0.146229                     -0.192031                      0.346139
+mu_b_wq_nonlocal_basin                             0.212562                      0.265662                     -0.052547
+sigma_b_wq_nonlocal_basin                          1.000000                      0.038131                      0.150783
+mu_b_wq_local_sub_basin                            0.038131                      1.000000                     -0.456935
+sigma_b_wq_local_sub_basin                         0.150783                     -0.456935                      1.000000
+mu_b_wq_nonlocal_sub_basin                         0.204665                      0.699491                     -0.049935
+sigma_b_wq_nonlocal_sub_basin                     -0.405941                      0.037969                     -0.295018
+b_basesq_exp                                       0.028024                      0.199927                      0.047225
+b_basin_1                                          0.078121                     -0.151543                     -0.042803
+b_basin_2                                          0.079520                     -0.268725                      0.051581
+b_basin_3                                          0.150203                     -0.229662                      0.021361
+b_basin_4                                         -0.016782                     -0.235879                   -8.9577e-04
+b_subbasin_1                                       0.086079                     -0.035933                      0.025904
+b_subbasin_2                                       0.038271                     -0.018713                     -0.038503
+b_subbasin_3                                       0.031020                     -0.003895                     -0.024330
+b_subbasin_4                                       0.067885                     -0.030960                      0.068505
+b_subbasin_5                                       0.072089                     -0.192586                      0.105770
+b_subbasin_6                                       0.102566                     -0.122157                      0.084842
+b_subbasin_7                                       0.106095                     -0.155407                      0.088652
+b_subbasin_8                                       0.061738                     -0.075789                      0.032327
+b_subbasin_9                                       0.078399                     -0.116221                      0.050962
+b_subbasin_10                                      0.112643                     -0.013625                      0.005306
+b_subbasin_11                                      0.064979                      0.184905                     -0.153803
+b_subbasin_12                                      0.029142                      0.003464                     -0.072226
+b_subbasin_13                                      0.074012                      0.030094                     -0.089860
+b_subbasin_14                                     -0.005820                     -0.042316                     -0.016697
+b_subbasin_15                                      0.031198                     -0.037306                      0.006193
+b_subbasin_16                                      0.061945                     -0.037459                      0.100593
+b_subbasin_17                                     -0.003578                     -0.026323                      0.018248
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_exp
+mu_b_asc                                          -0.004747                      0.092203                      -0.79177
+sigma_b_asc                                       -0.074231                     -0.026498                       0.07268
+b_cost                                             0.100589                     -0.092800                      -0.07155
+mu_b_wq_local_basin                                0.207701                      0.219632                       0.17150
+sigma_b_wq_local_basin                             0.053007                     -0.400120                       0.03835
+mu_b_wq_nonlocal_basin                             0.369906                      0.008213                       0.27822
+sigma_b_wq_nonlocal_basin                          0.204665                     -0.405941                       0.02802
+mu_b_wq_local_sub_basin                            0.699491                      0.037969                       0.19993
+sigma_b_wq_local_sub_basin                        -0.049935                     -0.295018                       0.04722
+mu_b_wq_nonlocal_sub_basin                         1.000000                     -0.280751                       0.32641
+sigma_b_wq_nonlocal_sub_basin                     -0.280751                      1.000000                      -0.06639
+b_basesq_exp                                       0.326409                     -0.066393                       1.00000
+b_basin_1                                         -0.132653                      0.080249                       0.21416
+b_basin_2                                         -0.149957                      0.045973                       0.11256
+b_basin_3                                         -0.159497                      0.008834                       0.32513
+b_basin_4                                         -0.197724                      0.083640                       0.09787
+b_subbasin_1                                       0.030478                     -0.090841                       0.15785
+b_subbasin_2                                       0.031216                     -0.075955                       0.18738
+b_subbasin_3                                       0.016769                     -0.046324                       0.15775
+b_subbasin_4                                       0.048528                     -0.102853                       0.15665
+b_subbasin_5                                       0.019124                     -0.137788                       0.06467
+b_subbasin_6                                       0.091044                     -0.077179                      -0.12779
+b_subbasin_7                                       0.016166                     -0.156939                       0.04271
+b_subbasin_8                                       0.114388                     -0.081501                       0.03690
+b_subbasin_9                                       0.051951                     -0.092134                      -0.08008
+b_subbasin_10                                      0.119257                      0.019202                      -0.35444
+b_subbasin_11                                      0.082718                      0.034820                      -0.16801
+b_subbasin_12                                      0.010525                     -0.043411                       0.06794
+b_subbasin_13                                      0.044593                     -0.085198                       0.11302
+b_subbasin_14                                      0.020326                     -0.058550                       0.23121
+b_subbasin_15                                     -0.059610                     -0.025563                       0.16533
+b_subbasin_16                                      0.016122                     -0.079521                      -0.05537
+b_subbasin_17                                     -0.025157                     -0.027627                      -0.03288
+                                                  b_basin_1                     b_basin_2                     b_basin_3
+mu_b_asc                                           -0.43241                     -0.381677                     -0.601888
+sigma_b_asc                                        -0.03810                     -0.044820                     -0.014174
+b_cost                                             -0.04569                      0.009608                     -0.043843
+mu_b_wq_local_basin                                 0.47841                      0.267447                      0.383976
+sigma_b_wq_local_basin                             -0.24757                     -0.107443                     -0.179909
+mu_b_wq_nonlocal_basin                              0.48963                      0.494805                      0.408443
+sigma_b_wq_nonlocal_basin                           0.07812                      0.079520                      0.150203
+mu_b_wq_local_sub_basin                            -0.15154                     -0.268725                     -0.229662
+sigma_b_wq_local_sub_basin                         -0.04280                      0.051581                      0.021361
+mu_b_wq_nonlocal_sub_basin                         -0.13265                     -0.149957                     -0.159497
+sigma_b_wq_nonlocal_sub_basin                       0.08025                      0.045973                      0.008834
+b_basesq_exp                                        0.21416                      0.112558                      0.325131
+b_basin_1                                           1.00000                      0.601074                      0.688427
+b_basin_2                                           0.60107                      1.000000                      0.628584
+b_basin_3                                           0.68843                      0.628584                      1.000000
+b_basin_4                                           0.65855                      0.596032                      0.675717
+b_subbasin_1                                        0.37420                      0.338089                      0.449137
+b_subbasin_2                                        0.42238                      0.315537                      0.408398
+b_subbasin_3                                        0.32985                      0.285478                      0.370480
+b_subbasin_4                                        0.37457                      0.308511                      0.400835
+b_subbasin_5                                        0.24034                      0.365672                      0.329116
+b_subbasin_6                                        0.22914                      0.388687                      0.271465
+b_subbasin_7                                        0.19919                      0.338088                      0.277191
+b_subbasin_8                                        0.22138                      0.311509                      0.290496
+b_subbasin_9                                        0.22538                      0.296876                      0.286173
+b_subbasin_10                                       0.09699                      0.285075                      0.110644
+b_subbasin_11                                       0.18143                      0.198284                      0.259319
+b_subbasin_12                                       0.21291                      0.253567                      0.309243
+b_subbasin_13                                       0.26642                      0.283226                      0.319997
+b_subbasin_14                                       0.25685                      0.251358                      0.338326
+b_subbasin_15                                       0.25994                      0.206088                      0.285834
+b_subbasin_16                                       0.24290                      0.245869                      0.279791
+b_subbasin_17                                       0.25723                      0.279659                      0.302928
+                                                  b_basin_4                  b_subbasin_1                  b_subbasin_2
+mu_b_asc                                          -0.333850                     -0.444529                     -0.439498
+sigma_b_asc                                       -0.004825                     -0.029144                      0.010739
+b_cost                                            -0.039548                      0.104108                      0.017523
+mu_b_wq_local_basin                                0.461607                      0.035628                      0.002423
+sigma_b_wq_local_basin                            -0.128589                     -0.009168                      0.021150
+mu_b_wq_nonlocal_basin                             0.441314                      0.048736                      0.016105
+sigma_b_wq_nonlocal_basin                         -0.016782                      0.086079                      0.038271
+mu_b_wq_local_sub_basin                           -0.235879                     -0.035933                     -0.018713
+sigma_b_wq_local_sub_basin                      -8.9577e-04                      0.025904                     -0.038503
+mu_b_wq_nonlocal_sub_basin                        -0.197724                      0.030478                      0.031216
+sigma_b_wq_nonlocal_sub_basin                      0.083640                     -0.090841                     -0.075955
+b_basesq_exp                                       0.097872                      0.157851                      0.187376
+b_basin_1                                          0.658549                      0.374201                      0.422377
+b_basin_2                                          0.596032                      0.338089                      0.315537
+b_basin_3                                          0.675717                      0.449137                      0.408398
+b_basin_4                                          1.000000                      0.308263                      0.281574
+b_subbasin_1                                       0.308263                      1.000000                      0.568139
+b_subbasin_2                                       0.281574                      0.568139                      1.000000
+b_subbasin_3                                       0.251331                      0.550774                      0.514107
+b_subbasin_4                                       0.283151                      0.558609                      0.430611
+b_subbasin_5                                       0.194856                      0.370896                      0.351096
+b_subbasin_6                                       0.216048                      0.361675                      0.333419
+b_subbasin_7                                       0.191428                      0.333650                      0.326377
+b_subbasin_8                                       0.188433                      0.350358                      0.340648
+b_subbasin_9                                       0.178166                      0.373867                      0.358596
+b_subbasin_10                                      0.106479                      0.259822                      0.229690
+b_subbasin_11                                      0.151507                      0.349219                      0.361422
+b_subbasin_12                                      0.204218                      0.405478                      0.378408
+b_subbasin_13                                      0.249632                      0.391137                      0.386767
+b_subbasin_14                                      0.243099                      0.351218                      0.364707
+b_subbasin_15                                      0.209081                      0.363912                      0.396020
+b_subbasin_16                                      0.247130                      0.424271                      0.420199
+b_subbasin_17                                      0.266677                      0.417408                      0.331766
+                                               b_subbasin_3                  b_subbasin_4                  b_subbasin_5
+mu_b_asc                                          -0.424074                      -0.40944                     -0.309581
+sigma_b_asc                                       -0.037735                      -0.02196                     -0.009483
+b_cost                                             0.125464                       0.09046                     -0.011400
+mu_b_wq_local_basin                               -0.027134                       0.01503                     -0.115163
+sigma_b_wq_local_basin                             0.015213                       0.03881                      0.097429
+mu_b_wq_nonlocal_basin                             0.005132                       0.05398                     -0.029390
+sigma_b_wq_nonlocal_basin                          0.031020                       0.06788                      0.072089
+mu_b_wq_local_sub_basin                           -0.003895                      -0.03096                     -0.192586
+sigma_b_wq_local_sub_basin                        -0.024330                       0.06851                      0.105770
+mu_b_wq_nonlocal_sub_basin                         0.016769                       0.04853                      0.019124
+sigma_b_wq_nonlocal_sub_basin                     -0.046324                      -0.10285                     -0.137788
+b_basesq_exp                                       0.157749                       0.15665                      0.064674
+b_basin_1                                          0.329849                       0.37457                      0.240341
+b_basin_2                                          0.285478                       0.30851                      0.365672
+b_basin_3                                          0.370480                       0.40083                      0.329116
+b_basin_4                                          0.251331                       0.28315                      0.194856
+b_subbasin_1                                       0.550774                       0.55861                      0.370896
+b_subbasin_2                                       0.514107                       0.43061                      0.351096
+b_subbasin_3                                       1.000000                       0.47154                      0.338238
+b_subbasin_4                                       0.471537                       1.00000                      0.340310
+b_subbasin_5                                       0.338238                       0.34031                      1.000000
+b_subbasin_6                                       0.318956                       0.32693                      0.493597
+b_subbasin_7                                       0.305452                       0.30180                      0.458536
+b_subbasin_8                                       0.329043                       0.32305                      0.477444
+b_subbasin_9                                       0.336906                       0.32898                      0.460064
+b_subbasin_10                                      0.230547                       0.23176                      0.358440
+b_subbasin_11                                      0.341868                       0.31621                      0.262816
+b_subbasin_12                                      0.379704                       0.34614                      0.308078
+b_subbasin_13                                      0.359104                       0.37211                      0.308799
+b_subbasin_14                                      0.281513                       0.30517                      0.238652
+b_subbasin_15                                      0.302766                       0.30550                      0.275676
+b_subbasin_16                                      0.370340                       0.35297                      0.366389
+b_subbasin_17                                      0.365833                       0.37682                      0.284247
+                                               b_subbasin_6                  b_subbasin_7                  b_subbasin_8
+mu_b_asc                                           -0.13201                      -0.28759                      -0.25007
+sigma_b_asc                                        -0.02346                      -0.02526                      -0.02575
+b_cost                                              0.03358                       0.06992                       0.02150
+mu_b_wq_local_basin                                -0.06806                      -0.10640                      -0.07348
+sigma_b_wq_local_basin                              0.08317                       0.06807                       0.05801
+mu_b_wq_nonlocal_basin                              0.04489                      -0.06317                       0.02304
+sigma_b_wq_nonlocal_basin                           0.10257                       0.10610                       0.06174
+mu_b_wq_local_sub_basin                            -0.12216                      -0.15541                      -0.07579
+sigma_b_wq_local_sub_basin                          0.08484                       0.08865                       0.03233
+mu_b_wq_nonlocal_sub_basin                          0.09104                       0.01617                       0.11439
+sigma_b_wq_nonlocal_sub_basin                      -0.07718                      -0.15694                      -0.08150
+b_basesq_exp                                       -0.12779                       0.04271                       0.03690
+b_basin_1                                           0.22914                       0.19919                       0.22138
+b_basin_2                                           0.38869                       0.33809                       0.31151
+b_basin_3                                           0.27147                       0.27719                       0.29050
+b_basin_4                                           0.21605                       0.19143                       0.18843
+b_subbasin_1                                        0.36167                       0.33365                       0.35036
+b_subbasin_2                                        0.33342                       0.32638                       0.34065
+b_subbasin_3                                        0.31896                       0.30545                       0.32904
+b_subbasin_4                                        0.32693                       0.30180                       0.32305
+b_subbasin_5                                        0.49360                       0.45854                       0.47744
+b_subbasin_6                                        1.00000                       0.37674                       0.48094
+b_subbasin_7                                        0.37674                       1.00000                       0.38212
+b_subbasin_8                                        0.48094                       0.38212                       1.00000
+b_subbasin_9                                        0.57734                       0.35786                       0.36240
+b_subbasin_10                                       0.52647                       0.36989                       0.36633
+b_subbasin_11                                       0.36144                       0.25607                       0.33839
+b_subbasin_12                                       0.27831                       0.28206                       0.26614
+b_subbasin_13                                       0.26787                       0.27836                       0.29061
+b_subbasin_14                                       0.24394                       0.26927                       0.19389
+b_subbasin_15                                       0.20834                       0.26454                       0.21640
+b_subbasin_16                                       0.39693                       0.30588                       0.39206
+b_subbasin_17                                       0.34738                       0.27891                       0.32894
+                                               b_subbasin_9                 b_subbasin_10                 b_subbasin_11
+mu_b_asc                                          -0.181554                      0.118336                      -0.06128
+sigma_b_asc                                       -0.013254                     -0.082716                      -0.02919
+b_cost                                             0.018555                      0.082792                       0.03609
+mu_b_wq_local_basin                               -0.115804                     -0.067424                      -0.01875
+sigma_b_wq_local_basin                             0.086054                      0.006840                      -0.01813
+mu_b_wq_nonlocal_basin                            -0.002774                     -0.026107                      -0.02459
+sigma_b_wq_nonlocal_basin                          0.078399                      0.112643                       0.06498
+mu_b_wq_local_sub_basin                           -0.116221                     -0.013625                       0.18491
+sigma_b_wq_local_sub_basin                         0.050962                      0.005306                      -0.15380
+mu_b_wq_nonlocal_sub_basin                         0.051951                      0.119257                       0.08272
+sigma_b_wq_nonlocal_sub_basin                     -0.092134                      0.019202                       0.03482
+b_basesq_exp                                      -0.080083                     -0.354437                      -0.16801
+b_basin_1                                          0.225377                      0.096986                       0.18143
+b_basin_2                                          0.296876                      0.285075                       0.19828
+b_basin_3                                          0.286173                      0.110644                       0.25932
+b_basin_4                                          0.178166                      0.106479                       0.15151
+b_subbasin_1                                       0.373867                      0.259822                       0.34922
+b_subbasin_2                                       0.358596                      0.229690                       0.36142
+b_subbasin_3                                       0.336906                      0.230547                       0.34187
+b_subbasin_4                                       0.328977                      0.231759                       0.31621
+b_subbasin_5                                       0.460064                      0.358440                       0.26282
+b_subbasin_6                                       0.577343                      0.526473                       0.36144
+b_subbasin_7                                       0.357859                      0.369888                       0.25607
+b_subbasin_8                                       0.362403                      0.366329                       0.33839
+b_subbasin_9                                       1.000000                      0.501749                       0.32399
+b_subbasin_10                                      0.501749                      1.000000                       0.37510
+b_subbasin_11                                      0.323987                      0.375098                       1.00000
+b_subbasin_12                                      0.329374                      0.239251                       0.32712
+b_subbasin_13                                      0.273195                      0.229512                       0.33251
+b_subbasin_14                                      0.239822                      0.145173                       0.26482
+b_subbasin_15                                      0.227810                      0.151902                       0.25373
+b_subbasin_16                                      0.400683                      0.301112                       0.38665
+b_subbasin_17                                      0.349598                      0.322531                       0.39903
+                                              b_subbasin_12                 b_subbasin_13                 b_subbasin_14
+mu_b_asc                                          -0.302910                     -0.337150                     -0.406804
+sigma_b_asc                                        0.033558                     -0.008818                      0.010125
+b_cost                                             0.025959                      0.042130                      0.029337
+mu_b_wq_local_basin                               -0.075782                     -0.004807                     -0.027205
+sigma_b_wq_local_basin                             0.057412                      0.002329                      0.037517
+mu_b_wq_nonlocal_basin                            -0.023902                      0.025270                      0.019224
+sigma_b_wq_nonlocal_basin                          0.029142                      0.074012                     -0.005820
+mu_b_wq_local_sub_basin                            0.003464                      0.030094                     -0.042316
+sigma_b_wq_local_sub_basin                        -0.072226                     -0.089860                     -0.016697
+mu_b_wq_nonlocal_sub_basin                         0.010525                      0.044593                      0.020326
+sigma_b_wq_nonlocal_sub_basin                     -0.043411                     -0.085198                     -0.058550
+b_basesq_exp                                       0.067941                      0.113018                      0.231207
+b_basin_1                                          0.212912                      0.266415                      0.256847
+b_basin_2                                          0.253567                      0.283226                      0.251358
+b_basin_3                                          0.309243                      0.319997                      0.338326
+b_basin_4                                          0.204218                      0.249632                      0.243099
+b_subbasin_1                                       0.405478                      0.391137                      0.351218
+b_subbasin_2                                       0.378408                      0.386767                      0.364707
+b_subbasin_3                                       0.379704                      0.359104                      0.281513
+b_subbasin_4                                       0.346140                      0.372112                      0.305175
+b_subbasin_5                                       0.308078                      0.308799                      0.238652
+b_subbasin_6                                       0.278311                      0.267874                      0.243938
+b_subbasin_7                                       0.282063                      0.278359                      0.269265
+b_subbasin_8                                       0.266143                      0.290610                      0.193890
+b_subbasin_9                                       0.329374                      0.273195                      0.239822
+b_subbasin_10                                      0.239251                      0.229512                      0.145173
+b_subbasin_11                                      0.327122                      0.332509                      0.264825
+b_subbasin_12                                      1.000000                      0.431121                      0.273719
+b_subbasin_13                                      0.431121                      1.000000                      0.320687
+b_subbasin_14                                      0.273719                      0.320687                      1.000000
+b_subbasin_15                                      0.256530                      0.370699                      0.263909
+b_subbasin_16                                      0.319116                      0.349721                      0.253309
+b_subbasin_17                                      0.345950                      0.311993                      0.265734
+                                              b_subbasin_15                 b_subbasin_16                 b_subbasin_17
+mu_b_asc                                          -0.362830                      -0.19561                     -0.247746
+sigma_b_asc                                        0.020063                       0.02486                      0.001387
+b_cost                                            -0.005832                      -0.03191                      0.078487
+mu_b_wq_local_basin                               -0.052046                      -0.04775                     -0.085777
+sigma_b_wq_local_basin                            -0.018147                       0.02885                      0.076371
+mu_b_wq_nonlocal_basin                            -0.062718                      -0.03941                     -0.025188
+sigma_b_wq_nonlocal_basin                          0.031198                       0.06195                     -0.003578
+mu_b_wq_local_sub_basin                           -0.037306                      -0.03746                     -0.026323
+sigma_b_wq_local_sub_basin                         0.006193                       0.10059                      0.018248
+mu_b_wq_nonlocal_sub_basin                        -0.059610                       0.01612                     -0.025157
+sigma_b_wq_nonlocal_sub_basin                     -0.025563                      -0.07952                     -0.027627
+b_basesq_exp                                       0.165327                      -0.05537                     -0.032884
+b_basin_1                                          0.259944                       0.24290                      0.257233
+b_basin_2                                          0.206088                       0.24587                      0.279659
+b_basin_3                                          0.285834                       0.27979                      0.302928
+b_basin_4                                          0.209081                       0.24713                      0.266677
+b_subbasin_1                                       0.363912                       0.42427                      0.417408
+b_subbasin_2                                       0.396020                       0.42020                      0.331766
+b_subbasin_3                                       0.302766                       0.37034                      0.365833
+b_subbasin_4                                       0.305504                       0.35297                      0.376820
+b_subbasin_5                                       0.275676                       0.36639                      0.284247
+b_subbasin_6                                       0.208337                       0.39693                      0.347384
+b_subbasin_7                                       0.264543                       0.30588                      0.278907
+b_subbasin_8                                       0.216396                       0.39206                      0.328941
+b_subbasin_9                                       0.227810                       0.40068                      0.349598
+b_subbasin_10                                      0.151902                       0.30111                      0.322531
+b_subbasin_11                                      0.253735                       0.38665                      0.399029
+b_subbasin_12                                      0.256530                       0.31912                      0.345950
+b_subbasin_13                                      0.370699                       0.34972                      0.311993
+b_subbasin_14                                      0.263909                       0.25331                      0.265734
+b_subbasin_15                                      1.000000                       0.28485                      0.294566
+b_subbasin_16                                      0.284848                       1.00000                      0.476746
+b_subbasin_17                                      0.294566                       0.47675                      1.000000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+ 100898         0.001707455
+  54738         0.002067455
+  62677         0.003019151
+ 101428         0.003656985
+  50205         0.004016891
+  50869         0.004576070
+  61993         0.004743610
+ 101088         0.005123208
+ 101206         0.005619230
+  52984         0.006009645
+ 100789         0.006859105
+ 104216         0.007157421
+ 100916         0.007348997
+  51698         0.007593149
+ 104228         0.008573532
+ 100435         0.008583986
+  65507         0.008901447
+  63654         0.009037377
+ 104089         0.009062932
+ 103396         0.009110928
+
+Changes in parameter estimates from starting values:
+                                  Initial    Estimate  Difference
+mu_b_asc                         1.567000    0.722094   -0.844906
+sigma_b_asc                      2.298000    2.420152    0.122152
+b_cost                          -0.005000   -0.004867  1.3296e-04
+mu_b_wq_local_basin             -0.974000   -0.432057    0.541943
+sigma_b_wq_local_basin           0.703000    0.479914   -0.223086
+mu_b_wq_nonlocal_basin          -0.642000   -0.244298    0.397702
+sigma_b_wq_nonlocal_basin        0.127000   -0.153860   -0.280860
+mu_b_wq_local_sub_basin         -0.633000   -0.600381    0.032619
+sigma_b_wq_local_sub_basin       0.013000    0.504569    0.491569
+mu_b_wq_nonlocal_sub_basin      -0.435000   -0.424763    0.010237
+sigma_b_wq_nonlocal_sub_basin    0.284000    0.401421    0.117421
+b_basesq_exp                     0.000000    0.353803    0.353803
+b_basin_1                        0.000000    0.328758    0.328758
+b_basin_2                        0.000000    0.658391    0.658391
+b_basin_3                        0.000000    0.366140    0.366140
+b_basin_4                        0.000000    0.773064    0.773064
+b_subbasin_1                     0.000000   -0.291861   -0.291861
+b_subbasin_2                     0.000000   -0.455293   -0.455293
+b_subbasin_3                     0.000000   -0.395883   -0.395883
+b_subbasin_4                     0.000000   -0.581599   -0.581599
+b_subbasin_5                     0.000000   -0.524975   -0.524975
+b_subbasin_6                     0.000000   -0.891304   -0.891304
+b_subbasin_7                     0.000000   -0.753805   -0.753805
+b_subbasin_8                     0.000000   -0.487074   -0.487074
+b_subbasin_9                     0.000000   -1.059089   -1.059089
+b_subbasin_10                    0.000000   -0.759129   -0.759129
+b_subbasin_11                    0.000000   -0.503545   -0.503545
+b_subbasin_12                    0.000000   -0.466035   -0.466035
+b_subbasin_13                    0.000000   -0.411525   -0.411525
+b_subbasin_14                    0.000000   -0.303216   -0.303216
+b_subbasin_15                    0.000000    0.290239    0.290239
+b_subbasin_16                    0.000000    0.004112    0.004112
+b_subbasin_17                    0.000000   -0.041261   -0.041261
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value         
+modelName              "Model 4.4"   
+modelDescr             "Mixed-MNL"   
+indivID                "CaseId"      
+nCores                 "4"           
+outputDirectory        "Finaloutput/"
+weights                "WEIGHT"      
+mixing                 "TRUE"        
+debug                  "FALSE"       
+workInLogs             "FALSE"       
+seed                   "13"          
+HB                     "FALSE"       
+noValidation           "FALSE"       
+noDiagnostics          "FALSE"       
+calculateLLC           "TRUE"        
+analyticHessian        "FALSE"       
+memorySaver            "FALSE"       
+panelData              "TRUE"        
+analyticGrad           "TRUE"        
+analyticGrad_manualSet "FALSE"       
+overridePanel          "FALSE"       
+preventOverridePanel   "FALSE"       
+noModification         "FALSE"       
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+Scaling used in computing Hessian
+---------------------------------
+                                    Value
+mu_b_asc                      0.722094383
+sigma_b_asc                   2.420152494
+b_cost                        0.004867036
+mu_b_wq_local_basin           0.432057233
+sigma_b_wq_local_basin        0.479913640
+mu_b_wq_nonlocal_basin        0.244297630
+sigma_b_wq_nonlocal_basin     0.153860040
+mu_b_wq_local_sub_basin       0.600380558
+sigma_b_wq_local_sub_basin    0.504568626
+mu_b_wq_nonlocal_sub_basin    0.424763223
+sigma_b_wq_nonlocal_sub_basin 0.401420829
+b_basesq_exp                  0.353803467
+b_basin_1                     0.328757840
+b_basin_2                     0.658391385
+b_basin_3                     0.366139629
+b_basin_4                     0.773063945
+b_subbasin_1                  0.291860606
+b_subbasin_2                  0.455292691
+b_subbasin_3                  0.395883042
+b_subbasin_4                  0.581598942
+b_subbasin_5                  0.524975282
+b_subbasin_6                  0.891303824
+b_subbasin_7                  0.753805292
+b_subbasin_8                  0.487073943
+b_subbasin_9                  1.059088785
+b_subbasin_10                 0.759129001
+b_subbasin_11                 0.503545220
+b_subbasin_12                 0.466034866
+b_subbasin_13                 0.411524739
+b_subbasin_14                 0.303216121
+b_subbasin_15                 0.290238686
+b_subbasin_16                 0.004111731
+b_subbasin_17                 0.041261168
+
+
+apollo_randCoeff
+------------------
+function(apollo_beta, apollo_inputs){
+  randcoeff = list()
+  randcoeff[["b_asc"]] = mu_b_asc + sigma_b_asc*draws_asc 
+  
+  randcoeff[["b_wq_local_basin"]] =  mu_b_wq_local_basin + sigma_b_wq_local_basin*draws_wq_local_basin
+  randcoeff[["b_wq_nonlocal_basin"]] =  mu_b_wq_nonlocal_basin + sigma_b_wq_nonlocal_basin*draws_wq_nonlocal_basin
+  
+  randcoeff[["b_wq_local_sub_basin"]] =  mu_b_wq_local_sub_basin + sigma_b_wq_local_sub_basin*draws_wq_local_sub_basin
+  randcoeff[["b_wq_nonlocal_sub_basin"]] =  mu_b_wq_nonlocal_sub_basin + sigma_b_wq_nonlocal_sub_basin*draws_wq_nonlocal_sub_basin
+  
+  #randcoeff[["b_basesq_obs"]] =  mu_b_basesq_obs + sigma_b_basesq_obs*draws_basesq_obs
+  #randcoeff[["b_basesq_exp"]] =  mu_b_basesq_exp + sigma_b_basesq_exp*draws_basesq_exp
+  
+  
+  
+  
+  return(randcoeff)
+}
+<bytecode: 0x3b76e6120>
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality = "estimate") {
+  
+  # Attach inputs
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  # Create list of probabilities
+  P = list()
+  
+  # Define utilities
+  V = list()
+  V[["policy"]]  = b_asc + b_cost *COST + 
+    b_wq_local_basin*WQ_BASIN_LOCAL_POLICY_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_POLICY_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_POLICY_SUBONLY_N +
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_POLICY_SUBONLY_N +
+    
+#   b_basesq_obs*WQ_CURRENT_CHOICE *(CHOICE_AREA == "BASIN")  +
+    
+    b_basesq_exp*WQ_CURRENT_CHOICE +# *(CHOICE_AREA == "BASIN") +
+    
+    
+    b_basin_1 * (CHOICE_AREA == "BASIN" & CHOICE_BASIN == 1) +
+    b_basin_2 * (CHOICE_AREA == "BASIN" & CHOICE_BASIN == 2) +
+    b_basin_3 * (CHOICE_AREA == "BASIN" & CHOICE_BASIN == 3) +
+    b_basin_4 * (CHOICE_AREA == "BASIN" & CHOICE_BASIN == 4) +
+    b_subbasin_1 * (CHOICE_SUB_BASIN == 1) +
+    b_subbasin_2 * (CHOICE_SUB_BASIN == 2) +
+    b_subbasin_3 * (CHOICE_SUB_BASIN == 3) +
+    b_subbasin_4 * (CHOICE_SUB_BASIN == 4) +
+    b_subbasin_5 * (CHOICE_SUB_BASIN == 5) +
+    b_subbasin_6 * (CHOICE_SUB_BASIN == 6) +
+    b_subbasin_7 * (CHOICE_SUB_BASIN == 7) +
+    b_subbasin_8 * (CHOICE_SUB_BASIN == 8) +
+    b_subbasin_9 * (CHOICE_SUB_BASIN == 9) +
+    b_subbasin_10 * (CHOICE_SUB_BASIN == 10) +
+    b_subbasin_11 * (CHOICE_SUB_BASIN == 11) +
+    b_subbasin_12 * (CHOICE_SUB_BASIN == 12) +
+    b_subbasin_13 * (CHOICE_SUB_BASIN == 13) +
+    b_subbasin_14 * (CHOICE_SUB_BASIN == 14) +
+    b_subbasin_15 * (CHOICE_SUB_BASIN == 15) +
+    b_subbasin_16 * (CHOICE_SUB_BASIN == 16) +
+    b_subbasin_17 * (CHOICE_SUB_BASIN == 17) #+
+ #   b_subbasin_18 * (CHOICE_SUB_BASIN == 18)
+    
+  
+  V[["opt_out"]] = 
+    b_wq_local_basin*WQ_BASIN_LOCAL_CURRENT_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_CURRENT_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_CURRENT_SUBONLY_N+
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_CURRENT_SUBONLY_N 
+  
+  
+  
+  
+  
+  
+  # Define MNL settings
+  mnl_settings = list(
+    alternatives  = c(policy = 1, opt_out = 0),  # Match to VOTE column coding
+    avail         = 1,  # Both alternatives are always available
+    choiceVar     = VOTE,  # Choice variable in the dataset
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Average across inter-individual draws
+  P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+  
+  ### Apply weights here (note the functionality argument)
+  P = apollo_weighting(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}

@@ -1,0 +1,243 @@
+Model run by tharakajayalath using Apollo 0.3.4 on R 4.3.2 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : Model 1
+Model description                           : Simple MNL model on mode choice SP data
+Model run at                                : 2026-09-07 22:14:37.86465
+Estimation method                           : bgw
+Model diagnosis                             : Relative function convergence
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -423.475844
+     reciprocal of condition number         : 5.65814e-07
+Number of individuals                       : 3825
+Number of rows in database                  : 26848
+Number of modelled outcomes                 : 26848
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -18609.62
+LL at equal shares, LL(0)                   : -18609.62
+LL at observed shares, LL(C)                : -17314.96
+LL(final)                                   : -16268.87
+Rho-squared vs equal shares                  :  0.1258 
+Adj.Rho-squared vs equal shares              :  0.1255 
+Rho-squared vs observed shares               :  0.0604 
+Adj.Rho-squared vs observed shares           :  0.0601 
+AIC                                         :  32549.73 
+BIC                                         :  32598.92 
+
+Estimated parameters                        : 6
+Time taken (hh:mm:ss)                       :  00:00:2.31 
+     pre-estimation                         :  00:00:0.86 
+     estimation                             :  00:00:0.26 
+     post-estimation                        :  00:00:1.19 
+Iterations                                  :  7  
+
+Unconstrained optimisation.
+
+Estimates:
+                           Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+b_asc                      0.931186     0.03379       27.56     0.04746        19.620
+b_cost                    -0.002507   5.999e-05      -41.79   7.581e-05       -33.069
+b_wq_local_basin          -0.396186     0.03220      -12.30     0.03903       -10.150
+b_wq_nonlocal_basin       -0.361467     0.03269      -11.06     0.03672        -9.845
+b_wq_local_sub_basin      -0.280085     0.01987      -14.09     0.02654       -10.552
+b_wq_nonlocal_sub_basin   -0.180050     0.01719      -10.47     0.02360        -7.629
+
+
+Overview of choices for MNL model component :
+                                  policy opt_out
+Times available                  26848.0 26848.0
+Times chosen                     17559.0  9289.0
+Percentage chosen overall           65.4    34.6
+Percentage chosen when available    65.4    34.6
+
+
+
+Classical covariance matrix:
+                                          b_asc                  b_cost        b_wq_local_basin
+b_asc                                  0.001142              -9.512e-07              5.2085e-04
+b_cost                               -9.512e-07               3.599e-09               9.665e-08
+b_wq_local_basin                     5.2085e-04               9.665e-08                0.001037
+b_wq_nonlocal_basin                  5.2903e-04               7.258e-08              3.3841e-04
+b_wq_local_sub_basin                 4.4003e-04               5.922e-08              2.8126e-04
+b_wq_nonlocal_sub_basin              3.8968e-04               4.441e-08              2.4756e-04
+                            b_wq_nonlocal_basin    b_wq_local_sub_basin b_wq_nonlocal_sub_basin
+b_asc                                5.2903e-04              4.4003e-04              3.8968e-04
+b_cost                                7.258e-08               5.922e-08               4.441e-08
+b_wq_local_basin                     3.3841e-04              2.8126e-04              2.4756e-04
+b_wq_nonlocal_basin                    0.001068              2.8180e-04              2.4809e-04
+b_wq_local_sub_basin                 2.8180e-04              3.9495e-04              2.0620e-04
+b_wq_nonlocal_sub_basin              2.4809e-04              2.0620e-04              2.9549e-04
+
+Robust covariance matrix:
+                                          b_asc                  b_cost        b_wq_local_basin
+b_asc                                  0.002253              -1.376e-06              9.5132e-04
+b_cost                               -1.376e-06               5.748e-09               3.168e-07
+b_wq_local_basin                     9.5132e-04               3.168e-07                0.001524
+b_wq_nonlocal_basin                  9.2816e-04               2.165e-07              7.2671e-04
+b_wq_local_sub_basin                 8.1449e-04               1.751e-07              6.4446e-04
+b_wq_nonlocal_sub_basin              7.4593e-04               1.052e-07              5.5089e-04
+                            b_wq_nonlocal_basin    b_wq_local_sub_basin b_wq_nonlocal_sub_basin
+b_asc                                9.2816e-04              8.1449e-04              7.4593e-04
+b_cost                                2.165e-07               1.751e-07               1.052e-07
+b_wq_local_basin                     7.2671e-04              6.4446e-04              5.5089e-04
+b_wq_nonlocal_basin                    0.001348              6.0315e-04              5.6455e-04
+b_wq_local_sub_basin                 6.0315e-04              7.0452e-04              4.6702e-04
+b_wq_nonlocal_sub_basin              5.6455e-04              4.6702e-04              5.5702e-04
+
+Classical correlation matrix:
+                                          b_asc                  b_cost        b_wq_local_basin
+b_asc                                    1.0000                -0.46926                 0.47874
+b_cost                                  -0.4693                 1.00000                 0.05003
+b_wq_local_basin                         0.4787                 0.05003                 1.00000
+b_wq_nonlocal_basin                      0.4790                 0.03701                 0.32155
+b_wq_local_sub_basin                     0.6553                 0.04967                 0.43954
+b_wq_nonlocal_sub_basin                  0.6709                 0.04306                 0.44727
+                            b_wq_nonlocal_basin    b_wq_local_sub_basin b_wq_nonlocal_sub_basin
+b_asc                                   0.47903                 0.65531                 0.67092
+b_cost                                  0.03701                 0.04967                 0.04306
+b_wq_local_basin                        0.32155                 0.43954                 0.44727
+b_wq_nonlocal_basin                     1.00000                 0.43382                 0.44155
+b_wq_local_sub_basin                    0.43382                 1.00000                 0.60360
+b_wq_nonlocal_sub_basin                 0.44155                 0.60360                 1.00000
+
+Robust correlation matrix:
+                                          b_asc                  b_cost        b_wq_local_basin
+b_asc                                    1.0000                -0.38246                  0.5135
+b_cost                                  -0.3825                 1.00000                  0.1071
+b_wq_local_basin                         0.5135                 0.10707                  1.0000
+b_wq_nonlocal_basin                      0.5326                 0.07778                  0.5071
+b_wq_local_sub_basin                     0.6465                 0.08702                  0.6220
+b_wq_nonlocal_sub_basin                  0.6659                 0.05881                  0.5980
+                            b_wq_nonlocal_basin    b_wq_local_sub_basin b_wq_nonlocal_sub_basin
+b_asc                                   0.53264                 0.64655                 0.66593
+b_cost                                  0.07778                 0.08702                 0.05881
+b_wq_local_basin                        0.50706                 0.62202                 0.59798
+b_wq_nonlocal_basin                     1.00000                 0.61890                 0.65150
+b_wq_local_sub_basin                    0.61890                 1.00000                 0.74551
+b_wq_nonlocal_sub_basin                 0.65150                 0.74551                 1.00000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+  71256           0.1960007
+  63406           0.2119447
+ 104330           0.2231811
+  51749           0.2327627
+ 102706           0.2347760
+ 100782           0.2365525
+ 102127           0.2380060
+  63569           0.2394206
+  64911           0.2394624
+ 102126           0.2407461
+ 105044           0.2416015
+  66865           0.2468857
+  69521           0.2474443
+  63588           0.2529079
+  69891           0.2529940
+ 103401           0.2534970
+  53020           0.2541323
+  72408           0.2549831
+  67187           0.2555834
+ 103184           0.2597483
+
+Changes in parameter estimates from starting values:
+                            Initial    Estimate  Difference
+b_asc                         0.000    0.931186    0.931186
+b_cost                        0.000   -0.002507   -0.002507
+b_wq_local_basin              0.000   -0.396186   -0.396186
+b_wq_nonlocal_basin           0.000   -0.361467   -0.361467
+b_wq_local_sub_basin          0.000   -0.280085   -0.280085
+b_wq_nonlocal_sub_basin       0.000   -0.180050   -0.180050
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                    
+modelName              "Model 1"                                
+modelDescr             "Simple MNL model on mode choice SP data"
+indivID                "CaseId"                                 
+outputDirectory        "analysis/outputs/models/"               
+debug                  "FALSE"                                  
+nCores                 "1"                                      
+workInLogs             "FALSE"                                  
+seed                   "13"                                     
+mixing                 "FALSE"                                  
+HB                     "FALSE"                                  
+noValidation           "FALSE"                                  
+noDiagnostics          "FALSE"                                  
+calculateLLC           "TRUE"                                   
+analyticHessian        "FALSE"                                  
+memorySaver            "FALSE"                                  
+panelData              "TRUE"                                   
+analyticGrad           "TRUE"                                   
+analyticGrad_manualSet "FALSE"                                  
+overridePanel          "FALSE"                                  
+preventOverridePanel   "FALSE"                                  
+noModification         "FALSE"                                  
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+Scaling used in computing Hessian
+---------------------------------
+                              Value
+b_asc                   0.931185713
+b_cost                  0.002507092
+b_wq_local_basin        0.396185975
+b_wq_nonlocal_basin     0.361466607
+b_wq_local_sub_basin    0.280084914
+b_wq_nonlocal_sub_basin 0.180049688
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality = "estimate") {
+  
+  # Attach inputs
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  # Create list of probabilities
+  P = list()
+  
+  # Define utilities
+  V = list()
+  V[["policy"]]  = b_asc + b_cost *COST + 
+    b_wq_local_basin*WQ_BASIN_LOCAL_POLICY_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_POLICY_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_POLICY_SUBONLY_N +
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_POLICY_SUBONLY_N
+  
+  
+  V[["opt_out"]] = 
+    b_wq_local_basin*WQ_BASIN_LOCAL_CURRENT_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_CURRENT_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_CURRENT_SUBONLY_N +
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_CURRENT_SUBONLY_N
+  
+  
+  # Define MNL settings
+  mnl_settings = list(
+    alternatives  = c(policy = 1, opt_out = 0),  # Match to VOTE column coding
+    avail         = 1,  # Both alternatives are always available
+    choiceVar     = VOTE,  # Choice variable in the dataset
+    utilities     = V
+  )
+  
+  # Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  # Take product across observations for the same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  # Prepare and return probabilities
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}

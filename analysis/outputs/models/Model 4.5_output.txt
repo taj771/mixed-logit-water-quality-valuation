@@ -1,0 +1,520 @@
+Model run by tharakajayalath using Apollo 0.3.4 on R 4.3.2 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : Model 4.5
+Model description                           : Mixed-MNL
+Model run at                                : 2025-11-09 19:52:25.469212
+Estimation method                           : bgw
+Model diagnosis                             : Relative function convergence
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -39.142154
+     reciprocal of condition number         : 2.65284e-07
+Number of individuals                       : 3825
+Number of rows in database                  : 26848
+Number of modelled outcomes                 : 26848
+
+Number of cores used                        :  8 
+Number of inter-individual draws            : 2000 (sobol)
+
+LL(start)                                   : -13174.43
+LL at equal shares, LL(0)                   : -18470.84
+LL at observed shares, LL(C)                : -17280.79
+LL(final)                                   : -13096.8
+Rho-squared vs equal shares                  :  0.2909 
+Adj.Rho-squared vs equal shares              :  0.2902 
+Rho-squared vs observed shares               :  0.2421 
+Adj.Rho-squared vs observed shares           :  0.2414 
+AIC                                         :  26219.6 
+BIC                                         :  26326.18 
+
+Estimated parameters                        : 13
+Time taken (hh:mm:ss)                       :  00:59:30.4 
+     pre-estimation                         :  00:05:23.76 
+     estimation                             :  00:12:20.69 
+     post-estimation                        :  00:41:45.95 
+Iterations                                  :  22  
+
+Unconstrained optimisation.
+
+Estimates:
+                                 Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+mu_b_asc                         0.749886    0.120534       6.221     0.24230         3.095
+sigma_b_asc                      2.418159    0.056680      42.663     0.11703        20.662
+b_cost                          -0.004890  1.1287e-04     -43.323  2.6989e-04       -18.119
+mu_b_wq_local_basin             -1.003539    0.083396     -12.033     0.18495        -5.426
+sigma_b_wq_local_basin           0.839977    0.121266       6.927     0.24520         3.426
+mu_b_wq_nonlocal_basin          -0.666049    0.065282     -10.203     0.13185        -5.051
+sigma_b_wq_nonlocal_basin        0.391822    0.148981       2.630     0.28994         1.351
+mu_b_wq_local_sub_basin         -0.558820    0.044303     -12.613     0.09571        -5.839
+sigma_b_wq_local_sub_basin       0.498050    0.056065       8.883     0.11187         4.452
+mu_b_wq_nonlocal_sub_basin      -0.265494    0.038102      -6.968     0.08264        -3.213
+sigma_b_wq_nonlocal_sub_basin    0.427990    0.050354       8.500     0.11566         3.700
+b_basesq_obs                     0.349512    0.041635       8.395     0.08529         4.098
+b_basesq_exp                    -0.034686    0.009689      -3.580     0.01739        -1.995
+
+
+Overview of choices for MNL model component :
+                                  policy opt_out
+Times available                  26848.0 26848.0
+Times chosen                     17559.0  9289.0
+Percentage chosen overall           65.4    34.6
+Percentage chosen when available    65.4    34.6
+
+
+
+Classical covariance matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           0.014529                    3.9919e-04                    -2.125e-06
+sigma_b_asc                                      3.9919e-04                      0.003213                    -2.780e-06
+b_cost                                           -2.125e-06                    -2.780e-06                     1.274e-08
+mu_b_wq_local_basin                              9.6104e-04                     -0.001015                     2.030e-06
+sigma_b_wq_local_basin                            -0.001196                      0.001300                    -2.625e-06
+mu_b_wq_nonlocal_basin                           4.6571e-04                   -7.9165e-04                     1.370e-06
+sigma_b_wq_nonlocal_basin                         -0.001131                      0.001693                    -2.750e-06
+mu_b_wq_local_sub_basin                         -4.1619e-04                   -4.7274e-04                     9.717e-07
+sigma_b_wq_local_sub_basin                       -7.598e-05                    5.7511e-04                    -1.402e-06
+mu_b_wq_nonlocal_sub_basin                      -6.2215e-04                   -2.4689e-04                     5.528e-07
+sigma_b_wq_nonlocal_sub_basin                   -2.7276e-04                    4.1232e-04                    -1.167e-06
+b_basesq_obs                                      -0.003948                    1.7349e-04                    -4.224e-07
+b_basesq_exp                                     1.6443e-04                    -9.954e-06                     5.566e-08
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                         9.6104e-04                     -0.001196                    4.6571e-04
+sigma_b_asc                                       -0.001015                      0.001300                   -7.9165e-04
+b_cost                                            2.030e-06                    -2.625e-06                     1.370e-06
+mu_b_wq_local_basin                                0.006955                     -0.006576                      0.002146
+sigma_b_wq_local_basin                            -0.006576                      0.014705                     -0.001272
+mu_b_wq_nonlocal_basin                             0.002146                     -0.001272                      0.004262
+sigma_b_wq_nonlocal_basin                         -0.001658                    9.4557e-04                     -0.005567
+mu_b_wq_local_sub_basin                            0.001777                     -0.001106                      0.001448
+sigma_b_wq_local_sub_basin                      -9.1178e-04                      0.001412                   -3.0729e-04
+mu_b_wq_nonlocal_sub_basin                         0.001467                   -6.3207e-04                      0.001253
+sigma_b_wq_nonlocal_sub_basin                   -1.3041e-04                   -3.8941e-04                   -5.4775e-04
+b_basesq_obs                                     3.5655e-04                    2.0311e-04                    3.8051e-04
+b_basesq_exp                                     -4.069e-05                     3.437e-05                     1.533e-05
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.001131                   -4.1619e-04                    -7.598e-05
+sigma_b_asc                                        0.001693                   -4.7274e-04                    5.7511e-04
+b_cost                                           -2.750e-06                     9.717e-07                    -1.402e-06
+mu_b_wq_local_basin                               -0.001658                      0.001777                   -9.1178e-04
+sigma_b_wq_local_basin                           9.4557e-04                     -0.001106                      0.001412
+mu_b_wq_nonlocal_basin                            -0.005567                      0.001448                   -3.0729e-04
+sigma_b_wq_nonlocal_basin                          0.022195                   -8.0353e-04                   -3.5238e-04
+mu_b_wq_local_sub_basin                         -8.0353e-04                      0.001963                   -9.6896e-04
+sigma_b_wq_local_sub_basin                      -3.5238e-04                   -9.6896e-04                      0.003143
+mu_b_wq_nonlocal_sub_basin                      -7.6001e-04                      0.001155                   -2.0818e-04
+sigma_b_wq_nonlocal_sub_basin                      0.001770                    -8.542e-05                   -4.2590e-04
+b_basesq_obs                                     3.1006e-04                    6.9509e-04                     1.149e-05
+b_basesq_exp                                     -4.685e-05                    -4.934e-05                     1.913e-05
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_obs
+mu_b_asc                                        -6.2215e-04                   -2.7276e-04                     -0.003948
+sigma_b_asc                                     -2.4689e-04                    4.1232e-04                    1.7349e-04
+b_cost                                            5.528e-07                    -1.167e-06                    -4.224e-07
+mu_b_wq_local_basin                                0.001467                   -1.3041e-04                    3.5655e-04
+sigma_b_wq_local_basin                          -6.3207e-04                   -3.8941e-04                    2.0311e-04
+mu_b_wq_nonlocal_basin                             0.001253                   -5.4775e-04                    3.8051e-04
+sigma_b_wq_nonlocal_basin                       -7.6001e-04                      0.001770                    3.1006e-04
+mu_b_wq_local_sub_basin                            0.001155                    -8.542e-05                    6.9509e-04
+sigma_b_wq_local_sub_basin                      -2.0818e-04                   -4.2590e-04                     1.149e-05
+mu_b_wq_nonlocal_sub_basin                         0.001452                   -4.1218e-04                    7.0909e-04
+sigma_b_wq_nonlocal_sub_basin                   -4.1218e-04                      0.002536                    1.7161e-04
+b_basesq_obs                                     7.0909e-04                    1.7161e-04                      0.001733
+b_basesq_exp                                     -1.648e-05                    -3.952e-05                   -1.6668e-04
+                                               b_basesq_exp
+mu_b_asc                                         1.6443e-04
+sigma_b_asc                                      -9.954e-06
+b_cost                                            5.566e-08
+mu_b_wq_local_basin                              -4.069e-05
+sigma_b_wq_local_basin                            3.437e-05
+mu_b_wq_nonlocal_basin                            1.533e-05
+sigma_b_wq_nonlocal_basin                        -4.685e-05
+mu_b_wq_local_sub_basin                          -4.934e-05
+sigma_b_wq_local_sub_basin                        1.913e-05
+mu_b_wq_nonlocal_sub_basin                       -1.648e-05
+sigma_b_wq_nonlocal_sub_basin                    -3.952e-05
+b_basesq_obs                                    -1.6668e-04
+b_basesq_exp                                      9.388e-05
+
+Robust covariance matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                           0.058708                      0.003165                    -1.395e-05
+sigma_b_asc                                        0.003165                      0.013696                    -1.465e-05
+b_cost                                           -1.395e-05                    -1.465e-05                     7.284e-08
+mu_b_wq_local_basin                                0.006194                     -0.003999                     9.035e-06
+sigma_b_wq_local_basin                            -0.009880                      0.003739                    -8.591e-06
+mu_b_wq_nonlocal_basin                             0.002795                     -0.002435                     4.971e-06
+sigma_b_wq_nonlocal_basin                         -0.006542                      0.004899                    -1.008e-05
+mu_b_wq_local_sub_basin                           -0.001418                     -0.001975                     4.469e-06
+sigma_b_wq_local_sub_basin                      -3.3656e-04                      0.001872                    -4.578e-06
+mu_b_wq_nonlocal_sub_basin                        -0.002605                     -0.001066                     1.994e-06
+sigma_b_wq_nonlocal_sub_basin                     -0.003249                      0.002179                    -5.857e-06
+b_basesq_obs                                      -0.016021                    4.9376e-04                    -1.494e-06
+b_basesq_exp                                     6.6284e-04                     4.396e-05                    -6.559e-08
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                           0.006194                     -0.009880                      0.002795
+sigma_b_asc                                       -0.003999                      0.003739                     -0.002435
+b_cost                                            9.035e-06                    -8.591e-06                     4.971e-06
+mu_b_wq_local_basin                                0.034208                     -0.032305                      0.011908
+sigma_b_wq_local_basin                            -0.032305                      0.060122                     -0.006173
+mu_b_wq_nonlocal_basin                             0.011908                     -0.006173                      0.017385
+sigma_b_wq_nonlocal_basin                         -0.007516                      0.001526                     -0.019731
+mu_b_wq_local_sub_basin                            0.011035                     -0.006523                      0.007287
+sigma_b_wq_local_sub_basin                        -0.004980                      0.008637                     6.951e-06
+mu_b_wq_nonlocal_sub_basin                         0.007872                     -0.002951                      0.007194
+sigma_b_wq_nonlocal_sub_basin                     -0.001123                     -0.001806                     -0.004221
+b_basesq_obs                                       0.001852                      0.001853                      0.002028
+b_basesq_exp                                    -2.0965e-04                    1.2186e-04                     3.612e-05
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                          -0.006542                     -0.001418                   -3.3656e-04
+sigma_b_asc                                        0.004899                     -0.001975                      0.001872
+b_cost                                           -1.008e-05                     4.469e-06                    -4.578e-06
+mu_b_wq_local_basin                               -0.007516                      0.011035                     -0.004980
+sigma_b_wq_local_basin                             0.001526                     -0.006523                      0.008637
+mu_b_wq_nonlocal_basin                            -0.019731                      0.007287                     6.951e-06
+sigma_b_wq_nonlocal_basin                          0.084065                     -0.003169                     -0.003807
+mu_b_wq_local_sub_basin                           -0.003169                      0.009161                     -0.004125
+sigma_b_wq_local_sub_basin                        -0.003807                     -0.004125                      0.012514
+mu_b_wq_nonlocal_sub_basin                        -0.003451                      0.005974                   -8.4373e-04
+sigma_b_wq_nonlocal_sub_basin                      0.013800                   -5.8654e-04                     -0.002006
+b_basesq_obs                                       0.002590                      0.003290                     1.867e-05
+b_basesq_exp                                    -4.6770e-04                   -1.6415e-04                     5.858e-05
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_obs
+mu_b_asc                                          -0.002605                     -0.003249                     -0.016021
+sigma_b_asc                                       -0.001066                      0.002179                    4.9376e-04
+b_cost                                            1.994e-06                    -5.857e-06                    -1.494e-06
+mu_b_wq_local_basin                                0.007872                     -0.001123                      0.001852
+sigma_b_wq_local_basin                            -0.002951                     -0.001806                      0.001853
+mu_b_wq_nonlocal_basin                             0.007194                     -0.004221                      0.002028
+sigma_b_wq_nonlocal_basin                         -0.003451                      0.013800                      0.002590
+mu_b_wq_local_sub_basin                            0.005974                   -5.8654e-04                      0.003290
+sigma_b_wq_local_sub_basin                      -8.4373e-04                     -0.002006                     1.867e-05
+mu_b_wq_nonlocal_sub_basin                         0.006829                     -0.001790                      0.003541
+sigma_b_wq_nonlocal_sub_basin                     -0.001790                      0.013377                      0.001445
+b_basesq_obs                                       0.003541                      0.001445                      0.007275
+b_basesq_exp                                    -1.2600e-04                   -2.5068e-04                   -5.8866e-04
+                                               b_basesq_exp
+mu_b_asc                                         6.6284e-04
+sigma_b_asc                                       4.396e-05
+b_cost                                           -6.559e-08
+mu_b_wq_local_basin                             -2.0965e-04
+sigma_b_wq_local_basin                           1.2186e-04
+mu_b_wq_nonlocal_basin                            3.612e-05
+sigma_b_wq_nonlocal_basin                       -4.6770e-04
+mu_b_wq_local_sub_basin                         -1.6415e-04
+sigma_b_wq_local_sub_basin                        5.858e-05
+mu_b_wq_nonlocal_sub_basin                      -1.2600e-04
+sigma_b_wq_nonlocal_sub_basin                   -2.5068e-04
+b_basesq_obs                                    -5.8866e-04
+b_basesq_exp                                     3.0242e-04
+
+Classical correlation matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                            1.00000                       0.05843                      -0.15616
+sigma_b_asc                                         0.05843                       1.00000                      -0.43449
+b_cost                                             -0.15616                      -0.43449                       1.00000
+mu_b_wq_local_basin                                 0.09561                      -0.21476                       0.21563
+sigma_b_wq_local_basin                             -0.08179                       0.18911                      -0.19177
+mu_b_wq_nonlocal_basin                              0.05919                      -0.21395                       0.18592
+sigma_b_wq_nonlocal_basin                          -0.06296                       0.20044                      -0.16355
+mu_b_wq_local_sub_basin                            -0.07794                      -0.18826                       0.19432
+sigma_b_wq_local_sub_basin                         -0.01124                       0.18098                      -0.22158
+mu_b_wq_nonlocal_sub_basin                         -0.13547                      -0.11432                       0.12854
+sigma_b_wq_nonlocal_sub_basin                      -0.04494                       0.14447                      -0.20539
+b_basesq_obs                                       -0.78673                       0.07352                      -0.08989
+b_basesq_exp                                        0.14079                      -0.01812                       0.05089
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                            0.09561                      -0.08179                       0.05919
+sigma_b_asc                                        -0.21476                       0.18911                      -0.21395
+b_cost                                              0.21563                      -0.19177                       0.18592
+mu_b_wq_local_basin                                 1.00000                      -0.65021                       0.39423
+sigma_b_wq_local_basin                             -0.65021                       1.00000                      -0.16071
+mu_b_wq_nonlocal_basin                              0.39423                      -0.16071                       1.00000
+sigma_b_wq_nonlocal_basin                          -0.13345                       0.05234                      -0.57240
+mu_b_wq_local_sub_basin                             0.48088                      -0.20590                       0.50076
+sigma_b_wq_local_sub_basin                         -0.19501                       0.20771                      -0.08396
+mu_b_wq_nonlocal_sub_basin                          0.46183                      -0.13680                       0.50383
+sigma_b_wq_nonlocal_sub_basin                      -0.03105                      -0.06377                      -0.16663
+b_basesq_obs                                        0.10269                       0.04023                       0.13999
+b_basesq_exp                                       -0.05035                       0.02925                       0.02424
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                           -0.06296                      -0.07794                     -0.011243
+sigma_b_asc                                         0.20044                      -0.18826                      0.180977
+b_cost                                             -0.16355                       0.19432                     -0.221583
+mu_b_wq_local_basin                                -0.13345                       0.48088                     -0.195006
+sigma_b_wq_local_basin                              0.05234                      -0.20590                      0.207711
+mu_b_wq_nonlocal_basin                             -0.57240                       0.50076                     -0.083957
+sigma_b_wq_nonlocal_basin                           1.00000                      -0.12174                     -0.042187
+mu_b_wq_local_sub_basin                            -0.12174                       1.00000                     -0.390099
+sigma_b_wq_local_sub_basin                         -0.04219                      -0.39010                      1.000000
+mu_b_wq_nonlocal_sub_basin                         -0.13389                       0.68403                     -0.097456
+sigma_b_wq_nonlocal_sub_basin                       0.23597                      -0.03829                     -0.150863
+b_basesq_obs                                        0.04999                       0.37683                      0.004923
+b_basesq_exp                                       -0.03246                      -0.11493                      0.035214
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_obs
+mu_b_asc                                           -0.13547                      -0.04494                     -0.786732
+sigma_b_asc                                        -0.11432                       0.14447                      0.073518
+b_cost                                              0.12854                      -0.20539                     -0.089893
+mu_b_wq_local_basin                                 0.46183                      -0.03105                      0.102688
+sigma_b_wq_local_basin                             -0.13680                      -0.06377                      0.040227
+mu_b_wq_nonlocal_basin                              0.50383                      -0.16663                      0.139994
+sigma_b_wq_nonlocal_basin                          -0.13389                       0.23597                      0.049987
+mu_b_wq_local_sub_basin                             0.68403                      -0.03829                      0.376827
+sigma_b_wq_local_sub_basin                         -0.09746                      -0.15086                      0.004923
+mu_b_wq_nonlocal_sub_basin                          1.00000                      -0.21484                      0.446991
+sigma_b_wq_nonlocal_sub_basin                      -0.21484                       1.00000                      0.081857
+b_basesq_obs                                        0.44699                       0.08186                      1.000000
+b_basesq_exp                                       -0.04464                      -0.08100                     -0.413179
+                                               b_basesq_exp
+mu_b_asc                                            0.14079
+sigma_b_asc                                        -0.01812
+b_cost                                              0.05089
+mu_b_wq_local_basin                                -0.05035
+sigma_b_wq_local_basin                              0.02925
+mu_b_wq_nonlocal_basin                              0.02424
+sigma_b_wq_nonlocal_basin                          -0.03246
+mu_b_wq_local_sub_basin                            -0.11493
+sigma_b_wq_local_sub_basin                          0.03521
+mu_b_wq_nonlocal_sub_basin                         -0.04464
+sigma_b_wq_nonlocal_sub_basin                      -0.08100
+b_basesq_obs                                       -0.41318
+b_basesq_exp                                        1.00000
+
+Robust correlation matrix:
+                                                   mu_b_asc                   sigma_b_asc                        b_cost
+mu_b_asc                                            1.00000                       0.11162                      -0.21325
+sigma_b_asc                                         0.11162                       1.00000                      -0.46382
+b_cost                                             -0.21325                      -0.46382                       1.00000
+mu_b_wq_local_basin                                 0.13823                      -0.18477                       0.18100
+sigma_b_wq_local_basin                             -0.16630                       0.13031                      -0.12983
+mu_b_wq_nonlocal_basin                              0.08748                      -0.15778                       0.13970
+sigma_b_wq_nonlocal_basin                          -0.09312                       0.14438                      -0.12879
+mu_b_wq_local_sub_basin                            -0.06115                      -0.17627                       0.17299
+sigma_b_wq_local_sub_basin                         -0.01242                       0.14295                      -0.15164
+mu_b_wq_nonlocal_sub_basin                         -0.13008                      -0.11025                       0.08941
+sigma_b_wq_nonlocal_sub_basin                      -0.11594                       0.16098                      -0.18764
+b_basesq_obs                                       -0.77521                       0.04946                      -0.06492
+b_basesq_exp                                        0.15731                       0.02160                      -0.01397
+                                        mu_b_wq_local_basin        sigma_b_wq_local_basin        mu_b_wq_nonlocal_basin
+mu_b_asc                                            0.13823                      -0.16630                       0.08748
+sigma_b_asc                                        -0.18477                       0.13031                      -0.15778
+b_cost                                              0.18100                      -0.12983                       0.13970
+mu_b_wq_local_basin                                 1.00000                      -0.71234                       0.48831
+sigma_b_wq_local_basin                             -0.71234                       1.00000                      -0.19094
+mu_b_wq_nonlocal_basin                              0.48831                      -0.19094                       1.00000
+sigma_b_wq_nonlocal_basin                          -0.14016                       0.02147                      -0.51611
+mu_b_wq_local_sub_basin                             0.62338                      -0.27795                       0.57741
+sigma_b_wq_local_sub_basin                         -0.24069                       0.31488                    4.7129e-04
+mu_b_wq_nonlocal_sub_basin                          0.51506                      -0.14563                       0.66027
+sigma_b_wq_nonlocal_sub_basin                      -0.05249                      -0.06369                      -0.27681
+b_basesq_obs                                        0.11741                       0.08861                       0.18032
+b_basesq_exp                                       -0.06518                       0.02858                       0.01575
+                                  sigma_b_wq_nonlocal_basin       mu_b_wq_local_sub_basin    sigma_b_wq_local_sub_basin
+mu_b_asc                                           -0.09312                      -0.06115                     -0.012417
+sigma_b_asc                                         0.14438                      -0.17627                      0.142953
+b_cost                                             -0.12879                       0.17299                     -0.151644
+mu_b_wq_local_basin                                -0.14016                       0.62338                     -0.240690
+sigma_b_wq_local_basin                              0.02147                      -0.27795                      0.314877
+mu_b_wq_nonlocal_basin                             -0.51611                       0.57741                    4.7129e-04
+sigma_b_wq_nonlocal_basin                           1.00000                      -0.11418                     -0.117369
+mu_b_wq_local_sub_basin                            -0.11418                       1.00000                     -0.385258
+sigma_b_wq_local_sub_basin                         -0.11737                      -0.38526                      1.000000
+mu_b_wq_nonlocal_sub_basin                         -0.14404                       0.75527                     -0.091269
+sigma_b_wq_nonlocal_sub_basin                       0.41152                      -0.05298                     -0.155018
+b_basesq_obs                                        0.10473                       0.40295                      0.001957
+b_basesq_exp                                       -0.09276                      -0.09862                      0.030113
+                                 mu_b_wq_nonlocal_sub_basin sigma_b_wq_nonlocal_sub_basin                  b_basesq_obs
+mu_b_asc                                           -0.13008                      -0.11594                     -0.775208
+sigma_b_asc                                        -0.11025                       0.16098                      0.049465
+b_cost                                              0.08941                      -0.18764                     -0.064917
+mu_b_wq_local_basin                                 0.51506                      -0.05249                      0.117411
+sigma_b_wq_local_basin                             -0.14563                      -0.06369                      0.088611
+mu_b_wq_nonlocal_basin                              0.66027                      -0.27681                      0.180317
+sigma_b_wq_nonlocal_basin                          -0.14404                       0.41152                      0.104726
+mu_b_wq_local_sub_basin                             0.75527                      -0.05298                      0.402948
+sigma_b_wq_local_sub_basin                         -0.09127                      -0.15502                      0.001957
+mu_b_wq_nonlocal_sub_basin                          1.00000                      -0.18728                      0.502331
+sigma_b_wq_nonlocal_sub_basin                      -0.18728                       1.00000                      0.146528
+b_basesq_obs                                        0.50233                       0.14653                      1.000000
+b_basesq_exp                                       -0.08768                      -0.12464                     -0.396868
+                                               b_basesq_exp
+mu_b_asc                                            0.15731
+sigma_b_asc                                         0.02160
+b_cost                                             -0.01397
+mu_b_wq_local_basin                                -0.06518
+sigma_b_wq_local_basin                              0.02858
+mu_b_wq_nonlocal_basin                              0.01575
+sigma_b_wq_nonlocal_basin                          -0.09276
+mu_b_wq_local_sub_basin                            -0.09862
+sigma_b_wq_local_sub_basin                          0.03011
+mu_b_wq_nonlocal_sub_basin                         -0.08768
+sigma_b_wq_nonlocal_sub_basin                      -0.12464
+b_basesq_obs                                       -0.39687
+b_basesq_exp                                        1.00000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+ 100898         0.001822718
+  54738         0.002516193
+  62677         0.002839897
+ 101428         0.003351271
+ 103190         0.003922654
+  50869         0.004471027
+  52984         0.004717523
+ 101088         0.004969071
+ 100435         0.005491123
+ 101206         0.006000185
+  61993         0.006137776
+ 104216         0.006305694
+ 100973         0.006612998
+ 104089         0.006689027
+ 100724         0.007099776
+ 100916         0.007237956
+ 100789         0.007807177
+  50205         0.007958369
+  51698         0.008032513
+ 104407         0.008309856
+
+Changes in parameter estimates from starting values:
+                                  Initial    Estimate  Difference
+mu_b_asc                         1.567000    0.749886    -0.81711
+sigma_b_asc                      2.298000    2.418159     0.12016
+b_cost                          -0.005000   -0.004890  1.1005e-04
+mu_b_wq_local_basin             -0.974000   -1.003539    -0.02954
+sigma_b_wq_local_basin           0.703000    0.839977     0.13698
+mu_b_wq_nonlocal_basin          -0.642000   -0.666049    -0.02405
+sigma_b_wq_nonlocal_basin        0.127000    0.391822     0.26482
+mu_b_wq_local_sub_basin         -0.633000   -0.558820     0.07418
+sigma_b_wq_local_sub_basin       0.013000    0.498050     0.48505
+mu_b_wq_nonlocal_sub_basin      -0.435000   -0.265494     0.16951
+sigma_b_wq_nonlocal_sub_basin    0.284000    0.427990     0.14399
+b_basesq_obs                     0.000000    0.349512     0.34951
+b_basesq_exp                     0.000000   -0.034686    -0.03469
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value         
+modelName              "Model 4.5"   
+modelDescr             "Mixed-MNL"   
+indivID                "CaseId"      
+nCores                 "8"           
+outputDirectory        "Finaloutput/"
+weights                "WEIGHT"      
+mixing                 "TRUE"        
+debug                  "FALSE"       
+workInLogs             "FALSE"       
+seed                   "13"          
+HB                     "FALSE"       
+noValidation           "FALSE"       
+noDiagnostics          "FALSE"       
+calculateLLC           "TRUE"        
+analyticHessian        "FALSE"       
+memorySaver            "FALSE"       
+panelData              "TRUE"        
+analyticGrad           "TRUE"        
+analyticGrad_manualSet "FALSE"       
+overridePanel          "FALSE"       
+preventOverridePanel   "FALSE"       
+noModification         "FALSE"       
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+Scaling used in computing Hessian
+---------------------------------
+                                    Value
+mu_b_asc                      0.749886002
+sigma_b_asc                   2.418159095
+b_cost                        0.004889948
+mu_b_wq_local_basin           1.003538645
+sigma_b_wq_local_basin        0.839977126
+mu_b_wq_nonlocal_basin        0.666048978
+sigma_b_wq_nonlocal_basin     0.391821773
+mu_b_wq_local_sub_basin       0.558820109
+sigma_b_wq_local_sub_basin    0.498050361
+mu_b_wq_nonlocal_sub_basin    0.265494356
+sigma_b_wq_nonlocal_sub_basin 0.427989851
+b_basesq_obs                  0.349512086
+b_basesq_exp                  0.034686345
+
+
+apollo_randCoeff
+------------------
+function(apollo_beta, apollo_inputs){
+  randcoeff = list()
+  randcoeff[["b_asc"]] = mu_b_asc + sigma_b_asc*draws_asc 
+  
+  randcoeff[["b_wq_local_basin"]] =  mu_b_wq_local_basin + sigma_b_wq_local_basin*draws_wq_local_basin
+  randcoeff[["b_wq_nonlocal_basin"]] =  mu_b_wq_nonlocal_basin + sigma_b_wq_nonlocal_basin*draws_wq_nonlocal_basin
+  
+  randcoeff[["b_wq_local_sub_basin"]] =  mu_b_wq_local_sub_basin + sigma_b_wq_local_sub_basin*draws_wq_local_sub_basin
+  randcoeff[["b_wq_nonlocal_sub_basin"]] =  mu_b_wq_nonlocal_sub_basin + sigma_b_wq_nonlocal_sub_basin*draws_wq_nonlocal_sub_basin
+  
+  #  randcoeff[["b_basesq_obs"]] =  mu_b_basesq_obs + sigma_b_basesq_obs*draws_basesq_obs
+  #  randcoeff[["b_basesq_exp"]] =  mu_b_basesq_exp + sigma_b_basesq_exp*draws_basesq_exp
+  
+  
+  
+  
+  return(randcoeff)
+}
+<bytecode: 0x3c7a3de00>
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality = "estimate") {
+  
+  # Attach inputs
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  # Create list of probabilities
+  P = list()
+  
+  # Define utilities
+  V = list()
+  V[["policy"]]  = b_asc + b_cost *COST + 
+    b_wq_local_basin*WQ_BASIN_LOCAL_POLICY_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_POLICY_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_POLICY_SUBONLY_N +
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_POLICY_SUBONLY_N +
+    
+    b_basesq_obs*WQ_CURRENT_CHOICE +
+    # b_basesq_exp*SQ_VARIATION_CHOICE +
+    b_basesq_exp*WQ_CURRENT_CHOICE * SQ_VARIATION_CHOICE
+  
+  V[["opt_out"]] = 
+    b_wq_local_basin*WQ_BASIN_LOCAL_CURRENT_N +
+    b_wq_nonlocal_basin*WQ_BASIN_NL_CURRENT_N +
+    b_wq_local_sub_basin*WQ_SUBBASIN_LOCAL_CURRENT_SUBONLY_N+
+    b_wq_nonlocal_sub_basin*WQ_SUBBASIN_NL_CURRENT_SUBONLY_N 
+  
+  # Define MNL settings
+  mnl_settings = list(
+    alternatives  = c(policy = 1, opt_out = 0),  # Match to VOTE column coding
+    avail         = 1,  # Both alternatives are always available
+    choiceVar     = VOTE,  # Choice variable in the dataset
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Average across inter-individual draws
+  P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+  
+  ### Apply weights here (note the functionality argument)
+  P = apollo_weighting(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}

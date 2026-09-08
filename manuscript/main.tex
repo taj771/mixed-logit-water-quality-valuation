@@ -1,0 +1,819 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{setspace}
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{changes}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularray}
+\usepackage{lipsum}
+\usepackage{smartdiagram}
+\usepackage{lscape}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{makecell}
+\usepackage{siunitx}% Including necessary packages
+\usepackage{etoc} % For customizing List of Tables
+\usepackage{tocloft} % For additional control over table of contents/lists
+%\usepackage{noto} % Reliable font package for compatibility
+\usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{multirow}
+
+%\usepackage[backend=biber,style=authoryear,maxbibnames=99,]{biblatex}
+
+\usepackage[backend=biber,
+            style=authoryear,
+            maxbibnames=99,
+            giveninits=false,
+            uniquename=false,    % ← Add this line
+            uniquelist=false]{biblatex} % ← And this line
+
+\addbibresource{refs.bib}
+
+\begin{document}
+
+\newpage
+
+\begin{flushleft}
+\large{\textbf{Varying Status Quo Conditions in Stated Preference Surveys: Empirical Evidence for Water Quality}}
+\end{flushleft}
+
+\subsection*{Abstract}
+
+
+This study examines how current conditions shape people’s preferences for public policies that improve environmental quality. 
+We use a stated preference survey with experimentally varied status quo levels in a setting with a spatially explicit freshwater 
+health score across a wide geographic area. We provide causal evidence that people have a higher willingness to pay when status 
+quo water quality levels are worse. These findings highlight the importance of accurately describing the status quo condition 
+in stated preference studies. This study also provides empirical insights into the monetized economic benefits of landscape-wide 
+water quality improvements in Canada. We find that the public’s willingness to pay for water quality improvements varies by 
+spatial scale and proximity to the policy site. Local improvements in home basins or sub-basins are estimated to have a higher 
+willingness to pay than distant ones. Recreational users have substantially higher willingness to pay, underscoring the joint 
+role of non-use and use values.
+
+
+\subsection*{3.2. Introduction}
+
+Monetized benefits of water quality improvements play a crucial role in shaping environmental policies, particularly as the degradation 
+of freshwater ecosystems has led policy makers to prioritize their management \parencite{unwater2021, naidoo2005economic, keiser2019low}. 
+These benefits underpin cost-benefit analyses by quantifying trade-offs and net economic value to society, incorporating 
+both market and nonmarket ecosystem services \parencite{goldstein2012integrating, naidoo2005economic, arrow1996there}. 
+Stated-preference (SP) surveys, which estimate people's willingness to pay (WTP) for environmental improvements, 
+are a cornerstone of this valuation \parencite{johnston2017contemporary}. The SP literature is continuously evolving to address 
+the critical nuances of policy relevance and the complexities of regulatory decision-making \autocite{johnston2017contemporary, vossler2023valuing, moore2023measuring,bateman2023perspectives}.
+
+
+SP practitioners often face difficult decisions when describing status quo (SQ) conditions to respondents. In SP surveys, 
+the SQ alternative provides a baseline description of current or future conditions and acts as a comparison for the policy alternatives.
+In many contexts and particularly water quality SP surveys, there is often limited data for accurately defining the SQ water quality 
+condition. For example, limited data may suggest that water quality is either ``poor'' or ``moderate'' in an area and the researcher needs to 
+decide which water quality to use as a SQ in a SP survey.
+Do these researcher decisions regarding the SQ description affect elicited preferences and values for environmental changes?
+
+
+To study this question we employ a split-sample approach to isolate the effect of 
+status quo conditions, thereby providing a robust assessment of how public preferences and welfare measures vary with the status quo 
+presented to respondents. To do so, we conducted a SP survey administered to 4,000 households across the Canadian prairie provinces 
+of Alberta, Saskatchewan, and Manitoba. Our approach builds on recent advancements in SP research, including improved identification of 
+ecosystem services, refined water quality metrics, and the incorporation of spatial dimensions through interactive visual maps—all 
+designed to align with regulatory objectives \autocite{moore2023measuring, kling2012exxon, johnston2017contemporary, vossler2023valuing, bateman2023perspectives}.
+
+
+We employed a four-version split-sample experimental design, with each version incorporating a distinct, experimentally varied SQ 
+water quality level. Respondents were randomly assigned to one of four survey versions, each featuring a unique SQ water quality 
+level based on the World Wildlife Fund’s (WWF) freshwater health score, adapted for Canada \parencite{WWF2020}. While choice attributes 
+and proposed improvements remained consistent across versions, the SQ was manipulated to vary respondents’ baseline perceptions. This 
+design enables us to isolate the causal impact of SQ on the utility of water quality improvements, overcoming the challenges 
+associated with relying solely on observational variability of SQ across river basins. In particular using observed SQ introduces endogeneity, 
+as actual water quality is often correlated with unobserved factors, such as socioeconomic conditions, land use, pollution sources, or 
+differential exposure, meaning people in poorer-quality areas may have different priorities or less experience with high-quality water. 
+In contrast, experimentally controlled SQ allows us to isolate causal effects by randomly assigning baseline water quality levels, 
+thereby mitigating the endogeneity and perceptual biases inherent in observational data. This experimental control provides a robust 
+framework for identifying how SQ water quality levels affect elicited preferences and values for water quality changes.
+
+
+We find that people's preferences for water quality improvements varies by spatial scale and proximity to the improvement.
+The annual household marginal WTP for an improvement in the water quality score is estimated to be 44\% higher for 
+local basins (\$226) than for non-local basins (\$156). For sub-basin-level improvements, marginal WTP is \$147 for local sub-basins and \$86 
+for non-local sub-basins. These findings highlight the importance of spatial context in shaping public preferences for water quality 
+interventions, informing more effective and equitable environmental policies in Canada.
+
+Our results indicate that public preferences for water quality improvements vary systematically with the SQ water quality conditions. 
+By leveraging experimental variation in SQ, we find robust empirical evidence that researchers’ decisions regarding how the SQ water 
+quality level is framed meaningfully influence revealed preferences in SP valuation. Specifically, poorer SQ conditions amplify the 
+utility associated with improvements, resulting in up to a 52\% higher willingness to pay for equivalent improvements when the baseline 
+is severely degraded compared to when it is relatively healthy, particularly for improvements at the local sub-basin scale. These findings 
+highlight the importance of accurate definition of baseline water quality in SP studies, as it systematically influences public preferences 
+for water quality improvements and consequently affects policy-relevant valuations and environmental decision-making.
+
+
+This study advances the SP literature on water quality valuation by systematically examining how SQ water quality conditions 
+shape public preferences, an underexplored area in prior research. The limited number of studies that have explored this issue 
+have focused on the changing nature of the SQ conditions and whether environmental quality is improving, remaining the same, or 
+decreasing under the SQ. For instance, \textcite{maguire2018muddying} used a three-way split-sample design with valuation questions 
+that incorporated a constant, a decline, or an improvement in future conditions without policy interventions across survey versions.
+Their findings reveal that WTP varies with future SQ trajectories, with marginal WTP increasing from constant to declining to 
+improving conditions, highlighting reference dependence in shaping policy support.  A related stream of the 
+SP literature has elicited perceptions of SQ water quality and compared responses to researcher-defined SQ conditions, 
+finding that the SQ-perceived group exhibited stronger preferences and higher WTP for water quality improvements \parencite{marsh2011respondents}. 
+This underscores the critical influence of perceived SQ on environmental valuation outcomes, although self-reported baseline SQ 
+risks endogeneity with preferences. In contrast, our study uses a split-sample design that exogenously manipulates current SQ water 
+quality across respondents, avoiding reliance on future projections or subjective reports. This experimental control enables a more 
+rigorous test of SQ effects, controlling for endogeneity concerns that arise from relying on observational variability of SQ. 
+It also offers empirical insights into the role of SQ conditions in preference formation, with critical implications for reducing 
+uncertainty in regulatory analysis and improving the design of environmental valuation surveys.
+
+This study also contributes to the limited Canadian SP literature on valuing water quality, where only a few studies have addressed the 
+complexities of regional and policy-relevant contexts \parencite{macaskill2022six}. Compared to the U.S., progress in Canada has been 
+slower in aligning SP applications with regulatory decision-making needs. We advance this literature by employing a comprehensive 
+water quality index that captures the interplay of human activities, pollution, and ecological integrity, producing more robust WTP 
+estimates for realistic policy contexts \parencite{arrow1996there, carson1993value, moore2023measuring}. By integrating detailed water quality 
+measures, spatial heterogeneity, and rigorous survey design, this study strengthens the accuracy and policy applicability of SP 
+literature on water quality valuation in Canada.
+
+
+
+\subsection*{3.3. Study Area}
+
+In this study, we focus on four major river basins within the Prairie Provinces (Alberta, Saskatchewan, Manitoba), 
+spanning over 800,000 square kilometers, which are further divided into 18 sub-basins (Figure~\ref{Figure1}). 
+These watersheds are critical to agriculture and the economy, providing irrigation
+for extensive farmland, potable water for urban centers, and essential ecosystem services such as water 
+purification and flood mitigation \parencite{schindler2006impending}. Consequently, the region faces significant ecological 
+threats, particularly from agricultural runoff, nutrient loading, and habitat fragmentation, which pose 
+risks to water quality and ecosystem resilience. Climate change, land-use changes, and potential water 
+scarcity further amplify the ecological and economic costs of degradation \parencite{WesternEconomicDiversificationCanada2020, 
+schindler2006impending}. Empirical evidence on monetized economic benefits and ecological integrity 
+remains a critical component of policy decision-making, given the region's economic dependence, complex 
+transboundary nature, ecological vulnerabilities, and climate-driven pressures for managing water resources
+sustainably \parencite{warren2022canada}.
+
+
+\begin{figure}[H]%
+    \renewcommand{\thefigure}{3.1} % set figure number manually
+	\centering
+	\includegraphics[scale=0.16]{figures/study_area.png}
+	\caption{The study area includes four main river basins across the Prairie provinces in Canada.}\label{Figure1}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: Our study area consists of four river basins, namely the North Saskatchewan, South Saskatchewan, Assiniboine-Red, and Lower 
+Saskatchewan-Nelson River basins, which are further divided into 18 river sub-basins.
+\end{minipage}
+\end{figure}
+
+
+\subsection*{3.4. Stated Preference Survey}
+
+\subsubsection*{3.4.1. Survey Structure}
+
+
+We built on \textcite{vossler2023valuing} and tailored the survey instrument to the Canadian context. In particular the survey included four 
+distinct sections, and the full survey instrument is provided in the supplimnentary materials. The online survey encouraged respondents
+to use a laptop, desktop, or large tablet for optimal viewing of graphics. This was followed by an authentication screen requesting the first 
+three digits of the respondent’s residential postal code to verify their location and proceed with the survey.\footnote{Since only the first 
+three postal code digits were collected, some Forward Sortation Areas (FSAs) spanned sub-basin borders. For those respondents, we included 
+questions with a map showing sub-basin distribution across the province, asking them to select their local sub-basin.} Introductory screens 
+outlined the study’s purpose, researcher affiliations, and government funding through the Global Water Futures program. 
+
+In Section 1, respondents provided opinions on water resources and conditions near their homes. Section 2 used visual and written descriptions to characterize variations 
+in water appearance, natural flow, and biodiversity. To verify image comprehension and act as attention checks, respondents selected the image 
+depicting the best water quality from a set of three. Incorrect answers triggered a refresher on image interpretation. These images were paired 
+with detailed variations corresponding to the WWF's five-level health score, with lower numerical values assigned to more naturally functioning 
+ecosystems, as shown in Figure \ref{Figure2}. After reviewing water condition levels, respondents viewed a map showing the spatial distribution of water 
+quality for a non-local basin and identified the water quality level of a specific city within it. Using a map of their local basin, they 
+identified the water quality of their local basin. Section 3 included valuation scenarios, detailed in the next section. It concluded with 
+follow-up questions assessing whether respondents’ votes aligned with incentive-compatible elicitation, which attributes influenced their 
+choices, their response uncertainty, beliefs about the tax burden’s distributional aspects, and general thoughts on the water quality proposals. 
+Section 4 was brief and primarily focused on water-based recreation, including detailed trip information for 2024.
+
+
+
+\subsubsection*{3.4.2. Characterizing Water Quality and Status Quo for Respondents}
+
+Water quality is complex to measure, and SP practitioners often face challenges in conveying water quality and the 
+SQ to respondents. We use the overall freshwater health scores, derived from the WWF Canada Freshwater 
+Assessment framework, to define water quality as a commodity for which we measure preferences \parencite{WWF2020}. 
+This national-scale framework measures deviations in ecological integrity from a water body’s natural condition, 
+provides a standard, scientifically grounded method for evaluating health across Canadian river basin and sub-basins 
+based on the international best practices \parencite{boulton1999overview,Roux1999,Norris1999,Birk2012,USEPA2013} and 
+domestic initiatives \parencite{Kidd2011,Alberta2012,Maaskant2012}. The overall health score is a composite 
+index based on four core metrics: hydrology, water quality, benthic macroinvertebrates, 
+and fish, which represent key components of aquatic ecosystems and are widely monitored in Canada \parencite{WWF2020}. 
+Each metric is assessed through quantitative indicators that measure current status and, where sufficient data exist, 
+temporal trends, with data sourced from long-term monitoring by federal, provincial, and regional entities, including 
+Environment and Climate Change Canada, provincial governments, community groups, and Indigenous-led 
+initiatives\footnote{More details on WWF's technical protocols for health assessment, the derivation of the overall 
+water quality index, and the specific data sources are available in the Technical Protocol report at https://watershedreports.wwf.ca.}. 
+We used the health scores published during the 2020 assessment, which were the most recent available at the time of survey development
+\footnote{We also reviewed the most recent health scores published in 2025. When comparing the health scores used in our survey with the most 
+recently published data, we found no significant changes between the two assessments. Most importantly, none of the 
+missing health scores have been updated in the latest edition}.
+
+
+The WWF's freshwater health score is attractive for our purposes, as it is designed to provide comparable interpretations of 
+biological health across watersheds, offering spatial transferability and grounding in scientifically credible ecological 
+principles. We use these spatially explicit health scores to carefully define water quality as an environmental good and 
+service to be valued, ensure consistent interpretation across respondents, and generate empirical estimates that are broadly 
+comparable across space and linked to a policy-relevant metric of ecological integrity \parencite{vossler2023valuing}. The 
+overall health score is categorized into five levels: very poor, poor, fair, good, and very good, with each level reflecting a 
+distinct degree of change from baseline ecosystem function and integrity at the sub-watershed scale. The scale of the scores 
+captures the extent of impacts from various stressors resulting from human activities in watersheds. The status of water quality 
+can therefore be improved by actions undertaken to address anthropogenic stressors, such as enhancing natural water flow and 
+controlling nutrient loading from agricultural land use \parencite{chambers2012development,vossler2023valuing}.
+
+We translated the ecological concepts underlying each health score into both visual and textual representations, ensuring they 
+are understandable to survey respondents in order to elicit economic values associated with water quality improvements. 
+In particular, we characterize the appearance of a natural stream by highlighting visual features such as water color and clarity, 
+physical modifications that alter the stream’s natural flow, the condition of riparian zones and banks, and the diversity of fish, 
+benthic macroinvertebrates, and aquatic plants supported by varying levels of health score. These are important drivers or are 
+associated with the core metrics upon which the overall health score is built, and are therefore likely to be associated with 
+different health scores and serve as key determinants of the ecosystem conditions of natural streams. We summarized this information 
+along with the varying visual features corresponding to each of the five levels of the overall health score. Each level visually 
+depicts the appearance of a natural stream or river, accompanied by a snapshot of biological diversity illustrated through a 
+gradient of benthic macroinvertebrates and aquatic plants. The visual and associated verbal narratives corresponding to five level 
+of health score define the water quality as commodity (Figure \ref{Figure2}).
+
+
+
+\begin{figure}[H]
+    \renewcommand{\thefigure}{3.2} % set figure number manually
+    \centering
+
+    % First row
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/quality_1_lwq.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/quality_2_lwq.jpg}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    % Second row
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/quality_3_lwq.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/quality_4_lwq.jpg}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    % Third row (single centered image)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/quality_5_lwq.jpg}
+    \end{subfigure}
+
+    \caption{Visual representation of a stream at five corresponding WWF's overall health score.}
+    \label{Figure2}
+    \begin{minipage}{15cm}
+        \singlespacing
+        \vspace{0.01cm}
+        \small {Notes: We develop visual representations for each level of WWF’s overall health score, depicting the underlying core 
+        metrics and accounting for their variation at each level, to facilitate comparable interpretations of biological health across watersheds.}
+    \end{minipage}
+\end{figure}
+
+
+To incorporate the spatial dimension of water quality improvements, we assigned spatially explicit baseline health score values across all 
+sub-basins in our study area (Figure \ref{Figure1}). At the time of data acquisition, some sub-basins lacked health score values due to 
+data gaps. For instance, among 18 sub-basins across four basins within the study area, eight sub-basins did not have an overall health 
+score. To address this issue, we imputed health scores for sub-basins with missing data based on the overall health scores of 
+neighboring sub-watersheds, their flow directions, and the threat levels assigned to the sub-watersheds with missing data.\footnote{We 
+used the WWF Freshwater Assessment Report to identify threat levels at the sub-basin level. The framework incorporates key indicators to 
+capture current stressors in Canada’s freshwater systems.} To account for the uncertainty associated with this imputation, we considered 
+two possible scenarios of the assigned health scores: in one scenario, we assigned a higher health score, and in the other, we assigned a 
+lower health score for the missing cases.
+
+The overall health scores are based on the WWF Freshwater Assessment in 2021, which was the most recent health score available at the 
+time of the study. Since we propose water quality improvements for a future time span, we adjusted the current baseline health scores based 
+on assessed threat levels to account for potential recent and future changes in water quality. For these threat-based adjustments, we 
+considered two baseline scenarios. In the first scenario, we downgraded the health score by two units if the threat level was assessed as 
+high or very high, and by one unit if the threat level was assessed as moderate or low. In the second scenario, we downgraded the health 
+score by one unit only if the threat level was assessed as very high; all other cases remained unchanged.
+
+In total, this resulted in four potential baseline health score scenarios for each sub-basin. For sub-basins with missing overall health 
+scores, variation stemmed from both the initial imputation of health scores and the threat-based adjustment. For sub-basins with available 
+overall health scores, variation resulted solely from the two threat-level adjustment scenarios.\footnote{The threat-based adjustments 
+were nested within the initial imputation of missing health score values, resulting in four baseline conditions.} Across the four baseline 
+conditions, 5.6\% of the study area had a baseline health score classified as “very good”, 66.7\% had scores ranging from “good” to 
+“fair”, 16.7\% had scores ranging from “fair” to “poor”, and 11.1\% had scores classified as “very poor”, based on the WWF freshwater health 
+score classification, as shown in Figure \ref{baseline_healthscore_map}.
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.3} % set figure number manually
+\centering
+\includegraphics[scale=0.12]{figures/current_wq_level.png}
+\caption{The average baseline Health Score for 18 sub-basins under four baseline conditions across survey versions.}
+\label{baseline_healthscore_map}
+\begin{minipage}{15.2cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: We use four baseline conditions based on threat levels and missing health scores. Here, we depict the average health score of 
+each sub-basin across the four baseline conditions.
+\end{minipage}
+\end{figure}
+
+
+
+\subsubsection*{3.4.3. Valuation Questions}
+
+The valuation exercise was designed to empirically estimate the degree to which people prefer ecosystems closer to their natural state. To 
+estimate households’ WTP for improvements in water quality, the survey presented up to seven valuation scenarios tailored 
+to each respondent. We followed established survey best practices to encourage truthful responses and to interpret answers to the valuation 
+scenarios as reflections of real economic trade-offs. Drawing on the literature on incentive-compatible survey elicitation 
+\parencite{carson2007incentive, vossler2012truth}, we framed the valuation scenarios as advisory referenda, employed a coercive payment 
+mechanism, and instructed respondents to consider each referendum independently \parencite{vossler2023valuing}. Furthermore, we emphasized 
+the survey’s consequentiality by informing participants that it was government-funded and that the results could influence public policy decisions. 
+
+
+The survey included valuation scenarios defined by four attributes: the spatial scale (basin or sub-basin), whether the change occured in 
+a local or non-local area, the water health score change, and a cost attribute (Table~\ref{Table 1}). We use experimental variation to examine 
+how economic welfare responds to two spatial dimensions, based on four different levels of improvementin the health score. The first spatial 
+dimension is the scale of water quality changes, where we propose improvements at either the full basin level or only within a sub-basin. 
+The second spatial dimension is the location of the changes, which has two levels: whether the changes occur within the respondent’s local 
+basin or not. The tax increase was defined as a household-level annual tax, randomly assigned and unavoidable if the referendum was approved, 
+applied over five years period. To reduce respondent cognitive burden, we grouped the scenarios into spatial unit blocks and water health score 
+change blocks. Within the spatial unit blocks, we defined two spatial scales: an entire river basin and sub-basin. Within a spatial unit block, 
+we held the spatial scale fixed while varying the health score change scenario (four possibilities). In a health score change block, we held 
+the health score change scenario fixed while varying the spatial unit. For each respondent, we assigned either two spatial unit blocks or two 
+health score change blocks, with one block representing their local basin or sub-basin and the other representing a non-local basin or sub-basin.
+We determined each respondent's local sub-basin based on their postal code provided at the beginning of the survey, which was then matched to 
+both their local and non-local sub-basins. By presenting scenarios that either include or exclude the respondent’s local basin, we are able 
+to differentiate the economic values of nearby improvements and how these values vary with distance.
+
+\begin{table}[H]%
+\renewcommand{\thetable}{3.1} % set table number manually
+\caption{Attributes and levels of the choice scenario}
+\centering
+\label{Table 1}
+\scalebox{0.85}{
+\begin{tabular}{|l|l|}
+\hline
+Attribute & Level \\
+\hline
+Health score changes & 1. Improve health score to level 1 \\
+                & 2. Improve health score to level 2 \\
+                & 3. Improve health score to level 3 \\
+                & 4. Improve health score level by 1 unit\\ 
+\hline
+Spatial scale of changes & 1. Full basin \\
+                         & 2. Only a sub-baisn \\
+\hline 
+Location of changes & 1. Changes within the local basin \\
+                    & 2. Changes within the non-local basin\\
+\hline                         
+Cost  & \$25, \$75, \$100, \$150, \$200,\$250, \$350, \$500, \$750 \\
+(Annual tax increase over five years) & \\
+\hline
+\end{tabular}
+}
+\label{tab:sample_table}
+\end{table}
+
+
+
+A valuation scenario consisted of maps displaying the policy area, along with details showing the baseline and proposed improvements in water
+quality. A table was used to summarize the areas under different health score levels within the policy basin under both current and improved 
+conditions. The scenario also included a summary table presenting the average changes in health score across the policy basin, the size of the 
+policy area, the household cost, and a vote solicitation framed as a public referendum (Figure \ref{ChoiceImage}).
+
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.4} % set figure number manually
+	\centering
+	\includegraphics[scale=0.71]{figures/ChoiceImage.png}
+	\caption{A sample referendum scenario}\label{ChoiceImage}
+\begin{minipage}{12cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: Choice scenario includes a visual representation of maps showing the policy area, with color-coded depictions of current and 
+improved conditions, along with a table summarizing the area under each health score. At the end, a summary table presents key policy details, 
+including the size of the policy area, the proposed change, how the average health score changes before and after the policy, the average cost 
+per household, and finally, the referendum question.
+\end{minipage}
+\end{figure}
+
+
+\subsubsection*{3.4.4. Survey Testing}
+
+We used the Voxco survey engine to code the survey for completion by an online panel. The experimental design and survey functionality 
+were tested in July 2024 through two online focus groups, each with 8–9 participants, to ensure effective operation and clear materials and 
+questions. Participants lived in the study area, were recruited using random digit dialing, and were invited to attend one of the potential dates.
+Drawing on focus group insights, we conducted a pilot survey with 1,000 respondents across three provinces in December 2024 using the revised 
+survey instrument to verify functionality and gather preliminary results, which informed further refinements to the final survey. Additionally, 
+the pilot survey data were used to estimate preliminary models, confirming that our experimental design worked. Based on these insights, 
+we adjusted the bid levels while keeping the rest of the experimental design unchanged.
+
+\subsubsection*{3.4.5. Survey Administration}
+
+The final survey instrument was administered to a sample of 3,850 people residing in our study area, verified by postal codes, between July 
+2025 and August 2025\footnote{Though our data collection spanned three months, the majority of responses were collected during the early 
+phase of the online survey. A growing literature examines whether public preferences are sensitive to temporal factors such as seasonality 
+and survey timing. Assessing these temporal dynamics represents a potential extension of our research.}. %The survey instrument was 
+%reviewed and approved by the Human Research Ethics Office of the University of Saskatchewan.% 
+The survey was conducted in partnership with the Canadian Hub for Applied and Social Research (CHASR) using CHASR’s online probability-based 
+panel. We used an opt-in internet panel to survey the general population in the Prairie provinces living in the study area, using quota-based 
+sampling. With opt-in internet panels, participants may be more likely to complete a survey if they are interested in the topic, raising 
+concerns about non-response bias (Johnston et al., 2017). To reduce potential self-selection bias, the survey invitation email omitted information 
+about the survey topic. A quota-based sampling strategy ensured the sample was representative of province of residence, age, and gender. 
+Furthermore, we used appropriate weighting for respondents to align with the 2021 census population targets. %(see Figures in A3.1-A3-12 in the Supplementary Materials).
+
+
+\subsection*{3.5. Econometric Framework}
+
+The theoretical framework for the econometric analysis of data from our discrete choice experiment is Random Utility Maximization (RUM) 
+theory, which assumes that the utility an individual derives depends on both the observable attributes of the choices and unobserved 
+factors affecting well-being, the latter captured through a random component (McFadden 1974). Let the utility of respondent $i$ derived 
+from option $j$ in voting scenario $t$ be given by:
+
+\begin{equation}
+U_{ijt} = \beta_{program} + \alpha C_{ijt} + \beta^{sl}_{wq} \triangle WQ^{sl}_{ijt} + \beta' X_{ijt} + e_{ijt}
+\label{Eq1}
+\end{equation}
+
+\noindent where utility $U_{ijt}$ is the utility that individual $i$ derives from alternative $j$ in choice situation $t$, and is assumed 
+to be additively separable into the program-specific constant for the water quality improvement program $\beta_{program}$, cost $C_{ijt}$ 
+(presented to respondents as an increase in household taxes), water quality changes for spatial unit $ sl $, 
+with $ s \in\ \{ \text{Basin, Sub-basin} \} $ and $ l \in \{ \text{Local, Non-local} \} $ and a vector of other 
+attributes $X_{ijt}$. The vector $X_{ijt}$ includes individual-specific covariates invariant across alternatives $j$ and thus cancels 
+in the utility difference, not affecting choice probabilities. $\alpha$, $\beta^{sl}_{wq}$ and $\beta$ are the estimable parameters 
+and $e_{ijt}$ is a random error term assumed to be independently and identically distributed Type I extreme value.
+
+First, we estimate Equation~\ref{Eq1} using a binary logit (BL) model specification \parencite{train2009discrete}. Second, we use 
+random parameter logit (RPL) models that allows utility parameters to be random and follow parametric distributions \parencite{revelt1998mixed}. 
+The RPL approach accommodates multiple sources of unobserved variability, including heterogeneity in tastes across respondents, and it also 
+accounts for panel data from repeated choice tasks. In particular, we model preferences for water quality improvements across varying spatial 
+units and the program-specific constants as random, using a normal probability density function, the most common specification for 
+characterizing preference heterogeneity \parencite{train2009discrete}.\footnote{All models were estimated using the Apollo package in 
+R \parencite{hess2019apollo}. To estimate the random parameter logit (RPL) models, we used simulated maximum likelihood estimation with 5,000 Sobol draws.}
+
+\subsubsection*{3.5.1. Welfare Measures}
+
+Within this estimation framework, the negative of the parameter on the cost variable, $-\alpha$, measures the marginal utility of income. 
+The parameter on the water quality score, $\beta^{sl}_{\text{wq}}$, represents the marginal utility of a change in water quality at a given 
+spatial scale ($sl$). Since an increase in the water quality score corresponds to a decline in water quality, the estimated 
+$\beta^{sl}_{\text{wq}}$ is negative, reflecting the disutility of worsening water quality. 
+Consequently, the negative of this parameter, $-\beta^{sl}_{\text{wq}}$, measures the marginal utility of a one-unit improvement in water 
+quality (i.e., a one-unit decrease in the score). Dividing the marginal utility of a one-unit decrease in the water quality score by the 
+marginal utility of income yields the marginal WTP for a one-unit improvement in water quality at different spatial 
+scales, as follows:
+
+
+\begin{equation}
+    WTP^{sl}_{\text{marginal}} = \frac{-\beta^{sl}_{\text{wq}}}{-\alpha}
+\end{equation}
+
+\noindent The total WTP ($WTP^{sl}_{total}$) measures the monetary value of a specific water quality improvement scenario compared to 
+the current condition. This is calculated by dividing the difference in utility between the improved and current scenarios by the marginal utility of income. 
+The utility difference accounts for the change in the water quality score and the program-specific constant ($\beta_{{program}}$), 
+which captures the baseline utility of the improved scenario relative to the status quo. The 
+total WTP is given by:
+
+\begin{equation}
+    WTP^{sl}_{total} = -\frac{\beta_{program}+(WQ^{sl}_{improved}-WQ^{sl}_{current})*\beta^{sl}_{wq}}{\alpha}
+\end{equation}
+
+\noindent We apply the delta method to calculate standard errors for the welfare measures, ensuring robust inference for the WTP estimates derived 
+from Model 2 \parencite{train2009discrete}.
+
+
+\subsection*{3.6. Results}
+
+The results section is organized into four subsections. First, we present findings from the primary models estimating preferences for 
+water quality improvements and discuss the associated welfare estimates.  Second, we extend the modeling framework to explore the 
+effect of status quo water quality conditions on shaping public preferences for water quality enhancements. Then, we examine model 
+specifications that evaluate how spatial attributes and respondents’ recreational behavior influence public preferences for water 
+quality improvement programs. Finally, we assessed survey response validity to ensure reliable data and conducted sensitivity analyses to 
+evaluate result robustness.
+
+\subsubsection*{3.6.1. Modeling Preferences for Water Quality Improvements}
+
+Table \ref{Table_2} reports the choice model parameter estimates for the water quality data. Model 1 uses the Binary Logit (BL) specification, which assumes homogeneous 
+preferences across individuals. The program-specific constant for the policy alternative is positive and significant, indicating 
+a baseline preference for policy interventions over the status quo. The cost coefficient is negative and significant, consistent with expected 
+disutility from increased costs. We interacted water quality scores, specific to the choice scenarios, with indicators for the 
+spatial scale of the policy area (i.e., basin or sub-basin), further distinguished as local or non-local based on respondents’ home 
+locations. As higher water quality score values indicate poorer water quality, the estimated negative coefficients suggest that respondents derive 
+lower utility from deteriorating conditions and prefer improved water quality, as expected.
+
+
+In Model 2, we employed a RPL model, which incorporates random parameters to capture unobserved preference heterogeneity\footnote{This model 
+is estimated in the preference space with a fixed cost coefficient. As shown by \textcite{train2005discrete}, 
+when the cost coefficient is fixed, the model is mathematically equivalent to one specified in WTP space. For completeness and to 
+facilitate interpretation, we also present the results from the Model 2 specification estimated directly in WTP space. These 
+results are reported in Appendix Table A1.}. The estimated mean for the program-specific constant is positive and the standard 
+deviation parameter is estimated to be large suggesting diverse preferences for policy interventions. The estimated cost coefficient 
+is negative and statistically significant, as expected, consistent with the negative marginal utility of price. Results indicate 
+that individuals are approximately 1.5 times more sensitive to changes in water quality within the local basin compared to the 
+non-local basin. Improvements at the sub-basin level also show a preference for local sub-basins over non-local ones, although 
+marginal utility gains are smaller compared to basin-level improvements. 
+
+\begin{center}
+    \input{tables/Table_1}
+\end{center}
+
+
+
+
+The estimates from our model specification allow us to examine how welfare is affected by the spatial scale and the respondent’s proximity 
+to the location of the water quality improvement, defined as the additional WTP for expanding a policy area, as well as by whether the policy site is 
+local or non-local. Figure \ref{Fig.marginal.wtp} presents annual marginal WTP estimates for water quality improvements over five years, 
+based on Model 2, across varying spatial scales\footnote{Here, in Model 2, the use of the normal distribution for random parameters offers flexibility 
+but allows for potentially implausible negative WTP values. Following best practices \autocite{hensher2003mixed}, we conduct a robustness check using 
+lognormal distributions in WTP space. The results confirm our core findings, while yielding relatively higher, right-skewed WTP estimates, which may be 
+attributed to the long upper tail of the lognormal distribution (Appendix Table A2. }. The marginal WTP for improvements at the basin level, including the respondent’s sub-basin, 
+is \$226. This amount decreases to \$156 when the policy site excludes the respondent’s local basin. Scaling down to the sub-basin level results 
+in lower WTP, with \$147 for local sub-basins and \$86 for non-local sub- basins. However, because each basin consists of four to six sub-basins, 
+comparing WTP on a per–square kilometer basis indicates higher values at the sub-basin scale relative to the basin scale. Households consistently 
+express higher WTP for improvements within their local sub-basins compared to non-local ones. These findings suggest diminishing marginal WTP as 
+the distance between the respondent’s residence and the improved area increases.
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.5} % set figure number manually
+	\centering
+	\includegraphics[scale=0.45]{figures/marginal_WTP.png}
+	\caption{Marginal willingness to pay for improvement in water quality}\label{Fig.marginal.wtp}
+\begin{minipage}{14cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: The figure indicates the marginal household WTP (in 2024 dollars) per year over a five-year period for a policy that aims to 
+improve water quality at varying spatial scales and localities. A local policy refers to one that improves water quality at the basin or sub-basin 
+scale where the household resides, whereas a non-local policy does not include the household’s resident basin. Estimates are derived from 
+Model 2, as described in Table 2.
+\end{minipage}
+\end{figure}
+
+
+Using Model 2 results, we estimate the total WTP for improving the water quality score from each sub-basin’s 
+current water quality level to a ``good'' level (Level 2) at the sub-basin scale, based solely on local values. Figure \ref{Fig.value_map} depicts 
+the spatial distribution of local households’ total WTP for achieving a ``good'' health score from current water quality conditions, with estimated 
+values ranging from \$320 to \$995 and higher WTP in areas with lower baseline health scores in our study region.
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.6} % set figure number manually
+\centering
+\includegraphics[scale=0.12]{figures/value_map.png}
+\caption{Spatial distribution of total WTP for improving the health score to Level 2. (\$ per household in the affected watershed, annual payment for 5 years).}
+\label{Fig.value_map}
+\begin{minipage}{15cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: Total WTP values are calculated at the local sub-basin level for a scenario of improving the health score to a ``good'' condition 
+(Level 2) from the current health score, based on the average across four baseline conditions.
+\end{minipage}
+\end{figure}
+
+
+
+\subsubsection*{3.6.2. Impact of Status Quo Water Quality Conditions}
+
+Table \ref{baseline} summarizes the estimation results from the model examining how SQ water quality conditions influence public preferences 
+for water quality improvement programs. In our experimental design, variation in SQ water quality arises not only from inherent differences 
+across sub-basins but also from experimentally induced variation across survey versions within those sub-basins. Our objective is to assess 
+whether this exogenous, experimentally assigned variation in SQ affects preferences for water quality improvements, thereby addressing the 
+endogeneity concerns that arise when relying solely on observational differences in SQ across locations. To do so, we evaluate in Model 3 
+how the experimentally varied SQ water quality level influences the utility of choosing a water quality improvement program. Specifically, 
+we include a variable capturing the current water quality score presented in each choice task, and we incorporate basin and sub-basin-level 
+fixed effects to control for both observable SQ differences and unobserved basin-specific factors. This specification allows us to isolate 
+how public preferences respond to exogenous variation in SQ, thereby mitigating endogeneity bias associated with non-random spatial variation 
+in water quality conditions.
+
+The statistically significant positive coefficients for the experimentally varied SQ water quality level indicate that as the 
+experimentally induced SQ worsens, the utility derived from improving water quality increases. This suggests that respondents place a higher 
+value on improvements when the experimentally manipulated baseline conditions are poorer. For example, the total WTP for a one unit 
+improvement in water quality at the Upper South Saskatchewan sub basin, which is one of the sub basins within the South Saskatchewan 
+River Basin, is estimated to be about \$635 when the SQ water quality is at level 5, whereas it is only about \$417 for the same 
+improvement when the SQ is at level 2 (see Figure \ref{baseline_WTP}).
+
+
+The results indicate a pronounced framing effect, whereby respondents anchor their preferences to the SQ water quality level. By 
+leveraging experimentally induced variation along with basin- and sub-basin-level fixed effects, we isolate the influence of SQ conditions 
+from unobserved spatial confounders, yielding more credible estimates than those based solely on observational differences. Importantly, 
+the evidence shows that the way researchers define the SQ water quality level can meaningfully shape elicited preferences. Thus, the 
+choice of SQ framing in stated preference surveys is not merely a design detail; it directly influences estimated willingness to pay for 
+water quality improvements. Careful attention to baseline conditions is therefore essential for producing reliable and policy-relevant 
+valuation evidence.
+
+
+%Consequently, populations facing degraded conditions are unequivocally more likely to support policy action and assign higher total 
+%value to improvements, though they derive less marginal utility from each unit of improvement when the SQ is framed as more degraded. 
+%These findings provide a crucial adjustment factor for improving the accuracy of benefit transfer across sites with differing baseline 
+%conditions, moving beyond ad hoc assumptions toward evidence-based valuation. 
+%These findings align with the literature on reference-dependent preferences in environmental valuation \textcite{marsh2011respondents,
+%maguire2018muddying},emphasizing SQ effects in WQ improvements that reveal behavioral nuances. In contrast to 
+
+
+
+
+
+
+\input{tables/Table_4}
+
+
+
+
+% --- Start single-page custom margin ---
+\newgeometry{left=1cm, right=2cm, top=3cm, bottom=3cm}
+
+
+
+
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.7} % set figure number manually
+\centering
+\includegraphics[scale=0.8]{figures/figure_7_new.png}
+\caption{Total WTP across varying baseline water quality conditions}
+\label{baseline_WTP}
+\label{value_map}
+\begin{minipage}{16cm}
+\singlespacing
+\vspace{0.01cm}
+\small  Notes: Total willingness to pay for local water quality improvements in the reference sub basin, that is, the Upper South 
+Saskatchewan sub basin, which is a sub basin of the South Saskatchewan River Basin, is estimated using Model 3 parameters, incorporating 
+experimental variation in the status quo based on WWF Freshwater Health Scores.
+\end{minipage}
+\end{figure}
+
+\restoregeometry % revert to original margins
+% --- End custom margin ---
+
+%\begin{onehalfspace}
+
+One concern with the initial imputation of WWF's overall health score, which is used to overcome missing WQ scores and thread-based 
+adjustments to account for temporal changes in baseline WQ, is the extent to which it aligns with respondents' perceptions of the SQ 
+water quality level in their local basin. To evaluate this alignment, we included a gauging question that elicited respondents' 
+perceptions of the presented SQ in their local choice scenarios. Specifically, 59\% of respondents indicated that the given baseline WQ 
+level was approximately what they expected, 31\% believed it was worse than expected, and 10\% perceived it as better than expected.
+Furthermore, to assess the robustness of our findings to respondents' perceived SQ, we estimated a model specification that included 
+dummy variables identifying respondents who reported that the presented SQ baseline deviated from the WQ baseline they perceived in 
+their local basin. The results of this specification are summarised in Appendix Table A3. We find no statistically significant 
+difference in utility parameters for respondents who believed the presented SQ water quality level was worse than they expected. 
+However, we find marginally significant positive utility associated with enrolment in the policy programme among respondents who 
+believed the presented SQ baseline WQ was better than they expected.
+
+
+\subsubsection*{3.6.3. Influence of Spatial Attributes and Recreational Behavior}
+
+In Table \ref{Table_4}, we present estimates from models that include additional covariates to examine variation in preferences for 
+spatial attributes and respondents’ recreational behavior. Model 4 evaluates whether respondents place an additional premium on 
+non-local choices that are adjacent to their local basin or sub-basin. To do so, we include variables that indicate whether water 
+quality improvements in non-local basins or sub-basins are adjacent to the respondent’s local basin or sub-basin. The results 
+indicate that individuals derive higher marginal utility from water quality improvements in non-local basins that are adjacent 
+to their local basin, compared to non-local basins that are farther away. For instance, there is approximately a 35\% additional 
+premium on the marginal WTP for non-local basin-level improvements that are adjacent to the respondent’s local basin (\$169), 
+relative to similar improvements in non-local basins that are not adjacent (\$126).
+
+
+As freshwater management policies and strategies vary across provinces, in Model 5, we assess how public preferences are shaped by provincial 
+boundaries. Specifically, we use a continuous variable representing the percentage of the policy area within the respondent’s home province. 
+The positive coefficient for this variable suggests that, as the proportion of the policy area within the respondent’s home province increases, 
+the utility of the policy alternative also increases and, this relationship is statistically significant.
+
+Model 6 assesses how respondents' policy preferences vary based on their recreational behavior. We include a variable indicating whether a 
+respondent made a water-based recreational trip in 2024 to the same basin or sub-basin that is the focus of their choice scenarios. The positive 
+and statistically significant coefficient suggests that respondents who took recreational trips within the policy-relevant basin or sub-basin 
+derive significantly higher utility from the policy alternatives, reflecting greater use values compared to respondents who did not visit water 
+bodies within the policy areas.
+
+%\end{onehalfspace}
+
+% --- Start single-page custom margin ---
+\newgeometry{left=1cm, right=2cm, top=3cm, bottom=3cm}
+
+\input{tables/Table_2} % correct way to include table
+
+\restoregeometry % revert to original margins
+% --- End custom margin ---
+
+
+
+
+\subsubsection*{3.6.4. Evaluation of Response Validity and Robustness}
+%\begin{onehalfspace}
+    
+
+
+To evaluate the validity, reliability, and respondent engagement of our stated preference survey, we incorporated several 
+follow-up questions. Responses to questions assessing beliefs related to incentive-compatible elicitation revealed robust 
+and valid preferences. Specifically, 81\% of participants reported voting as if their household would incur the stated policy 
+cost, 80\% believed the proposed policies would achieve the stated water quality improvements, and 78\% responded as if the 
+survey results would influence policymakers. The attributes of the water quality improvement program were salient to 
+respondents, with 91\% indicating that their votes were influenced by the level of water quality improvement, 70\% by the 
+spatial extent of the policy’s impact, and 70\% by improvements to water quality near their residence. The survey 
+demonstrated strong perceived neutrality, with 78\% of respondents reporting that it allowed them to form their own 
+opinions and 85\% expressing confidence in their votes, comparable to voting in a public election.
+
+A sensitivity analysis was conducted using a series of validity questions embedded in the survey. Figure~\ref{sensitivity_check} illustrates the 
+marginal WTP for a one-unit improvement in water quality score, derived from Model 2 estimates on restricted 
+samples that exclude respondents based on various combinations of validity criteria. These criteria, detailed in the figure notes, encompass 
+protest behavior, lack of engagement, uncertainty in choices, disbelief in survey consequentiality, and inadequate consideration of proposal 
+attributes. The results demonstrate robustness across the full sample, though some criteria have excluded notable respondents from the dataset, 
+indicating that the findings are not driven by responses exhibiting validity concerns.
+
+%\end{onehalfspace}
+
+% --- Start single-page custom margin ---
+\newgeometry{left=1cm, right=2cm, top=2cm, bottom=2cm}
+\begin{figure}[H]%
+\renewcommand{\thefigure}{3.8} % set figure number manually
+\centering
+\includegraphics[scale=0.45]{figures/sensitivity_WTP_marginal_checks.png}
+\caption{Assessing the robustness of model estimates using validity questions.}
+\label{sensitivity_check}
+\begin{minipage}{16cm}
+\singlespacing
+\vspace{0.01cm}
+\footnotesize  Notes: Marginal WTP estimates are derived from Model 2, estimated on a restricted sample that excludes respondents based on 
+their answers to sensitivity and consequentiality validity questions, as outlined below: \\
+
+\textbf{Protest Responses Excluded:} Respondents were excluded if they consistently voted “Yes” or “No” in all choice scenarios and provided 
+responses to follow-up validity questions indicating protest behavior or lack of engagement. This includes: (1) voting “Yes” to all proposals 
+while disagreeing with the claim “I voted as if my household would face the stated cost” and (2) voting “No” to all proposals while agreeing 
+with the statements “I believe that my taxes are too high already and am against any initiative that will increase taxes.”\\
+\textbf{Uncertain Responses Excluded:} Respondents were excluded if they expressed uncertainty in their choices and provided follow-up 
+responses indicating low engagement or questionable reliability. This includes those who disagreed with the statement “I am certain that 
+I voted the same way I would if I were voting in a public election,” while also indicating that (1) “I did not read the information on 
+the proposals carefully” or (2) “I did not have enough information to make comfortable decisions.”\\
+\textbf{Inconsequential and Non-independence Responses Excluded:} Respondents were excluded if they disagreed with statements affirming the survey's 
+consequentiality. Specifically, exclusions applied to respondents who disagreed with the following statements: “I voted as if the policies 
+would achieve the stated improvements in water quality”, “I voted as if the information collected in this survey will be used to inform 
+policy makers” and “I voted on each proposal without any consideration of the other proposals.”\\
+\textbf{All Exclusion Criteria Applied:} Respondents meeting any of the exclusion criteria described in Criteria 1 through 4 were excluded from the sample.
+
+\end{minipage}
+\end{figure}
+
+\restoregeometry % revert to original margins
+% --- End custom margin ---
+
+\subsection*{3.7. Discussion and Conclusion}
+\addcontentsline{toc}{subsection}{\protect\numberline{3.7.}Discussion and Conclusion}
+
+
+
+
+
+In SP surveys, particularly those valuing the economic benefits of water quality improvements, defining the SQ water quality is often 
+challenging due to limited data. Consequently, researchers frequently need to make arbitrary decisions about how to frame SQ water 
+quality levels. We examine whether these decisions on arbitrarily defined SQ levels influence public preferences, using a split-sample 
+approach to experimentally manipulate SQ conditions. By leveraging this exogenous variation, we assess how the SQ affects public 
+preferences for water quality improvements. Our use of experimentally induced variation allows for a more robust causal identification 
+of the SQ's effects on public preferences, overcoming concerns associated with confounding from observational variability in the SQ. We 
+find that researchers’ decisions regarding how the SQ is defined are not merely a technical detail of survey design—they meaningfully 
+shape public preferences for water quality improvements. In particular, people derive higher utility from proposed improvements 
+when baseline water quality is lower, whereas the same improvements are valued less when the SQ is relatively high. Ignoring 
+such perceptual and framing biases when designing SP surveys may misrepresent the true societal value of environmental improvements. 
+Therefore, the careful definition and communication of SQ conditions are critical for producing credible, policy-relevant valuation evidence.
+
+Our empirical findings on public preferences for water quality improvements that inform policy, emphasizing the roles of 
+spatial scale, location, and status quo conditions in determining WTP. Notably, spatial scale drives substantial preference 
+variations, with marginal WTP estimated at local basins and sub-basins, is estimated at \$226, dropping to \$156 for 
+non-local basins. In contrast, sub-basin-level improvements are estimated at \$147 locally versus \$86 non-locally. The total WTP for 
+improving the water quality from each sub-basin’s current baseline to “good” (Level 2) at the sub-basin scale, considering 
+only local values, ranges from \$320 to \$998, with higher WTP corresponding to areas with lower baseline health scores in our study region.
+WTP patterns across spatial scales and local versus non-local contexts are consistent with the findings of \textcite{vossler2023valuing}. 
+Although their spatial scales and water quality scales differ, at their smallest scale, they estimate a marginal WTP of \$121 
+(2021 USD) for a one-unit increase in their six-level water quality score in a local sub-watershed. At the watershed scale, 
+the marginal WTP for a local watershed is \$164, while it is lower, at \$135 (2021 USD), for a non-local watershed.
+
+
+There are several limitations of this study. One limitation is arbitrary assignment of water quality values to sub-basins with missing data. 
+Despite employing two scenarios to address uncertainty, this data imputation may affect the observed systematic variation in WTP across baseline conditions. 
+This approach, particularly relevant in Canada’s data-scarce context, warrants careful scrutiny in future research to ensure robust valuation. 
+Another limitation is the reliance on an online panel sample, which may underrepresent 
+non-internet users, provide insufficient observations for severely degraded subsets, and depend on self-reported recreational behavior, potentially 
+introducing bias. To address this, we applied weights to survey responses to align with 2021 Census population targets, mitigating bias from 
+underrepresented groups.
+
+
+
+\newpage
+
+\section*{References}
+\printbibliography[heading=none]
+\newpage
+
+\end{document}

@@ -1,0 +1,12 @@
+"","Estimate","Std.err.","t-ratio(0)","Rob.std.err.","Rob.t-ratio(0)"
+"mu_b_asc",4.40740026056147,NA,NA,NA,NA
+"sigma_b_asc",-3.67015876118625,NA,NA,NA,NA
+"b_cost",-0.01,NA,NA,NA,NA
+"ln_mu_b_wq_local_basin",-61.2090200073327,NA,NA,NA,NA
+"ln_sigma_b_wq_local_basin",-56.6993027911639,NA,NA,NA,NA
+"ln_mu_b_wq_nonlocal_basin",-31.6443064940062,NA,NA,NA,NA
+"ln_sigma_b_wq_nonlocal_basin",-8976.84863256527,NA,NA,NA,NA
+"ln_mu_b_wq_local_sub_basin",-166.566225881458,NA,NA,NA,NA
+"ln_sigma_b_wq_local_sub_basin",-322.943121813364,NA,NA,NA,NA
+"ln_mu_b_wq_nonlocal_sub_basin",-3.38180413180453,NA,NA,NA,NA
+"ln_sigma_b_wq_nonlocal_sub_basin",-144.716639634209,NA,NA,NA,NA

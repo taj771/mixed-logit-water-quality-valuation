@@ -1,0 +1,59 @@
+% latex table generated in R 4.3.2 by xtable 1.8-4 package
+% Mon Nov 10 16:08:00 2025
+{
+\renewcommand{\thetable}{3.3} % set table number manually
+\singlespacing
+\begin{table}[H]
+\caption{Estimation Results for the Impact of Baseline Water Quality Conditions on Policy Preferences}   
+\label{baseline}
+
+\centering
+\scalebox{1}{
+\begin{tabular}{lll}
+  \midrule
+Parameter & \multicolumn{2}{c}{Model 3} \\ 
+ & Mean & Std. Dev. \\ 
+\midrule
+Program Constant & 0.722** & 2.42*** \\ 
+   & (0.358) & (0.12) \\ 
+  Cost & -0.005*** &  \\ 
+   & (3e-04) &  \\ 
+  Current WQ Level & 0.354*** &  \\ 
+   & (0.0948) &  \\ 
+\midrule
+\addlinespace
+$\triangle$ Water Quality Score: &  &   \\
+\addlinespace
+
+\hspace{0.5em} Basin:local & -0.432** & 0.48 \\ 
+   & (0.198) & (0.323) \\ 
+\hspace{0.5em}   Basin:non-local & -0.244* & 0.154 \\ 
+   & (0.14) & (0.136) \\ 
+\hspace{0.5em}   Sub Basin:local & -0.6*** & 0.505*** \\ 
+   & (0.103) & (0.139) \\ 
+\hspace{0.5em}   Sub Basin:non-local & -0.425*** & 0.401*** \\ 
+   & (0.086) & (0.125) \\ 
+
+\midrule
+  Basin/Sub Basin FE & \multicolumn{2}{c}{Y}  \\ 
+  Individuals & \multicolumn{2}{c}{3,825}  \\ 
+  Voting Scenario & \multicolumn{2}{c}{26,848}  \\ 
+  Log-Likelihood at solution & \multicolumn{2}{c}{-13,018}  \\ 
+  McFadden’s R2 & \multicolumn{2}{c}{0.244}  \\ 
+  BIC & \multicolumn{2}{c}{26,372}  \\ 
+   \midrule
+\end{tabular}
+}
+\begin{minipage}{16cm}  
+\singlespacing  
+\vspace{0.01cm}  
+\footnotesize Notes: This table reports results from Model 3 evaluating how experimentally varied status quo (SQ) water 
+quality influences preferences for water quality improvements. The specification includes a variable indicating the WWF 
+Freshwater Health Index score at the SQ for each choice task, along with fixed effects at the basin and sub-basin levels. 
+This approach captures how the utility of choosing water quality improvement policies is affected by experimentally induced 
+variability in SQ water quality across survey versions, addressing endogeneity concerns that arise from relying on observed 
+variability in SQ water quality levels.
+Significance: *** $p < 0.01$, ** $p < 0.05$, * $p < 0.10$. 
+\end{minipage}
+\end{table}
+}

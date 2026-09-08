@@ -1,0 +1,28 @@
+{
+  // R terminal on macOS. The global settings.json only defines r.rterm.windows,
+  // which does nothing here.
+  "r.rterm.mac": "/usr/local/bin/R",
+  "r.rterm.option": ["--no-save", "--no-restore"],
+
+  // false = plain R console. Set to true only if you install radian.
+  "r.bracketedPaste": false,
+
+  // Workspace/plot/help panes for the R session.
+  "r.sessionWatcher": true,
+
+  // Send code to one shared R terminal rather than spawning new ones,
+  // so the packages loaded by 00-setup.R stay attached between scripts.
+  "r.alwaysUseActiveTerminal": true,
+
+  "[r]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // Keep the noise out of the file explorer.
+  "files.exclude": {
+    "**/.Rproj.user": true,
+    "**/.DS_Store": true,
+    "manuscript/_build": true
+  }
+}

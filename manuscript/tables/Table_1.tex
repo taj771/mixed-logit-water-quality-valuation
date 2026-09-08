@@ -1,0 +1,66 @@
+% latex table generated in R 4.3.2 by xtable 1.8-4 package
+% Fri Jun 13 12:01:15 2025
+\begin{center}
+\renewcommand{\thetable}{3.2} % set table number manually
+{\singlespacing
+\begin{table}[H]
+\caption{Estimation results for the primary model specifications, using Binary Logit (BL) and Random Parameters Logit (RPL) models.}
+\label{Table_2}
+%\centering
+\scalebox{1}{
+\begin{tabular}{p{6cm}p{3cm}p{2cm}p{2cm}}
+\midrule
+& \multicolumn{1}{l}{Model 1} & \multicolumn{2}{c}{Model 2}\\
+&   & Mean & Std. Dev\\
+  \midrule
+Program Constant & 0.931*** & 1.554*** & 2.422*** \\ 
+   & (0.0475) & (0.148) & (0.118) \\ 
+  Cost & -0.003*** & -0.005*** &  \\ 
+   & (1e-04) & (3e-04) &  \\ 
+\midrule
+\addlinespace
+$\triangle$ Water Quality Score &  &  &  \\
+\addlinespace
+%    &  &   &  \\ 
+
+\hspace{0.5em} Basin:local & -0.396*** & -1.1*** & 0.835*** \\ 
+   & (0.039) & (0.178) & (0.241) \\ 
+\hspace{0.5em} Basin:non-local & -0.361*** & -0.758*** & 0.347 \\ 
+   & (0.0367) & (0.128) & (0.32) \\ 
+\hspace{0.5em} Sub Basin:local & -0.28*** & -0.715*** & 0.528*** \\ 
+   & (0.0265) & (0.089) & (0.118) \\ 
+\hspace{0.5em} Sub Basin:non-local & -0.18*** & -0.418*** & 0.417*** \\ 
+   & (0.0236) & (0.069) & (0.118) \\
+
+
+   \midrule
+   Individuals & \multicolumn{1}{l}{3,825} & \multicolumn{2}{c}{3,825}\\
+    Voting Sceneario & \multicolumn{1}{l}{26,848} & \multicolumn{2}{c}{26,848}\\
+    
+    Log-Likelihood at solution & \multicolumn{1}{l}{-16,269} & \multicolumn{2}{c}{-13,133}\\
+
+    McFadden's $R^2$ & \multicolumn{1}{l}{0.060} & \multicolumn{2}{c}{0.239}\\
+
+%    AIC & \multicolumn{1}{l}{15,289} & \multicolumn{2}{c}{10,888}\\
+
+    BIC & \multicolumn{1}{l}{32,599} & \multicolumn{2}{c}{26,377}\\
+    
+   \midrule
+\end{tabular}
+}
+\vspace{0.2em}
+
+\small
+Both models use covariates that interact WWF’s freshwater health scores with indicators for the spatial 
+scale of the policy area (basin or sub-basin), further distinguished as local or non-local based on 
+respondents’ home locations, to capture variation in marginal utility from water quality improvements 
+depending on locality and spatial scale. Model 1, estimated as a Binary Logit (BL) model, assumes 
+homogeneous preferences across individuals. Model 2, a Random Parameter Logit (RPL) model, accommodates panel data from repeated 
+choice tasks, and substantially improves model fit. Robust standard errors are reported in the parenthesis. 
+Significance: *** $p < 0.01$, ** $p < 0.05$, * $p < 0.10$.
+
+
+\end{table}
+
+}
+\end{center}
