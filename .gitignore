@@ -60,3 +60,6 @@ manuscript/_build/
 
 # --- Apollo auto-backups (created when a model is re-estimated) --------------
 analysis/outputs/models/*_OLD*
+
+# --- stray graphics device output --------------------------------------------
+Rplots.pdf
