@@ -63,3 +63,6 @@ analysis/outputs/models/*_OLD*
 
 # --- stray graphics device output --------------------------------------------
 Rplots.pdf
+
+# --- default latexmk output; the committed PDF uses -jobname (see README) ----
+manuscript/main.pdf
