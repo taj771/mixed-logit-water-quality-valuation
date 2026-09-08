@@ -143,6 +143,83 @@ while degrading gracefully on a smaller one.
 Every model loaded by `03-figures/` and `04-tables/` now has a producer in
 `02-models/`, and every `source()` target in `00-run-all.R` resolves.
 
+---
+
+## Status
+
+The pipeline runs end to end and is reproducible. The manuscript PDF in
+`manuscript/` predates a set of corrections made to the analysis code, so its
+numbers are **not** the numbers the current code produces. Models are being
+re-estimated.
+
+### Corrections made to the survey weighting
+
+Two independent errors in `01-dataprep/Survey Data Preparation Part 4.R`, both
+present in the weights behind the current manuscript:
+
+1. **Gender raking target.** The filter excluding the census total row tested
+   `gender != "Both sexes"`, but the table spells that row `"Total - gender"`.
+   It survived the filter, fell through a `TRUE ~ "Other"` catch-all, and -
+   being Men+ plus Women+ by definition - made the "Other" target exactly 0.50.
+   The raking was told half the population is gender-diverse while 22 of 3,851
+   respondents are, and `cap = 3` made the target unreachable, so weights
+   collapsed toward zero.
+
+2. **Province weight.** Computed as the census population share alone rather
+   than census share divided by sample share. Alberta reached 82.6% of the
+   weighted sample against a true 63.5%; Manitoba and Saskatchewan were roughly
+   halved - biasing the local versus non-local comparison the chapter rests on.
+
+Effect of fixing both:
+
+| | Before | After |
+|---|---|---|
+| Median weight | 0.0000 | 0.578 |
+| Respondents below 1e-6 | 1,818 | 3 |
+| Effective sample size | 1,094 (28.4%) | 2,040 (53.0%) |
+| Alberta weighted share | 82.6% | 63.6% (census 63.5%) |
+
+Census targets are now cached to `data/derived/census_targets.rds`, so the
+weighting reproduces run to run. Previously every run re-downloaded from
+Statistics Canada, whose tables get revised - which is why regenerating the
+weights produced different numbers each time.
+
+### Other corrections
+
+- Seven model scripts guarded raw column names in their `filter(!is.na(...))`
+  chains while their utilities consumed the `_N` variants. Verified a no-op on
+  the current data, but the guard did not cover the columns the likelihood reads.
+- `Model 2.R` never called `apollo_saveOutput()`, so a 1.5-hour estimation wrote
+  nothing and Apollo's safety save replaced the good `.rds` with one lacking
+  robust standard errors. It failed silently: downstream scripts loaded the
+  stale object without erroring.
+- `pmax(0.001, x)` in the truncated-normal script returned a dim-less vector,
+  collapsing the utility matrix. Apollo recorded "modelled outcomes: 0" and BIC
+  came out `NA`. Argument order swapped; numerically identical, keeps `dim`.
+- The pipeline sourced a broken Figure 7 script (referencing parameters no model
+  estimates) and excluded the working one, whose output is md5-identical to the
+  figure the manuscript ships.
+- Table code printed standard errors as `3e-04` and log-likelihoods truncated to
+  four significant digits, and reported unsigned mixing standard deviations as
+  negative.
+
+Runtime dropped from roughly 300s to 110s across data prep, every change
+verified byte-identical against the previous output.
+
+### Open questions
+
+Documented, not yet resolved - each needs a call from the authors rather than
+a code change:
+
+- Eight of eighteen hardcoded status-quo water-quality levels in the sub-basin
+  WTP script disagree with what respondents were actually shown.
+- The published value map uses the basin-scale coefficient under a caption
+  describing sub-basin scale.
+- A coefficient in Table 3 is produced only by a script excluded from the
+  pipeline.
+- Blocks B3_1 and B3_2 are absent from the estimation data because two column
+  mapping files diverged.
+
 ## Known issues, carried over from the original
 
 1. **`Table_4.tex`** is used by `main.tex` but no script in the pipeline
