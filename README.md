@@ -1,8 +1,36 @@
-# Chapter III — Use and Non-Use Value of Water Quality
+# Spatial Welfare Estimation from a Discrete Choice Experiment
 
-Working folder for the Chapter III manuscript. Reorganised from the original
-`Chapter III-UseNonUseValue/` tree, which is kept intact alongside this folder
-until this one is confirmed good.
+**Mixed logit models on a 3,825-respondent stated-preference survey — 26,848
+choice observations across Alberta, Manitoba and Saskatchewan — producing
+willingness-to-pay estimates that vary by spatial scale and by whether the
+affected water body is local to the respondent.**
+
+Full analysis pipeline: raw survey export to census-weighted estimation dataset,
+fourteen estimated specifications, and the figures and tables of the resulting
+manuscript. Reproducible end to end from `analysis/R/00-run-all.R`.
+
+### Methods
+
+| | |
+|---|---|
+| **Choice econometrics** | Mixed logit with independent normal random parameters, estimated in both preference space and WTP space; lognormal and truncated-normal mixing variants; sub-basin fixed effects. Simulated maximum likelihood over Sobol draws (`apollo`). |
+| **Welfare measures** | Marginal and total WTP via the delta method, with robust standard errors; welfare surfaces mapped to 18 sub-basins. |
+| **Survey weighting** | Iterative proportional fitting (raking) to 2021 Census margins on age, gender, income and education, per province, against live Statistics Canada tables (`anesrake`, `cansim`). |
+| **Spatial analysis** | Polygon neighbour matrices, spatial joins, address geocoding, choropleth mapping (`sf`, `spdep`, `tmap`). |
+| **Reproducibility** | Byte-level output verification, cached external data, session setup with dependency and working-directory checks. |
+
+### What this repository shows
+
+Beyond the estimation itself, this is a worked example of auditing a research
+pipeline. Two errors in the survey weighting — one of which had silently
+reduced the effective sample size from 3,851 to 1,094 — were found, diagnosed
+against the census source, and fixed; several silent failure modes in the
+estimation code were caught before they reached print. All of it is documented
+in **Status** below, including the questions still open.
+
+> **Data is not included.** The survey is REB-governed human-subjects data
+> carrying postal codes alongside demographic bands and free-text responses.
+> The code is complete; place the data under `data/` to run it.
 
 ---
 
