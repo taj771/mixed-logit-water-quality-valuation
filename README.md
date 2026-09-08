@@ -59,8 +59,6 @@ Chapter3-WQ-Manuscript/
 
 ```bash
 cd manuscript
-# -jobname keeps the output name matching the committed PDF; without it
-# latexmk writes main.pdf and you end up with two copies of the manuscript.
 latexmk -pdf -jobname=Water-Quality-Spatial-WTP-manuscript main.tex
 latexmk -pdf -outdir=_build appendix.tex
 ```
