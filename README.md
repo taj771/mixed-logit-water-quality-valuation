@@ -1,9 +1,9 @@
 # Welfare Estimation from a Discrete Choice Experiment
 
-**Mixed logit models on a 3,825-respondent stated-preference survey, 26,848
+Mixed logit models on a 3,825-respondent stated-preference survey, 26,848
 choice observations across Alberta, Manitoba and Saskatchewan, producing
 willingness-to-pay estimates that vary by spatial scale and by whether the
-affected water body is local to the respondent.**
+affected water body is local to the respondent.
 
 Full analysis pipeline: raw survey export to census-weighted estimation dataset,
 fourteen estimated specifications, and the figures and tables of the resulting
