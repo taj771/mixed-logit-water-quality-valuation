@@ -40,6 +40,7 @@ in **Status** below, including the questions still open.
 Chapter3-WQ-Manuscript/
 ├── Chapter3-WQ-Manuscript.Rproj   open this first — sets the working directory
 ├── manuscript/                    LaTeX source
+│   ├── Water-Quality-Spatial-WTP-manuscript.pdf   compiled manuscript (see Status)
 │   ├── main.tex                   the manuscript          (was main1.tex)
 │   ├── appendix.tex               the appendix            (was Appendix_short.tex)
 │   ├── appendix-long.tex          longer appendix variant (was Appendix.tex)
